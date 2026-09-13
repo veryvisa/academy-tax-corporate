@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <title>业主经理的薪酬：工资还是分红（Salary vs. Dividend） · 微出国 · 学</title>
-<link rel="stylesheet" href="../assets/style.css?v=1789230896">
+<link rel="stylesheet" href="../assets/style.css?v=1789338952">
 <script>var PREV_URL="ca-corporate-02-passive-income-grind.html";var NEXT_URL="ca-corporate-04-shareholder-loans-s85-abil-windup.html";</script>
 <link rel="manifest" href="../manifest.webmanifest">
 </head>
@@ -30,20 +30,20 @@
       </div>
     </div>
     <h1>业主经理的薪酬：工资还是分红（Salary vs. Dividend）</h1>
-    <div class="doc-meta"><span class="vv-badge vv-badge--accent">加拿大 · 公司税 T2：SBD、股东贷款、s.85、ABIL、清算、NPO、薪酬规划 · 练习配比 37%</span><span class="vv-badge">13,323 字</span><span class="vv-badge">约 26 分钟</span></div>
+    <div class="doc-meta"><span class="vv-badge vv-badge--accent">加拿大 · 公司税 T2：SBD、股东贷款、s.85、ABIL、清算、NPO、薪酬规划 · 练习配比 37%</span><span class="vv-badge">13,421 字</span><span class="vv-badge">约 26 分钟</span></div>
     <blockquote>
 <p>核实日期：2026-09-05｜现行口径：2026 税年｜复核：2027-06-30（CPP/CPP2/EI/RRSP 四组数字每年 1 月同步跳一次，这是本页更新最快的一格）
 法条依据指向《所得税法》(Income Tax Act, ITA) 现行合订本（Act current to 2026-06-21）；数值指向加拿大税务局 (Canada Revenue Agency, CRA) 与卑诗省现行页面。</p>
 </blockquote>
 <p><code>ca-corporate-01-t2-intro-sbd</code> 讲清了公司自己交多少税，这一页接着往下问：钱从公司口袋挪到你个人口袋，走<strong>工资</strong>这条路划算，还是走<strong>分红</strong>这条路划算。这不是一道有唯一正确答案的题——它填在 T1 的雇佣收入行（line 10100）或股息行（line 12000），走哪条路要看你的现金需求、退休规划、家庭结构。读完这页你应该能做到三件事：说清工资为什么会同时产生 RRSP 额度、CPP 权益、托儿费扣除资格，也同时背上双份 CPP；算出一笔非合资格分红从公司利润到你手上实际留下多少；判断哪些给家庭成员的分红会撞上 2018 年之后的 TOSI（Tax on Split Income）规则。</p>
 <hr />
-<h2 id="_1">一、制度设计与底层逻辑：两条税，为什么设计成不对称</h2>
-<h3 id="11">1.1 工资是公司的费用，分红是公司税后的钱</h3>
+<h2 id="s1">一、制度设计与底层逻辑：两条税，为什么设计成不对称</h2>
+<h3 id="s1-1">1.1 工资是公司的费用，分红是公司税后的钱</h3>
 <p>这是整条规则的起点，也是最容易被忽略的一句话：<strong>工资在公司层面可以扣，分红不可以</strong>。公司发给你的工资、奖金，是一项经营支出，先减掉这笔钱才算出应税收入；公司要分红，得先把利润按 <code>ca-corporate-01-t2-intro-sbd</code> 讲过的税率交完税，剩下的税后利润才能拿去分。所以从公司账本上看，工资是"发生在算税之前"的钱，分红是"算完税之后"的钱。</p>
 <p>这句话直接决定了两条路径完全不同的税务地图：走工资，税只在你个人这一层交一次；走分红，钱先在公司层面交一道税（9% 或 15%，看是否享小企业扣除），到你手上再交第二道个人税。表面上看像是重复课税，但立法者早就想到了这一层——这就是<strong>整合 (integration)</strong> 制度存在的理由。</p>
-<h3 id="12">1.2 整合：让"公司先交、个人后补"约等于"直接赚到手"</h3>
+<h3 id="s1-2">1.2 整合：让"公司先交、个人后补"约等于"直接赚到手"</h3>
 <p>整合想达成的效果是：同一块利润，不管是你自己直接挣的，还是先进公司再分给你的，两条路径合计的税负应该差不多。做法是给股息设计一套<strong>毛额化 (gross-up)</strong> 加<strong>股息税收抵免 (dividend tax credit, DTC)</strong> 的机制：</p>
-<p>个人收到应税股息时，先按比例<strong>放大</strong>这笔股息——非合资格股息（用小企业扣除交过低税的那部分利润分出来的）放大 15%，合资格股息（交过一般税率的那部分利润分出来的）放大 38%（ITA s.82(1)(b)，TWS-0170）。放大的目的是把股息"还原"成公司交税前的那个数字，好让后面的抵免有基数可算。抵免这一步再把公司已经交过的那道税还回来：联邦抵免率是放大部分的 <strong>9/13</strong>（非合资格）与 <strong>6/11</strong>（合资格）（ITA s.121，TWS-0171）。</p>
+<p>个人收到应税股息时，先按比例<strong>放大</strong>这笔股息——非合资格股息（用小企业扣除交过低税的那部分利润分出来的）放大 15%，合资格股息（交过一般税率的那部分利润分出来的）放大 38%（ITA s.82(1)(b)，<a class="src-ref" href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-82.html" title="Income Tax Act s.82(1)(b) — 股息毛额化（gross-up）">加拿大联邦法规库</a>）。放大的目的是把股息"还原"成公司交税前的那个数字，好让后面的抵免有基数可算。抵免这一步再把公司已经交过的那道税还回来：联邦抵免率是放大部分的 <strong>9/13</strong>（非合资格）与 <strong>6/11</strong>（合资格）（ITA s.121，<a class="src-ref" href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-121.html" title="Income Tax Act s.121 — 股息税收抵免（DTC）">加拿大联邦法规库</a>）。省里还有一份抵免：BC 2026 税年的股息抵免是应税股息的 <strong>12%</strong>（合资格）与 <strong>1.96%</strong>（非合资格），与 2025 年相同；它和联邦抵免一样，乘的是放大之后的应税股息，不是实际收到的金额。</p>
 <p>这套机制<strong>近似</strong>而不是<strong>精确</strong>做到整合——原因是抵免率全国统一，而各省税率各不相同。所以"公司交税再分红"和"直接发工资"这两条路径最终留给个人手上的钱，会因为省份、税年、收入档位而有几个百分点的差距，方向甚至会随税率调整而反转。<strong>任何"开公司一定省税"或"分红一定比工资划算"的说法都是错的</strong>——这是一道要按人、按省、按年现算的题，不是一条通则。</p>
 <div class="vv-callout vv-callout--info">
 <p><span class="vv-callout__icon">ℹ️</span></p>
@@ -52,21 +52,21 @@
 <p>整合是设计意图，不是保证。一个高收入的业主经理，如果把利润全部留在公司按小企业税率交完再分红，个人层面还要再交一次非合资格股息税——两道税合计往往<strong>高于</strong>直接把这笔钱当工资发放、由公司当费用扣掉的税负。反过来，如果这笔钱本来就要留在公司里滚存投资，晚一点分红反而争取到了递延的好处。<strong>判断走哪条路，先问这笔钱要不要立刻花掉。</strong></p>
 </div>
 </div>
-<h3 id="13">1.3 工资额外买到的三样东西，分红一样都买不到</h3>
+<h3 id="s1-3">1.3 工资额外买到的三样东西，分红一样都买不到</h3>
 <p>工资在个人所得税表上比分红税率更高，这是常识，但工资额外换来的三件事经常被漏算：</p>
-<p><strong>第一，RRSP 供款额度。</strong> RRSP 额度按"上一年 18% 的 earned income（赚取收入）"累积，年度上限封顶（TWS-0172）。而 ITA s.146(1) 对 earned income 的定义只圈定了雇佣所得、自营生意所得，以及不动产租金与版权/专利权使用费这几类——<strong>股息不在清单里</strong>（TWS-0182）。只靠分红维生、一分钱工资都不发的业主经理，名下这份 earned income 是零，RRSP 额度也就永远是零。</p>
+<p><strong>第一，RRSP 供款额度。</strong> RRSP 额度按"上一年 18% 的 earned income（赚取收入）"累积，年度上限封顶（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/contributing-a-rrsp-prpp/contributions-affect-your-rrsp-prpp-deduction-limit.html" title="How contributions affect your RRSP deduction limit">CRA</a>）。而 ITA s.146(1) 对 earned income 的定义只圈定了雇佣所得、自营生意所得，以及不动产租金与版权/专利权使用费这几类——<strong>股息不在清单里</strong>（<a class="src-ref" href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-146.html" title="Income Tax Act s.146(8.3) — 配偶 RRSP 的归属规则">加拿大联邦法规库</a>）。只靠分红维生、一分钱工资都不发的业主经理，名下这份 earned income 是零，RRSP 额度也就永远是零。</p>
 <p><strong>第二，CPP 供款记录。</strong> 工资才会产生<strong>加拿大退休金计划 (Canada Pension Plan, CPP)</strong> 的可保收入，分红不产生。不发工资的业主经理，等于自己给自己判定"这辈子没交过 CPP"，退休时的 CPP 养老金按贡献记录算，记录是空的，给付也是空的。</p>
-<p><strong>第三，托儿费扣除资格。</strong> 托儿费扣除额度按"三分之二的 earned income"封顶（TWS-0253），而 ITA s.63(3) 给出的 earned income 定义同样只认雇佣与自营所得，<strong>没有股息</strong>（TWS-0351）。家庭现金收入很高、但全部来自分红的业主经理，可能一分钱托儿费都扣不了。</p>
+<p><strong>第三，托儿费扣除资格。</strong> 托儿费扣除额度按"三分之二的 earned income"封顶（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/technical-information/income-tax/income-tax-folios-index/series-1-individuals/folio-3-family-unit-issues/income-tax-folio-s1-f3-c1-child-care-expense-deduction.html" title="Income Tax Folio S1-F3-C1, Child Care Expense Deduction">CRA</a>），而 ITA s.63(3) 给出的 earned income 定义同样只认雇佣与自营所得，<strong>没有股息</strong>（<a class="src-ref" href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-63.html" title="Income Tax Act s.63(3) — 托儿费扣除「赚取收入」定义">加拿大联邦法规库</a>）。家庭现金收入很高、但全部来自分红的业主经理，可能一分钱托儿费都扣不了。</p>
 <p>这三条共享同一个法律机制——ITA 里"赚取收入"这个概念反复出现，反复把股息排除在外。<strong>发工资买的不是税率，是资格。</strong></p>
-<h3 id="14">1.4 谁与谁在博弈：把利润挪给低税率的家人</h3>
-<p>第二个战场是<strong>income splitting（收入分拆）</strong>。既然家庭成员边际税率各不相同，把利润挪给税率低的那个人分红，直觉上能省税。真实付出劳动、按公允市价领工资的家庭成员，这条路一直合法——但要通过两道闸门：<strong>s.67 合理性测试</strong>（付给家庭成员的报酬必须与付给陌生人做同样工作相当，否则不合理的那一截公司不能扣，TWS-0290）；以及<strong>business purpose 测试</strong>（必须证明这个人确实提供了服务，未成年人尤其难证明）。</p>
+<h3 id="s1-4">1.4 谁与谁在博弈：把利润挪给低税率的家人</h3>
+<p>第二个战场是<strong>income splitting（收入分拆）</strong>。既然家庭成员边际税率各不相同，把利润挪给税率低的那个人分红，直觉上能省税。真实付出劳动、按公允市价领工资的家庭成员，这条路一直合法——但要通过两道闸门：<strong>s.67 合理性测试</strong>（付给家庭成员的报酬必须与付给陌生人做同样工作相当，否则不合理的那一截公司不能扣，<a class="src-ref" href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-67.html" title="Income Tax Act s.67 — General limitation re expenses (reasonableness test)">加拿大联邦法规库</a>）；以及<strong>business purpose 测试</strong>（必须证明这个人确实提供了服务，未成年人尤其难证明）。</p>
 <p>分红这条路则被 2018 年之后大幅收紧的 <strong>TOSI（Tax on Split Income，分割收入税）</strong>规则堵死了大半：不满足排除条件的分红，会被按<strong>全国最高边际税率</strong>课税，不管收款人自己的收入档位有多低。TOSI 常见的三条排除（详见第二节 2.4）是这场博弈里读者最该记熟的部分。</p>
-<h3 id="15">1.5 走错路的法律后果：不是补税那么简单</h3>
+<h3 id="s1-5">1.5 走错路的法律后果：不是补税那么简单</h3>
 <p>分类错了，代价不止是"多交点税"。工资算成了分红（或者反过来），会牵出连锁反应：该扣未扣的<strong>源头扣缴 (payroll source deductions)</strong>——公司要补缴，还要交怠于扣缴的处罚与利息；该报 T4 的报成了 T4A 或 T5，CRA 重新定性后个人这边可能被追缴不同税种的差额；给家庭成员的"工资"如果被判定为徒有其名，公司这笔扣除会被整个打回、按 s.67 或 business purpose 测试双双落败。<strong>公司这边补税，个人这边补税，两头都跑不掉</strong>——这也是为什么这道题从来不是"选个税率更低的选项"这么简单。</p>
 <hr />
-<h2 id="2026">二、2026 税年现行规则与数字</h2>
-<h3 id="21-20242026">2.1 三列表一：股息毛额化/抵免与小企业税率，2024–2026 全部长青</h3>
-<table>
+<h2 id="s2">二、2026 税年现行规则与数字</h2>
+<h3 id="s2-1">2.1 三列表一：股息毛额化/抵免与小企业税率，2024–2026 全部长青</h3>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>项目</th>
@@ -82,14 +82,14 @@
 <td>15%</td>
 <td>15%</td>
 <td>15%</td>
-<td>长青，自 2019 税年未变（TWS-0170）</td>
+<td>长青，自 2019 税年未变（<a class="src-ref" href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-82.html" title="Income Tax Act s.82(1)(b) — 股息毛额化（gross-up）">加拿大联邦法规库</a>）</td>
 </tr>
 <tr>
 <td>合资格股息毛额化</td>
 <td>38%</td>
 <td>38%</td>
 <td>38%</td>
-<td>长青，自 2012 税年未变（TWS-0170）</td>
+<td>长青，自 2012 税年未变（<a class="src-ref" href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-82.html" title="Income Tax Act s.82(1)(b) — 股息毛额化（gross-up）">加拿大联邦法规库</a>）</td>
 </tr>
 <tr>
 <td>非合资格联邦股息税收抵免（ITA s.121）</td>
@@ -110,42 +110,42 @@
 <td>9%</td>
 <td>9%</td>
 <td>9%</td>
-<td>长青（TWS-0021）</td>
+<td>长青（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-tax-rates.html" title="Corporation tax rates">CRA</a>）</td>
 </tr>
 <tr>
 <td>联邦一般公司净税率（不享 SBD）</td>
 <td>15%</td>
 <td>15%</td>
 <td>15%</td>
-<td>长青（TWS-0021）</td>
+<td>长青（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-tax-rates.html" title="Corporation tax rates">CRA</a>）</td>
 </tr>
 <tr>
 <td>BC 省小企业税率</td>
 <td>2%</td>
 <td>2%</td>
 <td>2%</td>
-<td>长青，自 2017-04-01 未变（TWS-0169）</td>
+<td>长青，自 2017-04-01 未变（<a class="src-ref" href="https://www2.gov.bc.ca/gov/content/taxes/income-taxes/corporate/tax-rates" title="B.C. Corporate income tax rates and business limits">BC 省政府</a>）</td>
 </tr>
 <tr>
 <td>BC 省一般税率</td>
 <td>12%</td>
 <td>12%</td>
 <td>12%</td>
-<td>长青，自 2018-01-01 未变（TWS-0169）</td>
+<td>长青，自 2018-01-01 未变（<a class="src-ref" href="https://www2.gov.bc.ca/gov/content/taxes/income-taxes/corporate/tax-rates" title="B.C. Corporate income tax rates and business limits">BC 省政府</a>）</td>
 </tr>
 <tr>
 <td>联邦／BC 小企业限额 (business limit)</td>
 <td>500,000 元</td>
 <td>500,000 元</td>
 <td>500,000 元</td>
-<td>长青；<strong>NS/PEI 已上调，见 TKU-0025</strong></td>
+<td>长青；<strong>NS/PEI 已上调</strong></td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p>这张表最值钱的一行不是某个百分比，是<strong>"长青"三个字重复了九次</strong>——工资 vs 分红这道题的税率参数，2024 到 2026 一次都没动。这意味着任何一年算出来的比较结论，放到另外两年基本仍然成立，唯一要重算的是下面这张表：随年份走的是缴费上限，不是费率。</p>
-<p>用这张表把"BC 一家 CCPC 交完税、把税后利润按非合资格分红发给唯一股东"的合计税负摊开算一遍：公司层面 $100 利润，享小企业税率的情形下交 11%（联邦 9%＋BC 2%）留下 $89；这 $89 分红给个人，毛额化后按 115% 计为应税股息 $102.35（TWS-0216），扣掉股息税收抵免后，<strong>个人层面还要再交一次税</strong>，具体多少取决于其边际税率档位。整合"近似"两个字，就体现在这最后一步——两道税合计后与直接把 $100 当工资发放、由个人一次性按边际税率课税相比，谁更省，答案随收入档位浮动。</p>
-<h3 id="22">2.2 三列表二：工资这条路要背的三组年度数字</h3>
-<table>
+<p>用这张表把"BC 一家 CCPC 交完税、把税后利润按非合资格分红发给唯一股东"的合计税负摊开算一遍：公司层面 $100 利润，享小企业税率的情形下交 11%（联邦 9%＋BC 2%）留下 $89；这 $89 分红给个人，毛额化后按 115% 计为应税股息 $102.35（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-12000-taxable-amount-dividends-eligible-other-than-eligible-taxable-canadian-corporations.html" title="Lines 12000/12010 – 应税股息金额（毛额化倍数 138%/115% 与四种来源 slip 的框号分流）">CRA</a>），扣掉股息税收抵免后，<strong>个人层面还要再交一次税</strong>，具体多少取决于其边际税率档位。整合"近似"两个字，就体现在这最后一步——两道税合计后与直接把 $100 当工资发放、由个人一次性按边际税率课税相比，谁更省，答案随收入档位浮动。</p>
+<h3 id="s2-2">2.2 三列表二：工资这条路要背的三组年度数字</h3>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>项目</th>
@@ -161,78 +161,78 @@
 <td>5.95%</td>
 <td>5.95%</td>
 <td>5.95%</td>
-<td>长青（TWS-0006）</td>
+<td>长青（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html" title="CPP contribution rates, maximums and exemptions">CRA</a>）</td>
 </tr>
 <tr>
 <td>CPP 年度最高可供款收入 (YMPE)</td>
 <td>68,500 元</td>
 <td>71,300 元</td>
 <td>74,600 元</td>
-<td>逐年指数化（TWS-0006）</td>
+<td>逐年指数化（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html" title="CPP contribution rates, maximums and exemptions">CRA</a>）</td>
 </tr>
 <tr>
 <td>CPP 基本免税额</td>
 <td>3,500 元</td>
 <td>3,500 元</td>
 <td>3,500 元</td>
-<td>长青，不指数化（TWS-0006）</td>
+<td>长青，不指数化（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html" title="CPP contribution rates, maximums and exemptions">CRA</a>）</td>
 </tr>
 <tr>
 <td>CPP 雇员最高年供款额</td>
 <td>3,867.50 元</td>
 <td>4,034.10 元</td>
 <td>4,230.45 元</td>
-<td>逐年上调（TWS-0006）</td>
+<td>逐年上调（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html" title="CPP contribution rates, maximums and exemptions">CRA</a>）</td>
 </tr>
 <tr>
 <td>CPP2（YMPE以上至YAMPE）</td>
 <td>4%</td>
 <td>4%</td>
 <td>4%</td>
-<td>长青（TWS-0007）</td>
+<td>长青（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions/making-deductions/second-additional-cpp-contribution-rates-maximums.html" title="Second additional CPP contribution (CPP2) rates and maximums">CRA</a>）</td>
 </tr>
 <tr>
 <td>CPP2 雇员最高年供款额</td>
 <td>188 元</td>
 <td>396 元</td>
 <td>416 元</td>
-<td>逐年上调（TWS-0007）</td>
+<td>逐年上调（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions/making-deductions/second-additional-cpp-contribution-rates-maximums.html" title="Second additional CPP contribution (CPP2) rates and maximums">CRA</a>）</td>
 </tr>
 <tr>
 <td>EI 雇员费率</td>
 <td>1.66%</td>
 <td>1.64%</td>
 <td>1.63%</td>
-<td>逐年<strong>下降</strong>（TWS-0008）</td>
+<td>逐年<strong>下降</strong>（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/employment-insurance-ei/ei-premium-rates-maximums.html" title="EI premium rates and maximums">CRA</a>）</td>
 </tr>
 <tr>
 <td>EI 年度最高可保收入 (MIE)</td>
 <td>63,200 元</td>
 <td>65,700 元</td>
 <td>68,900 元</td>
-<td>逐年上调（TWS-0008）</td>
+<td>逐年上调（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/employment-insurance-ei/ei-premium-rates-maximums.html" title="EI premium rates and maximums">CRA</a>）</td>
 </tr>
 <tr>
 <td>EI 雇员最高年保费</td>
 <td>1,049.12 元</td>
 <td>1,077.48 元</td>
 <td>1,123.07 元</td>
-<td>逐年上调（费率降、上限升，净效果仍升，TWS-0008）</td>
+<td>逐年上调（费率降、上限升，净效果仍升，<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/employment-insurance-ei/ei-premium-rates-maximums.html" title="EI premium rates and maximums">CRA</a>）</td>
 </tr>
 <tr>
 <td>RRSP 年度供款上限</td>
 <td>31,560 元</td>
 <td>32,490 元</td>
 <td>33,810 元</td>
-<td>逐年上调（TWS-0009）</td>
+<td>逐年上调（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html" title="MP, DB, RRSP, DPSP, ALDA, TFSA limits, YMPE and the YAMPE">CRA</a>）</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <p><strong>发工资的成本不只是个人所得税，是这一整张表。</strong> 公司按雇员比例配缴 CPP（5.95%；自雇业主经理走 T1 自雇 CPP 时一人扛两份，合计 11.9%）；EI 则不同——<strong>持股超过公司 40% 的股东通常被认定为不可保雇佣</strong>，不用缴 EI，这是业主经理与普通雇员的关键差别（具体资格以雇佣保险法与 CRA 裁定为准，本表列一般员工口径供对照）。CPP2 是 2024 年才启用的第二层，专盯 YAMPE（YMPE 的 114%）以上那段收入，同样计入工资的边际成本。</p>
-<h3 id="23">2.3 应税福利：工资之外，公司还能给股东什么</h3>
+<h3 id="s2-3">2.3 应税福利：工资之外，公司还能给股东什么</h3>
 <p>工资与分红不是仅有的两条路——公司名下的车、给股东的贷款、免费或低价提供的住所，都可能构成<strong>应税福利 (taxable benefit)</strong>，且按"因股东身份给的"还是"因雇佣关系给的"分两套完全不同的申报规则。</p>
-<p><strong>公司车。</strong> 待命费 (standby charge) 的条文公式是买断车按月 <strong>2% × 车辆原始成本</strong>、租赁车按 <strong>2/3 × 月租</strong>，乘以私用天数占比（ITA s.6(1)(e)/(2)，TWS-0352）；再加一笔按 CRA 每年公布的每公里费率计的运营费用福利，减去股东已偿还的部分。这两块加总就是最终应税福利。</p>
-<p><strong>股东贷款。</strong> ITA s.15(2) 规定股东向公司借的钱原则上整笔并入借款当年个人所得，<strong>唯一例外是在放款那个公司税年结束后一年内还清</strong>，且不是"借了又还"的循环操作（TWS-0353）——这就是教材里"两年结算日"说法的条文依据：借款年公司年结日再加一年，横跨的正好是公司的两个年结日。就算躲过了 s.15(2) 整笔入账，只要实付利息低于 CRA 每季公布的<strong>规定利率 (prescribed rate)</strong>，差额还会被 s.80.4 追加认定为一笔推定利息福利（TWS-0354）——2026 年第四季度规定利率是 3%（TWS-0022），这个数每季度都会变，实务里只记机制不记具体数字。</p>
+<p><strong>公司车。</strong> 待命费 (standby charge) 的条文公式是买断车按月 <strong>2% × 车辆原始成本</strong>、租赁车按 <strong>2/3 × 月租</strong>，乘以私用天数占比（ITA s.6(1)(e)/(2)，<a class="src-ref" href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-6.html" title="Income Tax Act s.6(1)(e)/(2) — 公司车辆待命费 (standby charge) 计算公式">加拿大联邦法规库</a>）；再加一笔按 CRA 每年公布的每公里费率计的运营费用福利，减去股东已偿还的部分。这两块加总就是最终应税福利。</p>
+<p><strong>股东贷款。</strong> ITA s.15(2) 规定股东向公司借的钱原则上整笔并入借款当年个人所得，<strong>唯一例外是在放款那个公司税年结束后一年内还清</strong>，且不是"借了又还"的循环操作（<a class="src-ref" href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html" title="Income Tax Act s.15(1)/(2)/(2.6) — 股东福利与股东贷款并入所得、一年内偿还的例外">加拿大联邦法规库</a>）——这就是教材里"两年结算日"说法的条文依据：借款年公司年结日再加一年，横跨的正好是公司的两个年结日。就算躲过了 s.15(2) 整笔入账，只要实付利息低于 CRA 每季公布的<strong>规定利率 (prescribed rate)</strong>，差额还会被 s.80.4 追加认定为一笔推定利息福利（<a class="src-ref" href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-80.4.html" title="Income Tax Act s.80.4(1)/(2) — 员工与股东低息/无息贷款的推定利息福利">加拿大联邦法规库</a>）——2026 年第四季度规定利率是 3%（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/prescribed-interest-rates/2026-q4.html" title="Prescribed interest rates - 2026 fourth calendar quarter">CRA</a>），这个数每季度都会变，实务里只记机制不记具体数字。</p>
 <p><strong>住房与其他财产的私人使用。</strong> 公司资产（房产、度假屋）给股东私用，按 s.15(1) 认定福利：有现成租赁市场的按公允市场租金计，没有可比市场的按"经营成本加正常回报率、乘以孰高的成本或公允价值"这套替代公式计。</p>
 <div class="vv-callout vv-callout--danger">
 <p><span class="vv-callout__icon">✕</span></p>
@@ -241,39 +241,39 @@
 <p>应税福利分不清是"因股东身份"还是"因雇佣关系"给的，报错了滑单类型——股东福利该走 T4A，误报进 T4 会让 CPP/EI 也跟着算错；反过来，因雇佣关系给的福利误报成股东福利，会让这笔收入白白错失 CPP 的可保记录。而且<strong>股东福利报进 T4A 之后不能再享股息税收抵免</strong>——它不是股息，是普通所得（应税福利入 T4A code 28 或 117，报在 T1 的第 13000 行）。</p>
 </div>
 </div>
-<h3 id="24-tosi">2.4 TOSI：给家庭成员分红，三条排除线记熟</h3>
+<h3 id="s2-4">2.4 TOSI：给家庭成员分红，三条排除线记熟</h3>
 <p>2018 年之后，凡是分给"指定个人"（配偶、成年或未成年子女、父母、兄弟姐妹）的股息，只要不满足下面任意一条排除，就按全国最高边际税率整笔课税，不管收款人自己的收入档位多低：</p>
-<p><strong>排除一，合资格股份 (excluded shares)。</strong> 持股占该公司<strong>表决权与市值都不低于 10%</strong>，公司的服务性收入占比低于 90%，且不是专业公司（律师、会计师等行医执业类）（TWS-0355）。</p>
-<p><strong>排除二，实质参与经营 (excluded business)。</strong> 本年度或此前任意五个纳税年度（不需连续）平均每周实际工作达到或超过 <strong>20 小时</strong>（TWS-0355）。</p>
-<p><strong>排除三，配偶已满 65 岁。</strong> 若这笔分红对创造收入的那一方本就是排除额，配偶年满 65 岁后可比照适用，机制上与养老金分割相通（TWS-0355）。</p>
+<p><strong>排除一，合资格股份 (excluded shares)。</strong> 持股占该公司<strong>表决权与市值都不低于 10%</strong>，公司的服务性收入占比低于 90%，且不是专业公司（律师、会计师等行医执业类）（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/federal-government-budgets/income-sprinkling/guidance-split-income-rules-adults.html" title="Guidance on the application of the split income rules for adults — TOSI 成年人排除条件">CRA</a>）。</p>
+<p><strong>排除二，实质参与经营 (excluded business)。</strong> 本年度或此前任意五个纳税年度（不需连续）平均每周实际工作达到或超过 <strong>20 小时</strong>（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/federal-government-budgets/income-sprinkling/guidance-split-income-rules-adults.html" title="Guidance on the application of the split income rules for adults — TOSI 成年人排除条件">CRA</a>）。</p>
+<p><strong>排除三，配偶已满 65 岁。</strong> 若这笔分红对创造收入的那一方本就是排除额，配偶年满 65 岁后可比照适用，机制上与养老金分割相通（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/federal-government-budgets/income-sprinkling/guidance-split-income-rules-adults.html" title="Guidance on the application of the split income rules for adults — TOSI 成年人排除条件">CRA</a>）。</p>
 <p>三条命中任何一条，这笔分红就按收款人自己的边际税率课税；一条都不中，整笔按最高档课，等于把"分给低税率家人"这条省税路彻底堵死。<strong>判断给家庭成员分红划不划算，先把这三条过一遍，不是先算税率差。</strong></p>
 <hr />
-<h2 id="_2">三、实务流程：该走哪张表，该报哪张单</h2>
-<p><strong>决定发工资</strong>：需要先向 CRA 申请开立<strong>薪资扣缴账户 (payroll program account, RP)</strong>，每次发薪按 CRA 发布的扣缴表代扣个人所得税、CPP、EI，按月（或符合条件按季）汇缴；年结后<strong>次年 2 月最后一天</strong>前完成 T4 与 T4 汇总表的申报与滑单发放，遇周末或法定假日顺延至下一个营业日——2025 税年的实际截止日因此是 2026-03-02（TWS-0193）。</p>
-<p><strong>决定分红</strong>：不需要开薪资账户，但需要董事会正式<strong>表决分红 (dividend resolution)</strong>，明确分红类型（合资格 / 非合资格）——错发合资格股息超过公司 GRIP 余额，会触发 20% 的 Part III.1 罚税。年结后同样在<strong>次年 2 月最后一天</strong>前完成 T5 滑单申报（TWS-0193）。<strong>T4 与 T5 是两张完全独立的表，一笔钱不能同时上两张单</strong>，误把股东福利报进 T5 当股息，会让这笔钱错失应有的税种分类。</p>
+<h2 id="s3">三、实务流程：该走哪张表，该报哪张单</h2>
+<p><strong>决定发工资</strong>：需要先向 CRA 申请开立<strong>薪资扣缴账户 (payroll program account, RP)</strong>，每次发薪按 CRA 发布的扣缴表代扣个人所得税、CPP、EI，按月（或符合条件按季）汇缴；年结后<strong>次年 2 月最后一天</strong>前完成 T4 与 T4 汇总表的申报与滑单发放，遇周末或法定假日顺延至下一个营业日——2025 税年的实际截止日因此是 2026-03-02（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4120/employers-guide-filing-t4-slip-summary.html" title="Employers&#x27; Guide – Filing the T4 Slip and Summary (RC4120)">CRA</a>）。</p>
+<p><strong>决定分红</strong>：不需要开薪资账户，但需要董事会正式<strong>表决分红 (dividend resolution)</strong>，明确分红类型（合资格 / 非合资格）——错发合资格股息超过公司 GRIP 余额，会触发 20% 的 Part III.1 罚税。年结后同样在<strong>次年 2 月最后一天</strong>前完成 T5 滑单申报（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4120/employers-guide-filing-t4-slip-summary.html" title="Employers&#x27; Guide – Filing the T4 Slip and Summary (RC4120)">CRA</a>）。<strong>T4 与 T5 是两张完全独立的表，一笔钱不能同时上两张单</strong>，误把股东福利报进 T5 当股息，会让这笔钱错失应有的税种分类。</p>
 <p><strong>决定用资本股息账户 (Capital Dividend Account, CDA) 分红</strong>：如果公司有免税的 CDA 余额（来自资本利得免税部分、人寿保险理赔等），可以完全免税地分给股东，但必须先提交 T2054 选择表，且必须在分红成为应付的<strong>当天</strong>把全套文件一并寄给 CRA——这是三条路径里唯一有"当天"这种严苛时点要求的一条。</p>
 <p><strong>四个共同的时间纪律</strong>：公司源头扣缴每月 15 日前汇缴（大雇主可能是半月缴）；T4/T5 滑单次年 2 月最后一天前发放并申报；欠税与个人所得税汇算按各自的截止日走；分红表决记录与借款偿还记录都要留痕存档——CRA 事后重新定性时，靠的就是这些纸面证据。</p>
 <hr />
-<h2 id="_3">四、联邦之外：卑诗省这条怎么走</h2>
+<h2 id="s4">四、联邦之外：卑诗省这条怎么走</h2>
 <p>BC 这条路上，两件事直接决定工资 vs 分红的取舍：</p>
-<p><strong>第一，BC 的公司税率完全长青。</strong> 小企业税率 2%、一般税率 12%、限额 $500,000，自 2010 到 2017 陆续锁定后再没变过（TWS-0169），这意味着"留在公司里再分红"这条路径在 BC 这一侧的成本几年来是稳定的，年度更新时不用重算这一半。</p>
-<p><strong>第二，BC 的雇主健康税 (Employer Health Tax, EHT) 基本不构成实质成本。</strong> 这是一个常被误解的点：EHT 按全年 BC 境内薪资总额（工资、奖金、应税福利，<strong>不含股息</strong>）课征，$1,000,000 以下<strong>全免</strong>，$1,000,000.01 到 $1,500,000 之间按"5.85% × 超出 $1,000,000 的部分"分级，超过 $1,500,000 才按"1.95% × 全部薪资"整体课征（TWS-0350）。一到几名员工的小型业主经理公司，全年薪资总盘子通常远低于这个门槛——<strong>"发工资在 BC 会多交一层省级雇主税"这个说法，对典型的小生意并不成立</strong>，只有薪资盘子逼近百万时才需要把这条正式算进决策。</p>
+<p><strong>第一，BC 的公司税率完全长青。</strong> 小企业税率 2%、一般税率 12%、限额 $500,000，自 2010 到 2017 陆续锁定后再没变过（<a class="src-ref" href="https://www2.gov.bc.ca/gov/content/taxes/income-taxes/corporate/tax-rates" title="B.C. Corporate income tax rates and business limits">BC 省政府</a>），这意味着"留在公司里再分红"这条路径在 BC 这一侧的成本几年来是稳定的，年度更新时不用重算这一半。</p>
+<p><strong>第二，BC 的雇主健康税 (Employer Health Tax, EHT) 基本不构成实质成本。</strong> 这是一个常被误解的点：EHT 按全年 BC 境内薪资总额（工资、奖金、应税福利，<strong>不含股息</strong>）课征，$1,000,000 以下<strong>全免</strong>，$1,000,000.01 到 $1,500,000 之间按"5.85% × 超出 $1,000,000 的部分"分级，超过 $1,500,000 才按"1.95% × 全部薪资"整体课征（<a class="src-ref" href="https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview" title="Employer health tax overview — 起征点与两级税率">BC 省政府</a>）。一到几名员工的小型业主经理公司，全年薪资总盘子通常远低于这个门槛——<strong>"发工资在 BC 会多交一层省级雇主税"这个说法，对典型的小生意并不成立</strong>，只有薪资盘子逼近百万时才需要把这条正式算进决策。</p>
 <p>BC 省这边还有自己的<strong>省级股息税收抵免</strong>（走 BC428 表的专门工作表计算，不是简单套用联邦的 9/13、6/11），以及自己的个人所得税阶梯——这两项共同决定了某个具体收入档位下工资与非合资格分红孰优孰劣，本篇不逐一列出全部省级百分比，读者需按当年 BC428 与联邦税表联算；机制层面记住"BC 的整合同样只是近似"就够用。</p>
 <hr />
-<h2 id="_4">五、历史变革：这套取舍是怎么变成现在这样的</h2>
+<h2 id="s5">五、历史变革：这套取舍是怎么变成现在这样的</h2>
 <p><strong>分红的规则曾经只有一种。</strong> 在 2006 年"合资格股息"制度引入之前，所有加拿大公司分出的股息不分来源，一律按同一套毛额化/抵免比例课税——那时把大公司的一般税率利润和小公司的低税率利润混在一起分红，个人层面交的税是一样的，整合明显失灵。引入合资格股息（对应 GRIP，来自没有享受过小企业税率的那部分利润）之后，两套税率才第一次分开对齐各自公司层面实际交过的税。</p>
 <p><strong>TOSI 曾经只管未成年人。</strong> 2018 年之前，分割收入规则（当时俗称"童子税"）只针对未满 18 岁的未成年人；2018 年联邦预算把它大幅扩展到所有年龄的"指定个人"，才有了今天配偶、成年子女、父母、兄弟姐妹都要过三条排除线的局面。这次修法直接终结了过去业主经理普遍采用的"把公司股份分给全家、按每个人的税率分红"这条低门槛省税路，是本页内容里变化最大的一处。</p>
 <p><strong>小企业限额的递减机制在 Budget 2022 之后变宽。</strong> 大 CCPC 的应税资本递减区间从旧口径 $10M–$15M 扩宽到 $10M–$50M（详见 <code>ca-corporate-01-t2-intro-sbd</code>），这条虽然主要影响的是"能不能拿到 SBD"，但对本页而言意味着：更多中大型的家族公司仍然保有部分小企业税率额度，工资/分红这道题在更大规模的公司里依然适用同一套逻辑，不是只有微型公司才用得上。</p>
 <hr />
-<h2 id="_5">六、案例</h2>
-<h3 id="_6">案例一 · 温哥华的独资咨询顾问：只发刚好够用的工资</h3>
+<h2 id="s6">六、案例</h2>
+<h3 id="case1">案例一 · 温哥华的独资咨询顾问：只发刚好够用的工资</h3>
 <p>Priya 经营一家温哥华的 IT 咨询 CCPC，唯一股东兼唯一员工，公司年利润 $150,000，全享小企业税率，家庭年支出约 $70,000。<strong>示例数字</strong>：只发 $70,000 工资，买到 CPP 记录与约 $12,600 的下一年 RRSP 额度（18% × $70,000）；另假定已排除PSB、没有其他扣除且股东工资不属EI应保就业；公司还要负担雇主CPP $3,956.75，余下利润 $76,043.25按11%计算公司税约$8,364.76，留存约$67,678.49。未来派息是否更省，要再用未来个人税率及资金需求比较，不能预先保证。比较时应同时纳入雇主CPP、个人税、RRSP额度和公司留存用途；全发工资是待比较方案，并非当然错报。</p>
-<h3 id="_7">案例二 · 素里的餐饮店夫妻公司：给配偶开工资还是分红</h3>
+<h3 id="case2">案例二 · 素里的餐饮店夫妻公司：给配偶开工资还是分红</h3>
 <p>Marco 与太太共同经营素里一家餐厅，公司由 Marco 100% 持股，太太每周在店超过 20 小时，负责采购与前台。<strong>示例数字</strong>：太太年度工资 $45,000，符合 s.67 合理性测试（同岗位市场价约 $42,000–$48,000）；因每周超 20 小时满足 TOSI 的"实质参与经营"排除，日后即便改发她一部分分红也不会被打回最高档。<strong>常见错报</strong>：若太太只是挂名股东、不真正到店工作，直接分给她分红——两条排除线（10% 合资格股份、20 小时参与）都不满足，会被整笔按 Marco 的最高边际税率倒算，一分钱都省不下来。</p>
-<h3 id="s804">案例三 · 列治文的地产投资公司：股东贷款买房，踩中 s.80.4</h3>
+<h3 id="case3">案例三 · 列治文的地产投资公司：股东贷款买房，踩中 s.80.4</h3>
 <p>James 的持股公司账上有 $500,000 现金，他 2026 年 3 月零利息借出 $200,000 用于个人置业首付，公司年结日 12 月 31 日。<strong>示例数字</strong>：若在 2027 年 12 月 31 日（借款年公司年结后一年内）前还清，本金不并入 s.15(2) 所得；但零利息低于 CRA 每季规定利率，仍要按 s.80.4 算一笔推定利息福利并入所得——2026 年 Q4 规定利率 3%，福利约等于"$200,000 × 3% × 实际借款月数 ÷ 12"。<strong>常见错报</strong>：以为一年内还清就全免税——那只免掉 s.15(2) 的<strong>本金</strong>，s.80.4 的<strong>利息福利</strong>是独立的另一条规则，互不替代。</p>
 <hr />
-<h2 id="_8">七、常见错报与自查清单</h2>
+<h2 id="s7">七、常见错报与自查清单</h2>
 <ul>
 <li><strong>把整年利润当年一次性发成工资</strong>——看似把公司应税收入压到最低，但个人边际税率因此被推高，往往比"工资＋留存分红"的组合多交税，还牺牲了递延的好处。</li>
 <li><strong>只靠分红维生，从不发工资</strong>——RRSP 额度、CPP 供款记录、托儿费扣除资格三样一起归零，因为 ITA 对"赚取收入"的定义里都没有股息。</li>
@@ -284,8 +284,8 @@
 <li><strong>公司车私用天数按整年估算而不是实报</strong>——待命费公式里的私用天数占比是精确计量的分子分母，估算容易漏报或多报。</li>
 </ul>
 <hr />
-<h2 id="_9">术语双语对照</h2>
-<table>
+<h2 id="术语双语对照">术语双语对照</h2>
+<div class="table-scroll"><table>
 <thead>
 <tr>
 <th>English</th>
@@ -405,49 +405,49 @@
 <td>按 BC 境内薪资总额课征，$1,000,000 以下全免，小型公司通常不受影响</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <hr />
-<h2 id="_10">来源</h2>
-<p>法条（现行合订本，Act current to 2026-06-21）：s.82(1)(b) 股息毛额化（TWS-0170）· s.121 联邦股息税收抵免（TWS-0171）· s.146(1) RRSP「赚取收入」定义（TWS-0182）· s.63(3) 托儿费「赚取收入」定义（TWS-0351）· s.6(1)(e)/(2) 汽车待命费公式（TWS-0352）· s.15(1)/(2)/(2.6) 股东福利与股东贷款（TWS-0353）· s.80.4(1)/(2) 推定利息福利（TWS-0354）· s.67 合理性测试（TWS-0290）。</p>
-<p>CRA 现行页面：公司税率与省表（TWS-0021）· 公司税变化年表（TWS-0045）· 规定利率 2026 Q4（TWS-0022）· CPP 供款率与上限（TWS-0006）· CPP2 供款率与上限（TWS-0007）· EI 保费率与上限（TWS-0008）· RRSP/TFSA 等限额年表（TWS-0009）· RRSP 供款额度算法（TWS-0172）· 托儿费扣除折页 S1-F3-C1（TWS-0253）· T4 滑单申报指南 RC4120（TWS-0193）· Line 12000/12010 应税股息毛额化倍数（TWS-0216）· Line 40425 联邦股息税收抵免取数路径（TWS-0217）· TOSI 成年人分割收入排除指引（TWS-0355）。</p>
-<p>省级：BC 公司税率与经营限额（TWS-0169）· BC 雇主健康税起征点与税率（TWS-0350）。</p>
-<p>知识单元：TKU-0025（联邦三个率未变、省级限额已非通则）。</p>
+<h2 id="来源">来源</h2>
+<p>法条（现行合订本，Act current to 2026-06-21）：s.82(1)(b) 股息毛额化（<a class="src-ref" href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-82.html" title="Income Tax Act s.82(1)(b) — 股息毛额化（gross-up）">加拿大联邦法规库</a>）· s.121 联邦股息税收抵免（<a class="src-ref" href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-121.html" title="Income Tax Act s.121 — 股息税收抵免（DTC）">加拿大联邦法规库</a>）· s.146(1) RRSP「赚取收入」定义（<a class="src-ref" href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-146.html" title="Income Tax Act s.146(8.3) — 配偶 RRSP 的归属规则">加拿大联邦法规库</a>）· s.63(3) 托儿费「赚取收入」定义（<a class="src-ref" href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-63.html" title="Income Tax Act s.63(3) — 托儿费扣除「赚取收入」定义">加拿大联邦法规库</a>）· s.6(1)(e)/(2) 汽车待命费公式（<a class="src-ref" href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-6.html" title="Income Tax Act s.6(1)(e)/(2) — 公司车辆待命费 (standby charge) 计算公式">加拿大联邦法规库</a>）· s.15(1)/(2)/(2.6) 股东福利与股东贷款（<a class="src-ref" href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-15.html" title="Income Tax Act s.15(1)/(2)/(2.6) — 股东福利与股东贷款并入所得、一年内偿还的例外">加拿大联邦法规库</a>）· s.80.4(1)/(2) 推定利息福利（<a class="src-ref" href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-80.4.html" title="Income Tax Act s.80.4(1)/(2) — 员工与股东低息/无息贷款的推定利息福利">加拿大联邦法规库</a>）· s.67 合理性测试（<a class="src-ref" href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-67.html" title="Income Tax Act s.67 — General limitation re expenses (reasonableness test)">加拿大联邦法规库</a>）。</p>
+<p>CRA 现行页面：公司税率与省表（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-tax-rates.html" title="Corporation tax rates">CRA</a>）· 公司税变化年表（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/whats-new-corporations.html" title="What&#x27;s new for corporations">CRA</a>）· 规定利率 2026 Q4（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/prescribed-interest-rates/2026-q4.html" title="Prescribed interest rates - 2026 fourth calendar quarter">CRA</a>）· CPP 供款率与上限（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html" title="CPP contribution rates, maximums and exemptions">CRA</a>）· CPP2 供款率与上限（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/calculating-deductions/making-deductions/second-additional-cpp-contribution-rates-maximums.html" title="Second additional CPP contribution (CPP2) rates and maximums">CRA</a>）· EI 保费率与上限（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/employment-insurance-ei/ei-premium-rates-maximums.html" title="EI premium rates and maximums">CRA</a>）· RRSP/TFSA 等限额年表（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html" title="MP, DB, RRSP, DPSP, ALDA, TFSA limits, YMPE and the YAMPE">CRA</a>）· RRSP 供款额度算法（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/contributing-a-rrsp-prpp/contributions-affect-your-rrsp-prpp-deduction-limit.html" title="How contributions affect your RRSP deduction limit">CRA</a>）· 托儿费扣除折页 S1-F3-C1（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/technical-information/income-tax/income-tax-folios-index/series-1-individuals/folio-3-family-unit-issues/income-tax-folio-s1-f3-c1-child-care-expense-deduction.html" title="Income Tax Folio S1-F3-C1, Child Care Expense Deduction">CRA</a>）· T4 滑单申报指南 RC4120（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4120/employers-guide-filing-t4-slip-summary.html" title="Employers&#x27; Guide – Filing the T4 Slip and Summary (RC4120)">CRA</a>）· Line 12000/12010 应税股息毛额化倍数（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-12000-taxable-amount-dividends-eligible-other-than-eligible-taxable-canadian-corporations.html" title="Lines 12000/12010 – 应税股息金额（毛额化倍数 138%/115% 与四种来源 slip 的框号分流）">CRA</a>）· Line 40425 联邦股息税收抵免取数路径（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-40425-federal-dividend-tax-credit.html" title="Line 40425 – 联邦股息税收抵免的取数路径（先看 slip 框号，没有 slip 才用 5000-D1 工作表）">CRA</a>）· TOSI 成年人分割收入排除指引（<a class="src-ref" href="https://www.canada.ca/en/revenue-agency/programs/about-canada-revenue-agency-cra/federal-government-budgets/income-sprinkling/guidance-split-income-rules-adults.html" title="Guidance on the application of the split income rules for adults — TOSI 成年人排除条件">CRA</a>）。</p>
+<p>省级：BC 公司税率与经营限额（<a class="src-ref" href="https://www2.gov.bc.ca/gov/content/taxes/income-taxes/corporate/tax-rates" title="B.C. Corporate income tax rates and business limits">BC 省政府</a>）· BC 雇主健康税起征点与税率（<a class="src-ref" href="https://www2.gov.bc.ca/gov/content/taxes/employer-health-tax/employer-health-tax-overview" title="Employer health tax overview — 起征点与两级税率">BC 省政府</a>）。</p>
+
 <p>交叉参考：<code>ca-corporate-01-t2-intro-sbd</code>（公司自身税率与 CCPC 资格）· <code>ca-corporate-02-passive-income-grind</code>（留存利润的被动收入递减）· <code>ca-business-05-incorporate-or-not</code>（要不要转公司这一步的前置判断）。</p>
     <div class="doc-nav"><a href="ca-corporate-02-passive-income-grind.html">← 公司里的钱去做投资，税就变了一个人：被动收入递减、P</a><a href="ca-corporate-04-shareholder-loans-s85-abil-windup.html" class="r">公司与股东之间的四种交易：股东贷款、s.85 转让、 →</a></div>
-    <div class="doc-src">来源：<code>self</code></div>
+    <div class="doc-src">本站依据官方原文自撰 · 出处见正文链接</div>
   </article>
   <aside class="doc-aside">
     <details class="doc-toc-details" open>
       <summary class="doc-toc-summary"><span>本页目录</span><span class="doc-toc-icon">▾</span></summary>
       <div class="toc"><div class="toc">
 <ul>
-<li><a href="#_1">一、制度设计与底层逻辑：两条税，为什么设计成不对称</a><ul>
-<li><a href="#11">1.1 工资是公司的费用，分红是公司税后的钱</a></li>
-<li><a href="#12">1.2 整合：让"公司先交、个人后补"约等于"直接赚到手"</a></li>
-<li><a href="#13">1.3 工资额外买到的三样东西，分红一样都买不到</a></li>
-<li><a href="#14">1.4 谁与谁在博弈：把利润挪给低税率的家人</a></li>
-<li><a href="#15">1.5 走错路的法律后果：不是补税那么简单</a></li>
+<li><a href="#s1">一、制度设计与底层逻辑：两条税，为什么设计成不对称</a><ul>
+<li><a href="#s1-1">1.1 工资是公司的费用，分红是公司税后的钱</a></li>
+<li><a href="#s1-2">1.2 整合：让"公司先交、个人后补"约等于"直接赚到手"</a></li>
+<li><a href="#s1-3">1.3 工资额外买到的三样东西，分红一样都买不到</a></li>
+<li><a href="#s1-4">1.4 谁与谁在博弈：把利润挪给低税率的家人</a></li>
+<li><a href="#s1-5">1.5 走错路的法律后果：不是补税那么简单</a></li>
 </ul>
 </li>
-<li><a href="#2026">二、2026 税年现行规则与数字</a><ul>
-<li><a href="#21-20242026">2.1 三列表一：股息毛额化/抵免与小企业税率，2024–2026 全部长青</a></li>
-<li><a href="#22">2.2 三列表二：工资这条路要背的三组年度数字</a></li>
-<li><a href="#23">2.3 应税福利：工资之外，公司还能给股东什么</a></li>
-<li><a href="#24-tosi">2.4 TOSI：给家庭成员分红，三条排除线记熟</a></li>
+<li><a href="#s2">二、2026 税年现行规则与数字</a><ul>
+<li><a href="#s2-1">2.1 三列表一：股息毛额化/抵免与小企业税率，2024–2026 全部长青</a></li>
+<li><a href="#s2-2">2.2 三列表二：工资这条路要背的三组年度数字</a></li>
+<li><a href="#s2-3">2.3 应税福利：工资之外，公司还能给股东什么</a></li>
+<li><a href="#s2-4">2.4 TOSI：给家庭成员分红，三条排除线记熟</a></li>
 </ul>
 </li>
-<li><a href="#_2">三、实务流程：该走哪张表，该报哪张单</a></li>
-<li><a href="#_3">四、联邦之外：卑诗省这条怎么走</a></li>
-<li><a href="#_4">五、历史变革：这套取舍是怎么变成现在这样的</a></li>
-<li><a href="#_5">六、案例</a><ul>
-<li><a href="#_6">案例一 · 温哥华的独资咨询顾问：只发刚好够用的工资</a></li>
-<li><a href="#_7">案例二 · 素里的餐饮店夫妻公司：给配偶开工资还是分红</a></li>
-<li><a href="#s804">案例三 · 列治文的地产投资公司：股东贷款买房，踩中 s.80.4</a></li>
+<li><a href="#s3">三、实务流程：该走哪张表，该报哪张单</a></li>
+<li><a href="#s4">四、联邦之外：卑诗省这条怎么走</a></li>
+<li><a href="#s5">五、历史变革：这套取舍是怎么变成现在这样的</a></li>
+<li><a href="#s6">六、案例</a><ul>
+<li><a href="#case1">案例一 · 温哥华的独资咨询顾问：只发刚好够用的工资</a></li>
+<li><a href="#case2">案例二 · 素里的餐饮店夫妻公司：给配偶开工资还是分红</a></li>
+<li><a href="#case3">案例三 · 列治文的地产投资公司：股东贷款买房，踩中 s.80.4</a></li>
 </ul>
 </li>
-<li><a href="#_8">七、常见错报与自查清单</a></li>
-<li><a href="#_9">术语双语对照</a></li>
-<li><a href="#_10">来源</a></li>
+<li><a href="#s7">七、常见错报与自查清单</a></li>
+<li><a href="#术语双语对照">术语双语对照</a></li>
+<li><a href="#来源">来源</a></li>
 </ul>
 </div>
 </div>
@@ -463,7 +463,7 @@
   <p><b>微出国 · 学</b> — 自雇与小生意 · 公司 T2 · 2 模块复习自测。内容是学习者视角的整理，不是任何机构的培训教材，也不构成税务意见。<br>
   现行数字一律以 CRA / IRS / 财政部现行文件为准；个案请咨询持牌专业人士。发现错的地方，回论坛帖里说一声。</p>
 </footer>
-<script>var UP_PATH="../";var BUILD_TIME="1789230896";</script>
+<script>var UP_PATH="../";var BUILD_TIME="1789338952";</script>
 <script>
 if((localStorage.getItem('vv-theme')||'')==='dark')
   document.documentElement.setAttribute('data-theme','dark');
