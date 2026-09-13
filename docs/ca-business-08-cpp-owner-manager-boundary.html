@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>公司老板与自雇 CPP：两层上限为什么不能直接相加套用 · 微出国 · 学</title>
+<link rel="stylesheet" href="../assets/style.css?v=1789230896">
+<script>var PREV_URL="ca-business-07-cca-class-map.html";var NEXT_URL="ca-corporate-01-t2-intro-sbd.html";</script>
+<link rel="manifest" href="../manifest.webmanifest">
+</head>
+<body class="vv">
+<header class="vv-header">
+  <a class="vv-brand" href="../index.html"><svg viewBox="102.305 90.391 73.617 59.957" width="28" aria-hidden="true" class="mark">
+<path fill="#30D9C4" d="M 107.894531 95.808594 L 127.277344 95.808594 C 127.277344 95.808594 129.507812 95.628906 130.835938 97.679688 C 131.585938 98.910156 131.65625 100.316406 131.082031 101.546875 L 121.609375 117.953125 C 121.609375 117.953125 120.335938 120.65625 117.011719 120.824219 C 113.714844 120.910156 112.242188 118.40625 112.242188 118.40625 L 103.722656 103.652344 C 103.722656 103.652344 102.304688 101.792969 103.09375 99.332031 C 103.878906 96.878906 106.148438 95.773438 107.894531 95.808594 "/>
+<path fill="#0082CA" d="M 115.964844 124.792969 C 115.847656 124.59375 116.09375 124.378906 116.277344 124.519531 C 117.195312 125.21875 118.664062 125.902344 120.683594 125.515625 C 122.164062 125.210938 123.550781 124.296875 124.402344 122.757812 C 125.242188 121.300781 138.8125 97.8125 138.8125 97.8125 C 138.8125 97.8125 141.9375 90.917969 150.207031 90.550781 L 169.96875 90.550781 C 169.96875 90.550781 173 90.390625 174.503906 93.40625 C 175.921875 96.433594 173.941406 98.695312 173.667969 99.109375 C 173.394531 99.523438 142.203125 146.726562 142.203125 146.726562 C 142.203125 146.726562 140.003906 150.347656 135.40625 150.347656 C 130.808594 150.347656 128.707031 146.878906 128.417969 146.398438 C 128.175781 145.992188 118.835938 129.78125 115.964844 124.792969 "/></svg>微出国 · 学</a>
+  <nav><a href="../index.html">路线</a><a href="../slides.html">讲义</a><a href="../docs/" aria-current="page">讲解</a><a href="../drill.html">练习</a><a href="../exam.html">自测</a><a href="../progress.html">进度</a></nav>
+  <button class="theme" onclick="var r=document.documentElement,d=r.getAttribute('data-theme')==='dark';r.setAttribute('data-theme',d?'light':'dark');localStorage.setItem('vv-theme',d?'light':'dark')">◐</button>
+</header>
+<main><a href="ca-business-07-cca-class-map.html" class="vv-float-nav vv-float-nav--prev" title="上一篇: CCA 资产分类地图：从普通类别到生产性资产的首年判断"><span class="vv-float-nav__icon">‹</span><span class="vv-float-nav__card"><small>← 上一篇</small><strong>CCA 资产分类地图：从普通类别到生产性资产</strong></span></a><a href="ca-corporate-01-t2-intro-sbd.html" class="vv-float-nav vv-float-nav--next" title="下一篇: 公司是另一个纳税人：T2 入门与小企业扣除（T2 Return &amp; Small Business Deduction）"><span class="vv-float-nav__card"><small>下一篇 →</small><strong>公司是另一个纳税人：T2 入门与小企业扣除（</strong></span><span class="vv-float-nav__icon">›</span></a><div class="vv-max-dock"><span class="vv-max-dock__hint">键盘 ← → 切页 | Esc 退出</span><button class="vv-reader-btn vv-reader-btn-max" onclick="toggleDocMaximize()">✕ 退出专注</button></div>
+<div class="doc-wrap">
+  <article class="doc">
+    <div class="doc-bar">
+      <p class="crumb"><a href="../index.html">路线</a> › 加拿大 · 自雇与小生意：T2125、GST/HST、零工、农渔、要不要注册公司</p>
+      <div class="doc-bar-actions">
+        <span class="vv-reader-hint">键盘 ← → 翻页</span>
+        <button class="vv-reader-btn vv-aside-btn" onclick="toggleSidebarCollapse()" title="折叠/展开右侧栏">◧ 折叠侧栏</button>
+        <button class="vv-reader-btn vv-reader-btn-max" onclick="toggleDocMaximize()" title="最大化专注阅读 (快捷键 F)">⛶ 专注阅读</button>
+      </div>
+    </div>
+    <h1>公司老板与自雇 CPP：两层上限为什么不能直接相加套用</h1>
+    <div class="doc-meta"><span class="vv-badge vv-badge--accent">加拿大 · 自雇与小生意：T2125、GST/HST、零工、农渔、要不要注册公司 · 练习配比 63%</span><span class="vv-badge">3,204 字</span><span class="vv-badge">约 6 分钟</span></div>
+    <blockquote>
+<p>核实日期：2026-09-10｜本页口径：2026 税年自雇 CPP 两层供款上限；公司股东、公司雇员与未注册自雇者的身份必须先分开。</p>
+</blockquote>
+<p>在公司税学习里，CPP 常被放在工资、分红或自雇收入旁边，最后只记一个「最高供款额」。这是最危险的记法。CPP 的计算先问收入属于哪一种劳动关系，再问该收入落在哪个年度、是否超过第一层和第二层的可供款范围，最后才谈供款金额。自雇者的两层供款上限可以在说明中相加，但这不表示所有公司老板都可以把同一个数字直接填进个人或公司申报。</p>
+<h2 id="_1">一、先确定谁在赚取劳动收入</h2>
+<p>未注册经营者以自雇身份赚取业务收入时，CPP 通常沿着自雇路径计算；公司成立后，公司的业务收入属于公司，股东个人取得的工资、董事费、股息或其他款项则要分别判断。公司账户里有利润，不等于股东个人已经有同额可供 CPP 计算的劳动收入；公司向股东派股息，也不能因为钱来自经营活动就自动改写成工资。</p>
+<p>因此，开始计算前要在工作底稿列出主体：业务是谁经营，付款给谁，付款的法律性质是什么，是否已经通过工资系统处理，是否属于股息或其他分配。若把公司的净利润直接当成个人自雇收入，再套自雇 CPP 上限，得到的数字即使算术正确，法律路径也可能完全错误。反过来，若实际是未注册自雇经营，却只按公司股东分红思路处理，也会漏掉自雇供款的判断。</p>
+<p>公司老板还要区分「公司是雇主」和「老板是股东」两个角色。股东可以同时是公司的雇员，但这要通过工资、记录和雇佣事实体现；股东身份本身不是一张自动免除或自动触发 CPP 的通行证。工资路径与自雇路径都需要各自核对年度上限、扣除和申报资料。</p>
+<h2 id="2026">二、2026 年的两层结构</h2>
+<p>官方 2026 年表记录的第一层年度最高可供款收入（YMPE）为 <strong>$74,600</strong>，基本免税额为 <strong>$3,500</strong>，CPP 费率为 <strong>5.95%</strong>。研究说明特别指出，三年间费率没有变化，改变的是上限。因此，学习和年度维护时应先记机制：收入从基本免税额以上开始进入第一层计算，直到该年度的第一层上限；不要把 2026 的最高供款金额当成永远不变的规则。</p>
+<p>第二层是 CPP2 的范围。2026 年资料记录的第二层上限 YAMPE 为 <strong>$85,000</strong>；它不是把第一层的 $74,600 替换掉，而是在第一层上限之上继续形成另一段可供款空间。也就是说，达到第一层上限并不自动等于整个 CPP 计算完成；还要看是否有落在第二层范围内的收入，以及适用于该层的费率和年度规则。</p>
+<p>自雇者的特殊之处在于，自雇者承担本来由雇员和雇主两侧分担的供款。因此，TKU-0499 的结论是：CPP1 与 CPP2 的自雇上限可以相加，2026 年两层全年合计上限记录为 <strong>$9,292.90</strong>。但这只是符合条件、达到相应收入并满足年龄等条件时的全年上限快照；实际金额仍依年龄、收入、当年已缴金额及其他适用条件计算，不能把 $9,292.90 当作每个自雇者的固定应缴额。</p>
+<h2 id="_2">三、为什么「相加」不是「直接套」</h2>
+<p>把两层上限相加，是为了说明自雇者在完整年度、足够高的相关收入和符合条件时，第一层与第二层的最高暴露量。它不是一个新的单层税率，也不是把 $74,600 和 $85,000 相加后再乘一个比例。第一层有自己的起点、费率和上限；第二层从第一层上方的区间开始，有自己的年度参数。正确的工作表应把两层分列，再在最后汇总。</p>
+<p>如果一个人的相关收入没有达到第一层上限，就没有理由直接使用两层总上限。如果只在年度中途开始经营，或年龄条件使其并非全年适用，也不能把全年最高数字照搬。若当年已经通过雇佣工资缴过一部分 CPP，再有自雇收入，计算还要处理已经缴纳的部分和全年限制；否则把工资路径的供款与自雇路径的最高额分别算满，会产生重复。</p>
+<p>这也是公司老板最容易误判的地方。公司发给股东的工资可能已经产生雇员和雇主两侧的 CPP 记录；股东另外有个人自雇业务时，才需要把另一项业务放进自雇路径，并检查全年的互动。公司利润、股息和自雇业务收入不能只按银行到账顺序相加。应按收入性质、付款主体和 CPP 规则逐项归类。</p>
+<h2 id="_3">四、数字要放在年份和来源旁边</h2>
+<p>2026 年第一层的 $74,600 和第二层的 $85,000 是年度参数，不应脱离年份写进长青口诀。CRA 研究记录列出 YMPE 从 2024 年的 $68,500，升到 2025 年的 $71,300，再到 2026 年的 $74,600；基本免税额 $3,500 则被标为长青、不指数化的考点。费率 5.95% 在这段记录中保持不变，但「费率不变」不代表最高供款额不变，因为上限在上升。</p>
+<p>维护时应把三种内容分开：一是机制，例如第一层、第二层、基本免税额和自雇双侧承担；二是年度参数，例如 YMPE、YAMPE、各层最高供款和合计上限；三是个人适用条件，例如年龄、收入、是否全年经营、已有工资供款和免除情形。若只更新第三列数字而不检查机制，旧答案可能在新年度继续看似合理；若只讲机制不带税年，读者又无法判断手上的数字是哪一年。</p>
+<p>实际申报或给客户解释时，数字后面应直接标注「2026 税年」，并回到 CRA 当年 CPP rates and maximums 页面。不要用旧工资表、搜索结果摘要或上一年的个人计算器替代现行年度表。自雇合计上限尤其需要把 CPP1 与 CPP2 的来源都列在底稿上，而不是只抄一个四舍五入后的总数。</p>
+<h2 id="_4">五、用身份—区间—已缴三步复核</h2>
+<p>第一步是身份：这笔收入是公司工资、个人自雇收入、股息，还是其他支付？第二步是区间：相关收入超过基本免税额后，落在第一层、第一层以上的第二层，还是没有达到相应范围？第三步是已缴：本年度是否已有雇主工资供款，是否已达到某一层上限，是否存在年龄或其他条件改变资格？只有三步完成，才可以把结果带入个人报税或公司的工资记录。</p>
+<p>对考试学习者，这个顺序能避免把「最高供款额」当成答案本身；对公司经营者，它能避免把公司利润、个人工资和个人自雇收入混成一个池。2026 年 $9,292.90 的自雇两层合计只说明一个上限边界，不说明每个个案应缴多少。下一次复核应优先查看 CRA 年度表和 CPP2 现行资料，再按主体和已缴记录重算，而不是只把旧页面上的金额替换成新金额。</p>
+<h2 id="_5">六、三个容易看起来相同、实际上不同的数字</h2>
+<p>第一类是收入上限，例如 YMPE 和 YAMPE。它们界定可供款收入区间，不是个人一定会收到的福利，也不是公司可以从利润中直接扣除的费用数。第二类是最高供款，例如 CPP1、CPP2 以及自雇两层合计上限。它们是在足够收入、完整适用期间和其他条件成立时的边界。第三类是费率和基本免税额，它们参与计算，却不能脱离收入层级单独产生结果。把三类数字写在同一行而不标对象，最容易导致重复计算。</p>
+<p>对公司账务而言，雇主侧 CPP 与雇员工资记录还要保持一致。工资单显示的扣缴、公司承担的雇主份额、年末信息申报和个人报税资料，应当能互相解释。如果老板年中从公司领取工资，年底又把公司全年净利润当成自雇收入重新套两层上限，问题不在四舍五入，而在主体和收入性质没有先分开。出现这种混合情形时，应回到付款凭证、工资记录和公司账簿，而不是先找一个更大的最高额。</p>
+<p>自雇者也不能只看最终的总上限。若收入跨过第一层进入第二层，计算应展示第一层已经达到的部分、第二层新增的部分以及全年已缴供款；若收入不足或经营不是全年，结果会低于上限。年龄、开始和停止经营日期、既有雇佣收入以及适用的豁免，都是影响实际金额的事实。最高额适合作为异常检查：结果接近上限时，检查是否确实有足够相关收入；结果超过上限时，检查是否把不同主体或不同年份拼在了一起。</p>
+<p>年度更新也应保存计算版本。2026 年的 $74,600、$85,000、5.95% 和 $9,292.90 只能作为本页核实日的快照；2027 年即使费率不变，上限仍可能变化。维护人员应把来源日期、税年、公式和四舍五入规则一起留在工作底稿，正文则保留「先定身份、再定区间、最后核对已缴」的长青路线。这样更新数字时不会意外改掉适用于所有年度的机制。</p>
+    <div class="doc-nav"><a href="ca-business-07-cca-class-map.html">← CCA 资产分类地图：从普通类别到生产性资产的首年判</a><a href="ca-corporate-01-t2-intro-sbd.html" class="r">公司是另一个纳税人：T2 入门与小企业扣除（T2 R →</a></div>
+    <div class="doc-src">来源：<code>self</code></div>
+  </article>
+  <aside class="doc-aside">
+    <details class="doc-toc-details" open>
+      <summary class="doc-toc-summary"><span>本页目录</span><span class="doc-toc-icon">▾</span></summary>
+      <div class="toc"><div class="toc">
+<ul>
+<li><a href="#_1">一、先确定谁在赚取劳动收入</a></li>
+<li><a href="#2026">二、2026 年的两层结构</a></li>
+<li><a href="#_2">三、为什么「相加」不是「直接套」</a></li>
+<li><a href="#_3">四、数字要放在年份和来源旁边</a></li>
+<li><a href="#_4">五、用身份—区间—已缴三步复核</a></li>
+<li><a href="#_5">六、三个容易看起来相同、实际上不同的数字</a></li>
+</ul>
+</div>
+</div>
+    </details>
+    
+    <h3>同板块</h3><ul class="rel"><li><a href="ca-business-01-t2125-self-employment.html">T2125：从「我是自雇吗」的四因素判定，到「亏损怎么用」的一整条链（Self-</a></li><li><a href="ca-business-02-home-office-vehicle-cca.html">自雇的家、自雇的车、自雇的设备：家庭办公室、车辆费用与资本成本折让怎么扣（Bus</a></li><li><a href="ca-business-03-gst-hst-registration-quick-method.html">GST/HST：什么时候必须注册，注册后怎么算最省（Registration, </a></li><li><a href="ca-business-04-gig-platforms.html">网约车、送餐与短租：零工经济的税，以及「平台先一步报给 CRA」的新规则（Gig</a></li><li><a href="ca-business-05-incorporate-or-not.html">个体户还是公司：税务上到底差在哪（Sole Proprietor or Inco</a></li><li><a href="ca-business-06-gst-hst-reporting-and-methods.html">GST/HST 注册后的三条路线：申报频率、快速法与简化 ITC</a></li></ul>
+    
+    <a class="vv-btn vv-btn--primary" style="width:100%;margin-top:16px"
+       href="../drill.html?bp=ca-business">练这个板块的题 →</a>
+  </aside>
+</div></main>
+<footer class="foot">
+  <p><b>微出国 · 学</b> — 自雇与小生意 · 公司 T2 · 2 模块复习自测。内容是学习者视角的整理，不是任何机构的培训教材，也不构成税务意见。<br>
+  现行数字一律以 CRA / IRS / 财政部现行文件为准；个案请咨询持牌专业人士。发现错的地方，回论坛帖里说一声。</p>
+</footer>
+<script>var UP_PATH="../";var BUILD_TIME="1789230896";</script>
+<script>
+if((localStorage.getItem('vv-theme')||'')==='dark')
+  document.documentElement.setAttribute('data-theme','dark');
+
+// 自动版本更新检测：对比 DOM 的 BUILD_TIME 与服务器最新 manifest.json，出现新版本时带时间戳无缝重载绕过 HTTP 磁盘缓存
+(function(){
+  function checkVersion(){
+    var up = typeof UP_PATH !== 'undefined' ? UP_PATH : '';
+    fetch(up + 'assets/manifest.json?t=' + Date.now(), { cache: 'no-store' }).then(function(r){
+      return r.ok ? r.json() : null;
+    }).then(function(m){
+      if(!m || !m.build_time) return;
+      var serverBuild = String(m.build_time);
+      var clientBuild = typeof BUILD_TIME !== 'undefined' ? String(BUILD_TIME) : '';
+      if(clientBuild && serverBuild && clientBuild !== serverBuild){
+        var reloaded = sessionStorage.getItem('vv_reloaded_build');
+        if(reloaded !== serverBuild){
+          sessionStorage.setItem('vv_reloaded_build', serverBuild);
+          var u = new URL(location.href);
+          u.searchParams.set('_v', serverBuild);
+          location.replace(u.href);
+        } else if(!document.getElementById('vv-update-banner')) {
+          var bar = document.createElement('div');
+          bar.id = 'vv-update-banner';
+          bar.className = 'vv-update-banner';
+          bar.innerHTML = '🎉 网站已更新到最新版本，建议按 <b>Ctrl+F5</b> (或 <b>Cmd+Shift+R</b>) 强制刷新页面。<button onclick="location.reload(true)">立即刷新</button>';
+          document.body.prepend(bar);
+        }
+      }
+    }).catch(function(){});
+  }
+
+  checkVersion();
+  document.addEventListener('visibilitychange', function(){
+    if(document.visibilityState === 'visible') checkVersion();
+  });
+  window.addEventListener('focus', checkVersion);
+  setInterval(checkVersion, 5 * 60 * 1000);
+})();
+
+// 页眉登录态。身份服务不在（纯静态托管、或还没起 dev-server）时静默跳过——
+// 内容页是公开的，永远不该因为身份服务缺席而坏掉。
+fetch('/api/me').then(function(r){return r.ok?r.json():null;}).then(function(m){
+  if(!m||document.getElementById('vv-auth'))return;
+  var n=document.querySelector('.vv-header nav');if(!n)return;
+  var e=document.createElement('span');e.id='vv-auth';e.className='auth';
+  e.innerHTML=m.loggedIn
+    ?'<span title="学习记录已跨设备同步">'+m.username+'</span> <a href="/auth/logout">退出</a>'
+    :'<a href="/auth/login?next='+encodeURIComponent(location.pathname)+'">登录</a>';
+  n.after(e);
+}).catch(function(){});
+
+// ── 阅读器增强：专注/最大化模式 & 键盘/手势切页 ──
+(function(){
+  var prevUrl = typeof PREV_URL !== 'undefined' ? PREV_URL : '';
+  var nextUrl = typeof NEXT_URL !== 'undefined' ? NEXT_URL : '';
+
+  function updateMaxBtns(isMax) {
+    var btns = document.querySelectorAll('.vv-reader-btn-max');
+    for(var i=0; i<btns.length; i++) {
+      btns[i].innerHTML = isMax ? '✕ 退出专注' : '⛶ 专注阅读';
+    }
+  }
+
+  window.toggleDocMaximize = function() {
+    var root = document.documentElement;
+    var isMax = root.classList.toggle('is-doc-maximized');
+    try { localStorage.setItem('vv_doc_maximized', isMax ? 'true' : 'false'); } catch(e){}
+    updateMaxBtns(isMax);
+  };
+
+  function updateAsideBtns(isCol) {
+    var btns = document.querySelectorAll('.vv-aside-btn');
+    for(var i=0; i<btns.length; i++) {
+      btns[i].innerHTML = isCol ? '◨ 展开侧栏' : '◧ 折叠侧栏';
+    }
+  }
+
+  window.toggleSidebarCollapse = function() {
+    var root = document.documentElement;
+    var isCol = root.classList.toggle('is-aside-collapsed');
+    try { localStorage.setItem('vv_aside_collapsed', isCol ? 'true' : 'false'); } catch(e){}
+    updateAsideBtns(isCol);
+  };
+
+  try {
+    if(localStorage.getItem('vv_aside_collapsed') === 'true') {
+      document.documentElement.classList.add('is-aside-collapsed');
+      setTimeout(function(){ updateAsideBtns(true); }, 0);
+    }
+  } catch(e){}
+
+  // 本页目录 <details> 状态记忆
+  var tocDet = document.querySelector('.doc-toc-details');
+  if(tocDet) {
+    try {
+      if(localStorage.getItem('vv_toc_open') === 'false') {
+        tocDet.removeAttribute('open');
+      }
+    } catch(e){}
+    tocDet.addEventListener('toggle', function() {
+      try { localStorage.setItem('vv_toc_open', tocDet.open ? 'true' : 'false'); } catch(e){}
+    });
+  }
+
+  document.addEventListener('keydown', function(e) {
+    var tag = (e.target && e.target.tagName) || '';
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || e.target.isContentEditable) return;
+    if (e.key === 'ArrowLeft' && prevUrl) {
+      location.href = prevUrl;
+    } else if (e.key === 'ArrowRight' && nextUrl) {
+      location.href = nextUrl;
+    } else if (e.key === 'f' || e.key === 'F' || e.key === 'm' || e.key === 'M') {
+      toggleDocMaximize();
+    } else if (e.key === 'Escape' && document.documentElement.classList.contains('is-doc-maximized')) {
+      toggleDocMaximize();
+    }
+  });
+
+  var touchStartX = 0, touchStartY = 0;
+  document.addEventListener('touchstart', function(e) {
+    if (e.touches && e.touches.length === 1) {
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+    }
+  }, { passive: true });
+
+  document.addEventListener('touchend', function(e) {
+    if (!e.changedTouches || e.changedTouches.length !== 1) return;
+    var dx = e.changedTouches[0].clientX - touchStartX;
+    var dy = e.changedTouches[0].clientY - touchStartY;
+    if (Math.abs(dx) > 90 && Math.abs(dy) < 60) {
+      if (dx > 0 && prevUrl) {
+        location.href = prevUrl;
+      } else if (dx < 0 && nextUrl) {
+        location.href = nextUrl;
+      }
+    }
+  }, { passive: true });
+})();
+</script>
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('../sw.js').catch(()=>{}))}</script>
+</body></html>

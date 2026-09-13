@@ -1,0 +1,919 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>公司里的钱去做投资，税就变了一个人：被动收入递减、Part IV 税与双池 RDTOH（Passive Investment Income in a CCPC） · 微出国 · 学</title>
+<link rel="stylesheet" href="../assets/style.css?v=1789230896">
+<script>var PREV_URL="ca-corporate-01-t2-intro-sbd.html";var NEXT_URL="ca-corporate-03-salary-vs-dividend.html";</script>
+<link rel="manifest" href="../manifest.webmanifest">
+</head>
+<body class="vv">
+<header class="vv-header">
+  <a class="vv-brand" href="../index.html"><svg viewBox="102.305 90.391 73.617 59.957" width="28" aria-hidden="true" class="mark">
+<path fill="#30D9C4" d="M 107.894531 95.808594 L 127.277344 95.808594 C 127.277344 95.808594 129.507812 95.628906 130.835938 97.679688 C 131.585938 98.910156 131.65625 100.316406 131.082031 101.546875 L 121.609375 117.953125 C 121.609375 117.953125 120.335938 120.65625 117.011719 120.824219 C 113.714844 120.910156 112.242188 118.40625 112.242188 118.40625 L 103.722656 103.652344 C 103.722656 103.652344 102.304688 101.792969 103.09375 99.332031 C 103.878906 96.878906 106.148438 95.773438 107.894531 95.808594 "/>
+<path fill="#0082CA" d="M 115.964844 124.792969 C 115.847656 124.59375 116.09375 124.378906 116.277344 124.519531 C 117.195312 125.21875 118.664062 125.902344 120.683594 125.515625 C 122.164062 125.210938 123.550781 124.296875 124.402344 122.757812 C 125.242188 121.300781 138.8125 97.8125 138.8125 97.8125 C 138.8125 97.8125 141.9375 90.917969 150.207031 90.550781 L 169.96875 90.550781 C 169.96875 90.550781 173 90.390625 174.503906 93.40625 C 175.921875 96.433594 173.941406 98.695312 173.667969 99.109375 C 173.394531 99.523438 142.203125 146.726562 142.203125 146.726562 C 142.203125 146.726562 140.003906 150.347656 135.40625 150.347656 C 130.808594 150.347656 128.707031 146.878906 128.417969 146.398438 C 128.175781 145.992188 118.835938 129.78125 115.964844 124.792969 "/></svg>微出国 · 学</a>
+  <nav><a href="../index.html">路线</a><a href="../slides.html">讲义</a><a href="../docs/" aria-current="page">讲解</a><a href="../drill.html">练习</a><a href="../exam.html">自测</a><a href="../progress.html">进度</a></nav>
+  <button class="theme" onclick="var r=document.documentElement,d=r.getAttribute('data-theme')==='dark';r.setAttribute('data-theme',d?'light':'dark');localStorage.setItem('vv-theme',d?'light':'dark')">◐</button>
+</header>
+<main><a href="ca-corporate-01-t2-intro-sbd.html" class="vv-float-nav vv-float-nav--prev" title="上一篇: 公司是另一个纳税人：T2 入门与小企业扣除（T2 Return &amp; Small Business Deduction）"><span class="vv-float-nav__icon">‹</span><span class="vv-float-nav__card"><small>← 上一篇</small><strong>公司是另一个纳税人：T2 入门与小企业扣除（</strong></span></a><a href="ca-corporate-03-salary-vs-dividend.html" class="vv-float-nav vv-float-nav--next" title="下一篇: 业主经理的薪酬：工资还是分红（Salary vs. Dividend）"><span class="vv-float-nav__card"><small>下一篇 →</small><strong>业主经理的薪酬：工资还是分红（Salary </strong></span><span class="vv-float-nav__icon">›</span></a><div class="vv-max-dock"><span class="vv-max-dock__hint">键盘 ← → 切页 | Esc 退出</span><button class="vv-reader-btn vv-reader-btn-max" onclick="toggleDocMaximize()">✕ 退出专注</button></div>
+<div class="doc-wrap">
+  <article class="doc">
+    <div class="doc-bar">
+      <p class="crumb"><a href="../index.html">路线</a> › 加拿大 · 公司税 T2：SBD、股东贷款、s.85、ABIL、清算、NPO、薪酬规划</p>
+      <div class="doc-bar-actions">
+        <span class="vv-reader-hint">键盘 ← → 翻页</span>
+        <button class="vv-reader-btn vv-aside-btn" onclick="toggleSidebarCollapse()" title="折叠/展开右侧栏">◧ 折叠侧栏</button>
+        <button class="vv-reader-btn vv-reader-btn-max" onclick="toggleDocMaximize()" title="最大化专注阅读 (快捷键 F)">⛶ 专注阅读</button>
+      </div>
+    </div>
+    <h1>公司里的钱去做投资，税就变了一个人：被动收入递减、Part IV 税与双池 RDTOH（Passive Investment Income in a CCPC）</h1>
+    <div class="doc-meta"><span class="vv-badge vv-badge--accent">加拿大 · 公司税 T2：SBD、股东贷款、s.85、ABIL、清算、NPO、薪酬规划 · 练习配比 37%</span><span class="vv-badge">20,025 字</span><span class="vv-badge">约 40 分钟</span></div>
+    <blockquote>
+<p>核实日期：2026-09-05｜现行口径：2026 税年（年结落在 2026 年的公司）｜复核：2027-06-30
+法条依据指向《所得税法》(Income Tax Act, ITA) 现行合订本（Act current to 2026-06-21，last amended 2026-06-18）；报表口径指向加拿大税务局 (Canada Revenue Agency, CRA) 的 T2 指南（页脚更新日 2026-05-28）。</p>
+</blockquote>
+<p>上一页讲的是公司怎么拿到 9% 那个低税率。这一页讲的是它怎么被拿走：公司账上攒下的钱一旦拿去买 GIC、买股票、买出租物业，这笔收入在税法眼里就换了一个身份，税率从 11% 跳到 50% 以上，而且<strong>上一年的投资收入还会反过来削掉下一年的低税额度</strong>。这一页写给三种人：手上有一家已经开始有闲钱的公司、正在琢磨「钱是留在公司里投资还是拿出来投资」的小老板；替客户算 T2 第 6、7、8 页的从业者；以及要把「递延不是免除」这句话真正算清楚的学员。读完你应该能做到三件事：把一笔投资收入拆成「联邦 38⅔% 里哪一段会退回来、哪一段永远退不回来」；判断某笔收入到底算 AII 还是 AAII，从而算出明年的经营限额被削掉多少；说清资本利得那免税的一半怎么通过资本股息账户零税地送到股东手上。</p>
+<hr />
+<h2 id="_1">一、制度设计与底层逻辑：为什么公司投资要单设一整套税</h2>
+<h3 id="11">1.1 一句话的原则：递延可以，永久便宜不行</h3>
+<p>加拿大公司税与个人税的关系建立在<strong>整合 (integration)</strong> 这个假设上：同一笔钱，无论走「公司赚了再分给股东」还是「个人自己直接赚」，两条路的最终税负应当大致相等。上一页说过，小企业扣除给的不是减免，是<strong>把税推迟到分红那一天</strong>（详见 ca-corporate-01）。</p>
+<p>问题出在「推迟」这两个字。一位卑诗省的高收入者，自己赚 $100,000 要立刻交掉将近一半；同一笔钱如果先落在公司里，2026 税年只交 11%（联邦 9% ＋ 卑诗 2%，TWS-0021、TWS-0169），剩下 $89,000 可以<strong>当年就全部投进市场</strong>。个人那条路只剩 $50,000 出头能投。哪怕多年以后分红时把差额补齐，<strong>这些年多出来的那笔本金所产生的投资收益，是白赚的</strong>。递延本身在复利面前变成了永久优势。</p>
+<p>税法对此的回答不是取消递延，而是<strong>在投资这一侧把优势抹平</strong>。抹平的手段有三道，理解这一页的关键就是先认出这三道门各自站在哪个位置。</p>
+<h3 id="12">1.2 三道门，一条出口</h3>
+<p><strong>第一道门站在事前，削的是额度。</strong> 上一税年赚了多少被动收入，决定本税年还有多少经营利润能享 9%。这就是 2018 年联邦预算引入、2019 税年起生效的<strong>调整后合计投资收入递减 (adjusted aggregate investment income grind)</strong>：超过 $50,000 起算，每 $1 削掉 $5 的经营限额，到 $150,000 时限额归零（ITA s.125(5.1)(b)，TWS-0166、TWS-0162）。它不动投资收入本身的税，动的是<strong>经营收入的税</strong>——这一点最反直觉，也是本页最容易被误解的机制。</p>
+<p><strong>第二道门站在事中，先多收再退。</strong> 加拿大受控私人公司 (CCPC) 赚到的投资收入不享一般税率减免，Part I 抵免后是 28%，再加一道 <strong>10⅔% 的附加可退还税</strong>（ITA s.123.3，TWS-0341、TWS-0347），联邦合计 <strong>38⅔%</strong>。这个数字故意定得比个人最高边际税率相仿甚至更高——公司里投资在<strong>当年</strong>不但没有便宜，反而更贵。但其中 <strong>30⅔%</strong> 是可退还的（ITA s.129(4)，TWS-0339），只要把钱以应税股息形式派给股东，就按已付股息的 <strong>38⅓%</strong> 退回来。</p>
+<p><strong>第三道门站在公司之间，堵的是股息中转。</strong> 一家公司收到另一家加拿大公司的应税股息，在算应税收入时可以按 s.112 全额扣除，于是不交 Part I 税。如果就这么算完，把股票放进公司里收股息就等于完全免税。<strong>Part IV 税</strong>因此存在：非联结公司来的应税股息按 <strong>38⅓%</strong> 单独课一道税（ITA s.186(1)(a)，TWS-0340、TWS-0348），同样可退还。</p>
+<p><strong>出口只有两个。</strong> 一个是<strong>资本股息账户 (capital dividend account, CDA)</strong>：资本利得中不计税的那一半累积在这里，可以零税地派给股东（ITA s.89(1)、s.83(2)，TWS-0342、TWS-0343）。另一个是<strong>一般税率收入池 (general rate income pool, GRIP)</strong>：已经按高税率交足税的那部分利润，派出去时可以标成合资格股息，股东那一头享受更高的抵免（TWS-0348）。</p>
+<div class="vv-callout vv-callout--info">
+<p><span class="vv-callout__icon">ℹ️</span></p>
+<div>
+<p><strong>先把这张地图记住，后面的每个数字才有位置</strong></p>
+<p>三道门分别对应「明年少享低税率」「今年多交但会退」「公司间股息不能白拿」，两个出口分别对应「本来就不该课税的那一半」和「已经课足税的那一部分」。<strong>看到一个新数字，先问它属于哪一道门或哪一个出口</strong>——本页所有的混淆都源自把两道门的数字混用。</p>
+</div>
+</div>
+<h3 id="13">1.3 谁与谁在博弈</h3>
+<p><strong>第一个战场是「什么算被动」。</strong> 递减的基数越窄，公司越安全。所以条文在定义里留了几个出口：附属于经营活动的财产收入不算（ITA s.129(4) 的 income or loss 定义把「incident to or pertains to an active business」排除在外，TWS-0339）；从联营公司收到、而对方可以作经营支出扣除的款项，在收款方<strong>视同经营活动收入</strong>（s.129(6)）；处置<strong>经营性资产</strong>产生的资本利得不进 AAII（s.125(7)，TWS-0166）。这三条出口在实务里价值极高，也最容易被漏掉。</p>
+<p><strong>第二个战场是分散。</strong> 既然递减看的是「本公司加全部联营公司」的合计数，最直接的想法是把投资挪到一家<strong>关联但不联营</strong>的公司里。条文用 s.125(5.2) 封死：如果把财产借给或转给一家关联但不联营的公司，且合理认为原因之一是压低那个合计数，两家<strong>视同联营</strong>（TWS-0166）。</p>
+<p><strong>第三个战场是时点。</strong> 递减看的是<strong>上一历年内结束的税年</strong>的数，所以「今年赚多少投资收入」影响的是明年的低税额度——这给了一个真实的操作窗口，也给了一个真实的陷阱（第二节 2.2）。</p>
+<h3 id="14">1.4 错报的三种法律后果</h3>
+<p><strong>派超了资本股息账户，罚超额部分的 3/5，也就是 60%</strong>（ITA s.184(2)，TWS-0344）。这是本课税率最高的一条惩罚性税，而且它在<strong>派息那一刻就已经发生</strong>，不等评税通知。补救通道存在——经股东同意可以把超额部分视同一笔单独的应税股息（s.184(3)）——但需要股东配合，而实务里股东常常已经变了。</p>
+<p><strong>把股息标成「合资格」标超了，罚 20%</strong>；若超标是出于人为拉高 GRIP 的安排，再加 10%，合计 30%（ITA s.185.1(1)，TWS-0345、TWS-0348）。20% 那一档可经股东同意改按普通股息处理化解，<strong>30% 那一档不许</strong>。</p>
+<p><strong>股息退税有三年时效。</strong> 税年结束后三年内没把 T2 报进去，这笔退税<strong>永久作废</strong>（ITA s.129(1)、CRA T2 指南第 6 章，TWS-0339、TWS-0346）。一家「反正没欠税、迟报不罚」的公司，可能正是因为迟报而把已经交出去的可退还税永久留在了政府手里——<strong>迟报罚是零，损失却是实打实的</strong>。</p>
+<hr />
+<h2 id="2026">二、2026 税年现行规则与数字</h2>
+<h3 id="21-aii-aaii">2.1 「被动」有两个口径：AII 与 AAII</h3>
+<p>这是全页最重要的一处区分，也是报表上最容易取错数的一处：同一张附表上并排放着两个投资收入口径，服务两件完全不同的事。</p>
+<p><strong>合计投资收入 (aggregate investment income, AII)</strong> 定义在 ITA s.129(4)，它服务的是<strong>可退还税</strong>：Part I 可退还部分是 30⅔% × AII（再与另两项取最小），附加税是 10⅔% × AII（与应税收入减去 SBD 可享额后的余额取小）。AII 的构成是「应税资本利得净额 ＋ 财产性收入 − 财产性亏损」，其中剔除免税收入、剔除按 s.112/113 扣掉的公司间股息（那部分归 Part IV 管，两条链条不重叠，TWS-0347）。</p>
+<p><strong>调整后合计投资收入 (adjusted aggregate investment income, AAII)</strong> 定义在 ITA s.125(7)，它服务的<strong>只有一件事</strong>：算下一年经营限额被削掉多少。它在 AII 基础上做四处调整（TWS-0166）：</p>
+<table>
+<thead>
+<tr>
+<th>调整</th>
+<th>方向</th>
+<th>机制上为什么这样改</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>处置<strong>经营性资产</strong>的资本利得与亏损剔除</td>
+<td>缩小</td>
+<td>卖掉自家厂房不是「把公司当投资账户」，不该罚</td>
+</tr>
+<tr>
+<td><strong>非联结公司</strong>的股息计入</td>
+<td>放大</td>
+<td>持有的组合股票就是被动投资，AII 那边被 s.112 扣掉了，这里补回来</td>
+</tr>
+<tr>
+<td><strong>指定投资业务</strong>收入计入（不限于加拿大境内）＋ <strong>人寿保险保单</strong>投资部分计入</td>
+<td>放大</td>
+<td>堵两条把被动收入挪出计量口径的老路</td>
+</tr>
+<tr>
+<td>不扣 s.91(4) 的外国关联企业已纳税</td>
+<td>放大</td>
+<td>境外被动收入不因外国税抵免而缩小计量</td>
+</tr>
+</tbody>
+</table>
+<div class="vv-callout vv-callout--warn">
+<p><span class="vv-callout__icon">⚠️</span></p>
+<div>
+<p><strong>报表上这两个口径挨着放，取错数不会有任何提示</strong></p>
+<p>Schedule 7 的第 1 部分算 AII，落到 T2 第 6 页的 line 440；<strong>第 2 部分算 AAII，跳到第 4 页去算小企业扣除的递减</strong>（CRA T2 指南第 6 章，TWS-0346）。两个数在同一张附表上，差别常常只有几万块，而用错了的后果分别是「退税算错」和「明年的低税额度算错」。<strong>填表时先问一句：我现在算的这个数，是要拿去退税，还是要拿去削明年的额度？</strong></p>
+</div>
+</div>
+<h3 id="22-aaii">2.2 递减：每一元超额AAII削减五元限额</h3>
+<p>条文写法是一个公式（ITA s.125(5.1)(b)，TWS-0166）：</p>
+<pre><code>限额削减额 ＝ D ÷ $500,000 × 5 × (E − $50,000)
+</code></pre>
+<p>D 是本来的经营限额，独立公司是 $500,000，比值为 1；E 是<strong>本公司与全部联营公司的 AAII 合计</strong>。所以对一家独立公司来说，公式化简成「每 $1 超过 $50,000 的 AAII，削掉 $5 的经营限额」，AAII 到 $150,000 时 $500,000 全部削光。</p>
+<p>E 的计量期要读得很仔细：条文写的是<strong>「在上一个历年内结束的每一个税年」</strong>，不是「上一个税年」。对一家年结日固定、每年一个税年的公司，两种读法结果相同；但一家在某个历年里因变更年结日或控制权变更而有<strong>两个税年结束</strong>的公司，那两个税年的 AAII <strong>要加在一起</strong>。与之对照，应税资本那条递减取的是「上一个税年」的应税资本（s.125(5.1)(a)）——<strong>同一个条文里的两条递减，计量期的写法就不一样</strong>。</p>
+<div class="vv-callout vv-callout--warn">
+<p><span class="vv-callout__icon">⚠️</span></p>
+<div>
+<p><strong>两条递减取大者，不相加；计量期也不一样</strong></p>
+<p>应税资本递减与被动收入递减的关系是 <strong>exceeds the greater of</strong>（取大者），这一条在 ca-corporate-01 已经展开。这里补一句容易被忽略的：<strong>两条的计量期不同</strong>——一条数上一税年，一条数上一历年内结束的各税年。年结日变过的那一年，两条要分别数。</p>
+</div>
+</div>
+<p><strong>方向性后果要说清楚。</strong> 递减削的是<strong>经营利润的低税率</strong>，不是投资收入的税。一家 2025 税年赚了 $90,000 利息的卑诗公司，2026 税年的经营限额被削掉 $200,000（($90,000 − $50,000) × 5），剩 $300,000。假设它 2026 税年的经营利润是 $500,000，那么 $300,000 按 11% 交、$200,000 按 27% 交，比上一年多交约 $32,000——<strong>而这 $32,000 与那笔利息本身要交的税毫无关系，是额外的</strong>。</p>
+<div class="vv-callout vv-callout--danger">
+<p><span class="vv-callout__icon">✕</span></p>
+<div>
+<p><strong>一笔一次性的投资收入，会在下一年制造一张与它无关的账单</strong></p>
+<p>最典型的剧本：公司 2025 年卖掉一处闲置物业，实现一笔大额资本利得，AAII 冲到 $150,000 以上；2026 年公司经营照旧、投资收入回到零，<strong>但整年的经营利润全部按一般税率交税</strong>。等 2027 年额度恢复，钱已经交出去了。<strong>处置时点是可以选的，而选时点这件事只在处置之前有价值。</strong></p>
+</div>
+</div>
+<h3 id="23-3823-3023">2.3 投资收入自己的税率：38⅔% 里有 30⅔% 会回来</h3>
+<table>
+<thead>
+<tr>
+<th>组成</th>
+<th>2026 税年联邦</th>
+<th>出处</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Part I 基本率</td>
+<td>38%</td>
+<td>TWS-0021</td>
+</tr>
+<tr>
+<td>减联邦抵免 10%</td>
+<td>28%</td>
+<td>TWS-0021、TWS-0347</td>
+</tr>
+<tr>
+<td><strong>不享一般税率减免的 13%</strong></td>
+<td>仍是 28%</td>
+<td>投资收入不合资格（TWS-0021）</td>
+</tr>
+<tr>
+<td>加附加可退还税 10⅔%（line 604）</td>
+<td><strong>38⅔%</strong></td>
+<td>ITA s.123.3，TWS-0341、TWS-0347</td>
+</tr>
+<tr>
+<td>其中可退还部分（line 450）</td>
+<td><strong>30⅔% × AII</strong></td>
+<td>ITA s.129(4)，TWS-0339</td>
+</tr>
+<tr>
+<td>永久留在联邦的那一段</td>
+<td>38⅔% − 30⅔% ＝ <strong>8%</strong></td>
+<td>由上两行相减得出</td>
+</tr>
+</tbody>
+</table>
+<p>再加上卑诗省的一般率 12%（TWS-0169），一笔留在卑诗公司里的利息收入，<strong>当年</strong>的合计税负是 50⅔%；把钱以应税股息派给股东后，退回 30⅔%，公司这一层的永久成本落到 <strong>20%</strong>。这只是该简化加拿大来源利息情景的公司层余额，不能直接当成比个人投资额外多20%的税；还须计算股东毛额化、联邦和省抵免、派息时点及本金递延。</p>
+<div class="vv-callout vv-callout--info">
+<p><span class="vv-callout__icon">🔧</span></p>
+<div>
+<p><strong>「公司里投资更省税」这句话在 2019 年之后基本不成立</strong></p>
+<p>当年确实交得更多（50⅔% 对个人边际税率），退回来之后公司这一层还剩 20% 的永久成本，而个人那一层的股息税还在后面。真正剩下的优势只有一样：<strong>投进去的本金更大</strong>，因为经营利润只交了 11% 就留在了公司里。所以这道题的答案取决于「你投多久」与「你赚的是哪一类投资收入」，而不取决于「开不开公司」。本板块的薪酬规划一篇会把两条路的完整算式并排列出。</p>
+</div>
+</div>
+<h3 id="24-part-iv-3813">2.4 Part IV 税：38⅓%，但要先分联结与非联结</h3>
+<p><strong>非联结公司</strong>来的应税股息（就是你在市场上买的加拿大股票、加拿大股息基金），按 <strong>38⅓%</strong> 全额课 Part IV 税（ITA s.186(1)(a)、CRA T2 指南第 8 章 line 712，TWS-0340、TWS-0348）。</p>
+<p><strong>联结公司</strong>来的股息，只在<strong>付款方因为派这笔股息而拿到股息退税时</strong>才课，且按比例传导（s.186(1)(b)）。设计意图是让钱在自家公司链条里流动时不重复课税，同时让可退还税「跟着股息走」。</p>
+<p><strong>联结 (connected) 的判据与联营 (associated) 完全是两套东西</strong>，这一点在实务里被混用得最多：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>connected（Part IV 用）</th>
+<th>associated（小企业扣除用）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>出处</td>
+<td>ITA s.186(4)，TWS-0340</td>
+<td>ITA s.125(2)，TWS-0166</td>
+</tr>
+<tr>
+<td>门槛</td>
+<td>收款方控制付款方；或持有付款方 <strong>&gt;10% 表决权股本</strong> 且 <strong>&gt;10% 市值</strong></td>
+<td>受同一人或同一群人控制；含亲属关系加 25% 持股的判定</td>
+</tr>
+<tr>
+<td>控制的定义</td>
+<td><strong>&gt;50% 表决权股本</strong>（s.186(2)）</td>
+<td>法律控制与事实控制都算</td>
+</tr>
+<tr>
+<td>后果</td>
+<td>决定这笔股息要不要交 Part IV 税</td>
+<td>决定几家公司分一个 $500,000</td>
+</tr>
+</tbody>
+</table>
+<div class="vv-callout vv-callout--warn">
+<p><span class="vv-callout__icon">⚠️</span></p>
+<div>
+<p><strong>「我们是一家人的公司，所以不用交 Part IV 税」——这句话错在混了两张表</strong></p>
+<p>如果收款公司持有付款公司20%的表决权且股份市值也占20%，即使没有控制权，也满足connected的第二条路径。关联公司的associated定义仍须另按s256逐项判断，亲属身份本身不能代替持股和控制测试。<strong>联营不等于联结，联结也不等于联营。</strong></p>
+</div>
+</div>
+<h3 id="25-rdtoh2019">2.5 双池 RDTOH：2019 年起，一个账户拆成两个</h3>
+<p><strong>退还性股息税账户 (refundable dividend tax on hand, RDTOH)</strong> 是记录「已经交出去、将来会退回来」的那部分税的通知账户。2019 税年起它拆成两个（CRA T2 指南第 6 章，TWS-0346）：</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>合资格池 ERDTOH（line 530）</th>
+<th>非合资格池 NERDTOH（line 545）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>进什么</td>
+<td>收到<strong>非联结公司的合资格股息</strong>所交的 Part IV 税；联结公司股息中导致对方从其 ERDTOH 退税的那部分</td>
+<td>Part I 可退还部分（line 450，含 10⅔% 附加税）；其余 Part IV 税</td>
+</tr>
+<tr>
+<td>靠什么退</td>
+<td>派<strong>合资格股息</strong></td>
+<td>派<strong>非合资格股息</strong></td>
+</tr>
+<tr>
+<td>退多少</td>
+<td>已付合资格股息 × <strong>38⅓%</strong>，与池余额取小</td>
+<td>已付非合资格股息 × <strong>38⅓%</strong>，与池余额取小</td>
+</tr>
+<tr>
+<td>谁能有</td>
+<td>私人公司与 subject corporation</td>
+<td>同左；但 Part I 可退还部分那一块只有 CCPC 与 substantive CCPC 才产生</td>
+</tr>
+</tbody>
+</table>
+<p><strong>退还顺序有一条硬规则</strong>：派非合资格股息时<strong>先掏 NERDTOH，掏干了才可能动 ERDTOH</strong>；派合资格股息只能掏 ERDTOH（ITA s.129(1)(a)，TWS-0339、TWS-0346）。</p>
+<p><strong>为什么要拆。</strong> 拆池之前，公司可以用一笔<strong>合资格股息</strong>（股东那一头税率更低）去把因赚利息而积起来的 RDTOH 全部取回来——等于用低税的分红形态领走了为高税收入交的可退还税，整合被破坏。拆池之后，两条路各走各的：为投资收入交的税只能靠<strong>非合资格股息</strong>领回，而非合资格股息在股东那一头正是税率更高的那一类（毛额化 15%、联邦抵免为毛额部分的 9/13，ITA s.82(1)(b)、s.121，TWS-0170、TWS-0171）。</p>
+<div class="vv-callout vv-callout--info">
+<p><span class="vv-callout__icon">ℹ️</span></p>
+<div>
+<p><strong>一个只有拆池之后才成立的两难</strong></p>
+<p>公司账上同时有 NERDTOH 与 GRIP 的时候，派合资格股息对股东最划算但拿不回 NERDTOH；派非合资格股息能拿回 NERDTOH 但股东多交税。<strong>这两件事必须一起算，不能各自最优</strong>——这是薪酬规划里每年都要重算一次的题。</p>
+</div>
+</div>
+<h3 id="26">2.6 资本股息账户：免税的那一半怎么零税送出去</h3>
+<p>资本利得只有一半计入应税资本利得。另一半在税法里不是「不存在」，而是<strong>累积在 CDA 里等着派出去</strong>（ITA s.89(1) 的 capital dividend account 定义，写法就是「资本利得 减 应税资本利得」，TWS-0342）。除了利得的免税一半，CDA 还接收人寿保险赔付超出保单成本的部分、收到的资本股息等项。</p>
+<p>它是一个<strong>通知账户</strong>：不在资产负债表上，只在算股息时用；而且它是<strong>从公司最后一次成为私人公司起累计到「派息那一刻」</strong>的余额，不是税年末的余额。</p>
+<p>派发要走一次<strong>选择 (election)</strong>：不晚于股息成为应付之时与首次实际支付日两者较早者，就股息<strong>全额</strong>作 ITA s.83(2) 选择并报表格 T2054，加拿大居民股东一般不计入PartI收入；付给非居民仍须另核PartXIII及协定预扣（TWS-0343）。三条实务纪律：</p>
+<p><strong>第一，迟一天就要走迟报选择。</strong> 罚款是「年化 1% × 经过的月数」与「$500 × 月数 ÷ 12」两者<strong>取小</strong>（s.83(4)）——对小额股息罚得很轻，$500/年 是这条罚款的量级天花板。迟报与超额派发的补救路径不同；超额部分另核s184(3)应税股息选择和股东同意。</p>
+<p><strong>第二，选择只能对全额作，不能只对一部分作。</strong></p>
+<p><strong>第三，派之前先核余额。</strong> CRA 提供 T2SCH89 让私人公司请求核对 CDA 余额。派超了的代价是超额部分 60% 的 Part III 税（s.184(2)，TWS-0344），与迟报那点罚款完全不是一个量级。</p>
+<div class="vv-callout vv-callout--danger">
+<p><span class="vv-callout__icon">✕</span></p>
+<div>
+<p><strong>资本亏损会把 CDA 吃回去，而账上看不出来</strong></p>
+<p>CDA 是净额概念：资本亏损中不可扣的那一半会冲减这个账户。应在股息成为应付前一刻核实余额；后来新发生的资本亏损会影响以后可派余额，通常不会仅因发生在同一税年就追溯使先前有效的资本股息超额。先前利得记录本来有误或特殊反避税情形另判，不能与后来才发生的损失混为一谈。</p>
+</div>
+</div>
+<h3 id="27-grip">2.7 GRIP 与合资格股息：把「已经交足税」的部分标出来</h3>
+<p><strong>合资格股息 (eligible dividend)</strong> 在股东那一头毛额化 38%、联邦抵免为毛额部分的 6/11（TWS-0170、TWS-0171），比非合资格股息优惠得多。CCPC 能派多少合资格股息，取决于它的 <strong>GRIP</strong> 余额——一个「大体反映未享小企业扣除、也未享其他特别税率的应税收入」的池子（CRA T2 指南第 8 章 line 710，TWS-0348）。</p>
+<p>条文的算式是「上年 GRIP ＋ 一般税率因子 × 调整后应税收入 ＋ 收到的合资格股息 − 已派合资格股息」，其中一般税率因子 2012 年起是 <strong>0.72</strong>（ITA s.89(1)，TWS-0342）。0.72 这个数不是凑的：按高税率交完税之后剩下的税后利润，大约就是这个比例，所以它代表「这些钱已经在公司层面交足税，可以按合资格股息派出去」。</p>
+<p>一条时点纪律很有用：<strong>GRIP 在年末才计算，但年中可以先派合资格股息，只要年末回看时已派的合资格股息不超过 GRIP 就不罚</strong>（TWS-0348）。反过来说，年末一笔意外的收入结构变化，可能把整年的指定打成超额。</p>
+<p><strong>LRIP 是非 CCPC 才有的账户</strong>，方向相反：它是一个阻挡池，必须先派普通股息把它清零，才能派合资格股息（TWS-0348）。<strong>把 LRIP 说成 CCPC 的账户是最常见的一处错</strong>。</p>
+<p>还有一步纯程序、却最常被漏掉：<strong>合资格股息必须在付款当时或之前书面通知股东</strong>（ITA s.89(14)）。CRA 明确接受一人公司或家族公司在<strong>董事会会议纪要里记一行</strong>作为通知形式；迟报指定可在三年内（特殊情形六年）补作（TWS-0349）。漏了这一步，股东在个人报表上按 38% 毛额化申报就没有依据。</p>
+<h3 id="28">2.8 三列表：教材那一年、去年、今年</h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>2024 税年（教材口径）</th>
+<th>2025 税年</th>
+<th>2026 税年（现行）</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Part IV 税率（非联结公司应税股息）</td>
+<td>38⅓%</td>
+<td>38⅓%</td>
+<td><strong>38⅓%</strong></td>
+<td>长青，2016 起（ITA s.186(1)(a)，TWS-0340）</td>
+</tr>
+<tr>
+<td>RDTOH 退还率（每 $1 已付应税股息）</td>
+<td>38⅓%</td>
+<td>38⅓%</td>
+<td><strong>38⅓%</strong></td>
+<td>长青（ITA s.129(1)，TWS-0339）</td>
+</tr>
+<tr>
+<td>Part I 可退还部分</td>
+<td>30⅔% × AII</td>
+<td>30⅔% × AII</td>
+<td><strong>30⅔% × AII</strong></td>
+<td>长青（ITA s.129(4)，TWS-0339）</td>
+</tr>
+<tr>
+<td>投资收入附加可退还税（line 604）</td>
+<td>10⅔%</td>
+<td>10⅔%</td>
+<td><strong>10⅔%</strong></td>
+<td>长青（ITA s.123.3，TWS-0347）</td>
+</tr>
+<tr>
+<td>投资收入联邦合计</td>
+<td>38⅔%</td>
+<td>38⅔%</td>
+<td><strong>38⅔%</strong></td>
+<td>长青（28% ＋ 10⅔%，TWS-0021）</td>
+</tr>
+<tr>
+<td>被动收入递减起算点</td>
+<td>50,000 元</td>
+<td>50,000 元</td>
+<td>50,000 元</td>
+<td>长青，2019 起（TWS-0162、TWS-0166）</td>
+</tr>
+<tr>
+<td>被动收入递减归零点</td>
+<td>150,000 元</td>
+<td>150,000 元</td>
+<td>150,000 元</td>
+<td>长青（TWS-0162）</td>
+</tr>
+<tr>
+<td>每 $1 超额 AAII 削减</td>
+<td>$5</td>
+<td>$5</td>
+<td><strong>$5</strong></td>
+<td>长青（ITA s.125(5.1)(b)）</td>
+</tr>
+<tr>
+<td>RDTOH 账户数</td>
+<td>两个（ERDTOH / NERDTOH）</td>
+<td>两个</td>
+<td><strong>两个</strong></td>
+<td>长青，2019 税年起拆池（TWS-0346）</td>
+</tr>
+<tr>
+<td>资本股息超额派发罚</td>
+<td>3/5（60%）</td>
+<td>60%</td>
+<td><strong>60%</strong></td>
+<td>长青（ITA s.184(2)，TWS-0344）</td>
+</tr>
+<tr>
+<td>超额合资格股息指定罚</td>
+<td>20%（人为拉高 GRIP 再加 10%）</td>
+<td>20% / 30%</td>
+<td><strong>20% / 30%</strong></td>
+<td>长青（ITA s.185.1(1)，TWS-0345）</td>
+</tr>
+<tr>
+<td>一般税率因子（GRIP）</td>
+<td>0.72</td>
+<td>0.72</td>
+<td><strong>0.72</strong></td>
+<td>长青，2012 起（ITA s.89(1)，TWS-0342）</td>
+</tr>
+<tr>
+<td>适用主体</td>
+<td>教材只写 CCPC</td>
+<td>CCPC ＋ <strong>substantive CCPC</strong></td>
+<td>CCPC ＋ <strong>substantive CCPC</strong></td>
+<td>已生效，2022-04-07 之后开始的税年（TWS-0347）</td>
+</tr>
+<tr>
+<td>应税资本递减区间</td>
+<td>教材 <strong>$10M–$15M</strong></td>
+<td>$10M–$50M</td>
+<td><strong>$10M–$50M</strong></td>
+<td>教材停在 2022-04-07 之前的旧口径（TKU-0106，详见 ca-corporate-01）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>这张表里只有最后两行动过。</strong> 前十二行从 2024 到 2026 一格没变，CRA 自己维护的公司税变化年表里 2026 也只有省级一节、没有联邦一节（TWS-0045）——<strong>「查过、没变」也是结论</strong>，年度更新时这十二行可以直接跳过，把时间花在最后两行和省级那一格上。</p>
+<p><strong>最后两行是本页的教材错位。</strong> 第一处已经在 ca-corporate-01 判过（TKU-0106），这里只交叉引用。第二处是<strong>substantive CCPC 这一整层教材没有</strong>：一家因为控制权安排而不再是 CCPC 的私人公司，只要落进这个定义，2022 年 4 月 6 日之后开始的税年仍要交 10⅔% 的附加税、仍要产生 NERDTOH（ITA s.123.3、CRA T2 指南第 7 章，TWS-0341、TWS-0347）。<strong>按教材那一版的理解，「不再是 CCPC」等于这套反递延规则整体不适用——这个理解在 2026 税年是错的。</strong></p>
+<hr />
+<h2 id="_2">三、实务流程：一张附表、四个账户、两个时点</h2>
+<h3 id="31">3.1 从财报到四个数</h3>
+<p><strong>第一步，Schedule 7 第 1 部分算 AII</strong>，结果落到 T2 第 6 页 <strong>line 440</strong>；第 3 部分算境外投资收入，落 <strong>line 445</strong>。这两个数一起决定 Part I 可退还部分，填 <strong>line 450</strong>（CRA T2 指南第 6 章，TWS-0346）。</p>
+<p><strong>第二步，Schedule 7 第 2 部分算 AAII</strong>，这个数<strong>不往第 6 页走</strong>，它跳到第 4 页去参与小企业扣除的递减计算（同上）。</p>
+<p><strong>第三步，Schedule 3 算 Part IV 税</strong>：第 1、2 部分算应交多少，结果填第 9 页 <strong>line 712</strong>；第 3、4 部分算股息退税（CRA T2 指南第 8 章，TWS-0348）。</p>
+<p><strong>第四步，第 8 页 line 604 填 10⅔% 的附加可退还税</strong>，它汇进 line 450（CRA T2 指南第 7 章，TWS-0347）。</p>
+<p><strong>第五步，两个池的余额</strong>：ERDTOH 填 <strong>line 530</strong>，NERDTOH 填 <strong>line 545</strong>（TWS-0346）。</p>
+<h3 id="32">3.2 四张附表与两张表格，各管一个账户</h3>
+<table>
+<thead>
+<tr>
+<th>件</th>
+<th>管什么</th>
+<th>什么时候要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Schedule 7</td>
+<td>AII（第 1 部分）、境外投资收入（第 3 部分）、<strong>AAII（第 2 部分）</strong></td>
+<td>CCPC 有投资收入或要算 SBD 就要填</td>
+</tr>
+<tr>
+<td>Schedule 3</td>
+<td>收到的股息、已派的应税股息、Part IV 税、股息退税</td>
+<td>收到或派发股息就要填</td>
+</tr>
+<tr>
+<td>Schedule 53</td>
+<td>GRIP 计算</td>
+<td>CCPC 想派合资格股息</td>
+</tr>
+<tr>
+<td>Schedule 54</td>
+<td>LRIP 计算</td>
+<td><strong>非</strong> CCPC 派股息</td>
+</tr>
+<tr>
+<td>Schedule 55</td>
+<td>超额合资格股息指定的 Part III.1 税</td>
+<td>指定超了</td>
+</tr>
+<tr>
+<td>T2054</td>
+<td>资本股息选择（ITA s.83(2)）</td>
+<td><strong>不晚于股息成为应付之时与首次实际支付日两者较早者</strong></td>
+</tr>
+<tr>
+<td>T2SCH89</td>
+<td>请求 CRA 核对 CDA 余额</td>
+<td>派资本股息之前</td>
+</tr>
+</tbody>
+</table>
+<h3 id="33">3.3 两个时点，和一条时效</h3>
+<p><strong>Part IV 税与 Part I 税同一天到期</strong>：都在公司的 <strong>balance-due day</strong>（ITA s.186(1)，TWS-0340），也就是年结后两个月，符合条件的 CCPC 三个月（详见 ca-corporate-01）。<strong>申报表要到年结后六个月才到期，但这两道税早就该交了。</strong></p>
+<p><strong>资本股息选择的时点是「股息应付当天或之前」</strong>，不是年末、更不是报表申报日（ITA s.83(2)）。</p>
+<p><strong>股息退税的三年时效</strong>是这一页最贵的一条程序规则：税年结束后三年内没报 T2，退税永久作废（TWS-0339、TWS-0346）。而且<strong>要真的把钱付给股东</strong>才算派了股息——账上挂一笔应付股息不付，或者只做会计分录，退税拿不到（TWS-0346）。</p>
+<h3 id="34">3.4 要留什么凭证</h3>
+<p>券商年度报表（区分利息、加拿大股息、境外股息、已实现利得，且要能标出<strong>每一笔股息的付款方是不是联结公司</strong>）· 处置计算底稿（成本基础、处置费用，以及<strong>这项资产是不是经营性资产</strong>的判断依据）· 出租物业的收支与资本性支出记录 · 董事会决议（派息金额、日期、<strong>合资格股息的书面通知</strong>）· 已归档的 T2054 与 CRA 的确认 · 全部联营公司的 AAII 明细与各自的税年结束日。</p>
+<hr />
+<h2 id="_3">四、联邦之外：卑诗省这一格怎么走</h2>
+<p>卑诗省的公司税只有两个税率：小企业率 2.0%（2017-04-01 起）与一般率 12.0%（2018-01-01 起），经营限额 $500,000（2010-01-01 起），到 2026 税年都没动过（TWS-0169）。</p>
+<p><strong>关键在于投资收入落在哪个率上。</strong> 卑诗省税率页写得很直白：一般率适用于超过 $500,000 的收入，<strong>以及任何不合资格享低税率的收入，例如投资收入</strong>（TWS-0169）。所以公司里的利息、租金、境外收入按 <strong>12%</strong> 交省税；只有合资格享小企业扣除的经营利润才走 2%。</p>
+<p><strong>递减是同步的。</strong> 卑诗省的低税率没有自己的资格判据，它直接挂在联邦小企业扣除上——联邦那边因被动收入被削掉多少限额，卑诗这边同步削掉多少（TWS-0169）。所以第二节 2.2 那个例子里，公司多交的不只是联邦的 6 个百分点，还有卑诗的 10 个百分点，<strong>合计每被削掉 $1 限额多交 16 分钱</strong>。</p>
+<p>本页普通 CCPC 的利息收入模型中，BC 部分按 s.14(2) 的 12% 计算，不会仅因派息就随联邦 RDTOH 退回。于是本页假设下，公司层退税后 20% 的负担由省 12% 与联邦约 8% 构成；这不是所有公司的永久有效税率。BC s.14(6)–(8) 对符合联邦 s.131 的特定公司确有资本利得退还，境外税抵免等另有条件。因此应限定为“普通 CCPC 利息收入的派息退税”，不能扩写成“BC 没有任何投资税退还”（TWS-0056，TKU-0121）。</p>
+<div class="vv-callout vv-callout--info">
+<p><span class="vv-callout__icon">🔧</span></p>
+<div>
+<p><strong>跨省客户先看这一格再算别的</strong></p>
+<p>各省一般率差得很多，而投资收入全额吃一般率。同一笔 $100,000 的公司利息收入，换一个省，公司层的永久成本能差好几个百分点。<strong>判断「钱留在公司里投资划不划算」，先确定公司在哪个省有常设机构，再动算式。</strong> 各省当年率务必回 CRA 的公司税率页与公司税变化年表两处对读——这两页会互相打架，见 TKU-0107。</p>
+</div>
+</div>
+<hr />
+<h2 id="_4">五、历史变革：这套规则是分三次装上去的</h2>
+<p><strong>第一次，2016 年，把率抬上去。</strong> Part IV 税从 33⅓% 提到 <strong>38⅓%</strong>，投资收入的附加可退还税从 6⅔% 提到 <strong>10⅔%</strong>，Part I 可退还部分相应变成 <strong>30⅔%</strong>。原因是个人最高边际税率在 2016 年上调，公司这一侧不跟着抬，递延优势就会重新出现。<strong>整合是一个需要每次跟着调的等式，不是一劳永逸的设计。</strong></p>
+<p><strong>第二次，2018 年预算，装上递减。</strong> 这一轮的背景是 2017 年那场关于私人公司税制的全国争论：最初的方案是对公司里的被动投资收入本身设计一套极其复杂的追溯课税，遭到强烈反对后被撤回，改成现在这个简单得多的版本——<strong>不动投资收入的税，只削经营收入的低税额度</strong>，$50,000 起、$150,000 归零，2019 税年起生效。$50,000 这个门槛当时的官方说法是对应约 $1,000,000 的被动资产按 5% 回报计算，用意是「不影响绝大多数小公司」。</p>
+<p><strong>第三次，2019 年，拆池。</strong> RDTOH 拆成 ERDTOH 与 NERDTOH，堵掉「用合资格股息领回为投资收入交的可退还税」这条路（第二节 2.5）。s.129(5) 专门写了一整条过渡规则，把拆池当年的旧池余额按公式分到两个新池里。</p>
+<p><strong>第四次，2022 年 4 月 7 日，补 substantive CCPC。</strong> 一批安排通过让公司在技术上不再是 CCPC（例如把控制权挪给非居民）来绕开整套反递延规则。2024 年的立法把 <strong>substantive CCPC</strong> 这个概念补进 s.123.3 与 s.129(4)：<strong>实质上仍由加拿大居民控制的私人公司，即使技术上不是 CCPC，投资收入照样要交 10⅔%、照样产生 NERDTOH</strong>（TWS-0341、TWS-0347）。同一批立法把大 CCPC 的应税资本递减区间从 $10M–$15M 改成 $10M–$50M（TKU-0106）。</p>
+<p><strong>教材停在哪。</strong> 用作结构参照的那一版教材写的是 2024 税年口径，它对 AII、AAII、Part IV、双池 RDTOH 的机制描述与现行规则一致；两处停在旧口径：<strong>应税资本递减区间仍写 $10M–$15M</strong>（TKU-0106），以及<strong>通篇没有 substantive CCPC 这一层</strong>。备考时按教材的结构记忆没问题，遇到真客户时这两处要按现行规则重算。</p>
+<hr />
+<h2 id="_5">六、案例</h2>
+<blockquote>
+<p>以下人名、公司名与金额均为示例，用于演示算法，不对应任何真实纳税人。</p>
+</blockquote>
+<h3 id="_6">案例一 · 温哥华的两人咨询公司：一笔利息，明年多交三万二</h3>
+<p><strong>情景。</strong> 示例公司「岭南咨询」是一家卑诗省的 CCPC，无联营公司，年结日 12 月 31 日。2025 税年经营利润 $500,000，同时账上累积的现金买了 GIC，全年利息 $90,000。2026 税年经营利润仍是 $500,000，投资收入回落到 $10,000。</p>
+<p><strong>适用规则。</strong> 2026 税年的经营限额要按 2025 税年（即上一历年内结束的税年）的 AAII 递减：AAII ＝ $90,000，超过 $50,000 的部分是 $40,000，削减额 ＝ $40,000 × 5 ＝ $200,000（ITA s.125(5.1)(b)）。假设公司应税资本远低于 $10,000,000，应税资本那条递减为零，取大者仍是 $200,000。</p>
+<p><strong>算出的数。</strong> 2026 税年经营限额 ＝ $500,000 − $200,000 ＝ $300,000。
+经营利润 $500,000 中，$300,000 按 11% 交（联邦 9% ＋ 卑诗 2%）＝ $33,000；$200,000 按 27% 交（联邦 15% ＋ 卑诗 12%）＝ $54,000；合计 $87,000。
+如果 2025 年没有那笔利息，全部 $500,000 按 11% 交 ＝ $55,000。<strong>差额 $32,000</strong>。
+另外 2025 年那 $90,000 利息本身，当年按 50⅔% 交了约 $45,600，其中 30⅔%（约 $27,600）进 NERDTOH 等着退。</p>
+<p><strong>常见错报。</strong> 把递减算在 2025 税年（当年）而不是 2026 税年；或者把 $90,000 直接乘 5 得出 $450,000 的削减额——<strong>乘 5 的是超过 $50,000 的部分，不是全额</strong>。</p>
+<h3 id="part-iv">案例二 · 列治文的家族控股公司：Part IV 税走一圈又回来</h3>
+<p><strong>情景。</strong> 示例公司「明湖控股」是一家卑诗省 CCPC，持有若干上市加拿大银行股（持股比例远低于 10%，属非联结公司），2026 税年收到合资格股息 $100,000。同年公司把 $100,000 全额作为<strong>合资格股息</strong>派给唯一股东。</p>
+<p><strong>适用规则。</strong> 这笔股息在算应税收入时按 s.112 全额扣除，不交 Part I 税；但要交 Part IV 税 ＝ $100,000 × 38⅓% ＝ <strong>$38,333</strong>（ITA s.186(1)(a)）。因为来源是非联结公司的<strong>合资格股息</strong>，这 $38,333 全额进 <strong>ERDTOH</strong>（ITA s.129(4)）。派出合资格股息 $100,000 后，股息退税 ＝ min($100,000 × 38⅓%, ERDTOH 余额) ＝ <strong>$38,333</strong>，全额退回。</p>
+<p><strong>算出的数。</strong> 公司层净税负 <strong>零</strong>；$100,000 完整流到股东手上，股东按合资格股息申报（毛额化 38%、联邦抵免为毛额部分的 6/11）。整合在这一条上是干净的。</p>
+<p><strong>常见错报。</strong> 派的是<strong>非合资格</strong>股息——那样只能先掏 NERDTOH，而这家公司的 NERDTOH 是零，于是要绕到 ERDTOH 才能退，同时股东那一头按 15% 毛额化、9/13 抵免申报，白白多交税。<strong>收到什么类型的股息，就派什么类型的股息</strong>，是拆池之后最省事的一条经验法则。</p>
+<h3 id="_7">案例三 · 素里的家族制造公司：卖厂房的三重后果</h3>
+<p><strong>情景。</strong> 示例公司「南岸机械」是一家卑诗省 CCPC，2025 税年卖掉一处<strong>已经停用多年、出租给第三方</strong>的旧厂房，资本利得 $400,000；同年另有利息收入 $20,000。2026 税年经营利润 $400,000。</p>
+<p><strong>适用规则与三重后果。</strong></p>
+<p><strong>其一，当年的税。</strong> 应税资本利得 ＝ $400,000 × 50% ＝ $200,000，进 AII；加上利息 $20,000，AII ＝ $220,000，按 50⅔% 交，其中 30⅔%（约 $67,500）进 NERDTOH。</p>
+<p><strong>其二，明年的额度。</strong> 这处厂房<strong>已停用并出租</strong>，不是处置时的经营性资产，所以这笔利得<strong>要进 AAII</strong>。2025 税年 AAII ＝ $200,000 ＋ $20,000 ＝ $220,000，远超 $150,000，<strong>2026 税年的经营限额直接归零</strong>：$400,000 的经营利润全部按 27% 交 ＝ $108,000，而不是 $44,000。<strong>多交 $64,000。</strong></p>
+<p><strong>其三，CDA 那一半。</strong> 资本利得中不计税的 $200,000 进 CDA，可以经 s.83(2) 选择零税派给股东。这一步是三重后果里唯一的好消息，也是唯一<strong>必须主动做才拿得到</strong>的一步。</p>
+<p><strong>如果这处厂房仍在自用经营。</strong> 那笔利得就属于处置经营性资产，<strong>不进 AAII</strong>，2026 税年的经营限额只被那 $20,000 利息影响（低于 $50,000，递减为零）——<strong>同一笔利得，仅因为资产在处置时是不是经营性资产，明年就差 $64,000 的税</strong>。</p>
+<p><strong>常见错报。</strong> 只算了当年的税，没算明年的额度；把 CDA 那一半当成「本来就免税，不用管」而从没派出去，等到公司清算时才发现账户还在但资产已经没了；以及把「以前是经营性资产」当成「处置时是经营性资产」——<strong>判断的时点是处置那一刻</strong>。</p>
+<hr />
+<h2 id="_8">七、常见错报与自查清单</h2>
+<ol>
+<li>
+<p><strong>把 AII 当成 AAII 去算递减。</strong> 识别方法：看底稿取的是 Schedule 7 的第 1 部分还是第 2 部分。算退税用第 1 部分，算递减用第 2 部分。</p>
+</li>
+<li>
+<p><strong>用本税年的 AAII 算本税年的递减。</strong> 识别方法：看数据取自哪一年。取的应是<strong>上一历年内结束的税年</strong>；年结日变过的那一年可能有两个税年要加总。</p>
+</li>
+<li>
+<p><strong>把超额部分之外的 AAII 也乘 5。</strong> 识别方法：底稿里出现「AAII × 5」就是错的，正确写法是「(AAII − $50,000) × 5」。</p>
+</li>
+<li>
+<p><strong>把两条递减相加。</strong> 识别方法：看应税资本递减与被动收入递减是不是被加在一起。条文是<strong>取大者</strong>（详见 ca-corporate-01）。</p>
+</li>
+<li>
+<p><strong>忘了把联营公司的 AAII 加进来。</strong> 识别方法：拿出全部联营公司名单，逐家确认它们在上一历年内结束的税年的 AAII 都进了合计数；再问一句有没有把投资挪到关联但不联营的公司里——那会触发 s.125(5.2) 视同联营。</p>
+</li>
+<li>
+<p><strong>把附属于经营活动的财产收入当被动。</strong> 识别方法：看这笔收入是不是「incident to or pertains to」经营活动，或者财产是不是主要用于经营。真正闲置出租的物业算被动，为经营周转而放着的短期存款利息通常不算。</p>
+</li>
+<li>
+<p><strong>把联结与联营混用。</strong> 识别方法：判 Part IV 用 &gt;10% 表决权且 &gt;10% 市值（或控制）；判小企业扣除限额分摊用控制加亲属 25% 那一套。<strong>两张表要分别过一遍。</strong></p>
+</li>
+<li>
+<p><strong>派错股息类型，退不出想退的那个池。</strong> 识别方法：看 line 530 与 line 545 的余额分别是多少，再看这一年派的是哪一类股息。非合资格股息先掏 NERDTOH，合资格股息只能掏 ERDTOH。</p>
+</li>
+<li>
+<p><strong>账上挂应付股息就以为可以退税。</strong> 识别方法：看有没有真实付款（现金或实物资产）或构成推定股息。只做分录，股息退税拿不到。</p>
+</li>
+<li>
+<p><strong>迟报 T2 导致股息退税过期。</strong> 识别方法：数一数税年结束到报表送出之间有没有超过三年。<strong>这一条与迟报罚是两回事</strong>——不欠税时迟报罚为零，但退税会永久作废。</p>
+</li>
+<li>
+<p><strong>派资本股息前没核 CDA 余额，或者迟报了选择。</strong> 识别方法：看有没有不晚于股息成为应付之时与首次实际支付日两者较早者报出 T2054。迟报可救（罚款取小，量级很轻），<strong>派超了要交 60%</strong>。派之前用 T2SCH89 向 CRA 核余额。</p>
+</li>
+<li>
+<p><strong>合资格股息只在报表上指定，没有书面通知股东。</strong> 识别方法：翻董事会决议或会议纪要有没有那一行记载。一人公司在纪要里记一行就够，但<strong>必须在付款当时或之前</strong>。</p>
+</li>
+<li>
+<p><strong>把 LRIP 当成 CCPC 的账户。</strong> 识别方法：先确认公司是不是 CCPC。是就用 GRIP（可派上限），不是才用 LRIP（必须先清零的阻挡池）。</p>
+</li>
+<li>
+<p><strong>认定「公司不是 CCPC 了，这套规则就不适用」。</strong> 识别方法：看公司是否落进 substantive CCPC。2022 年 4 月 6 日之后开始的税年，实质上仍由加拿大居民控制的私人公司照样要交 10⅔% 附加税、照样产生 NERDTOH。教材那一版没有这一层。</p>
+</li>
+</ol>
+<p><strong>下一步练习</strong>：122</p>
+<hr />
+<h2 id="_9">术语双语对照</h2>
+<table>
+<thead>
+<tr>
+<th>English</th>
+<th>中文</th>
+<th>一句话机制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>aggregate investment income (AII)</td>
+<td>合计投资收入</td>
+<td>应税资本利得净额加财产性收入减财产性亏损；服务可退还税的计量（ITA s.129(4)），填 line 440</td>
+</tr>
+<tr>
+<td>adjusted aggregate investment income (AAII)</td>
+<td>调整后合计投资收入</td>
+<td>在 AII 上作四处调整；<strong>只</strong>服务经营限额递减（ITA s.125(7)），算在 Schedule 7 第 2 部分</td>
+</tr>
+<tr>
+<td>business limit reduction (passive income)</td>
+<td>被动收入限额递减</td>
+<td>上一历年内结束税年的 AAII 每超 $50,000 一元，削减 $5 经营限额，$150,000 归零</td>
+</tr>
+<tr>
+<td>specified investment business</td>
+<td>指定投资业务</td>
+<td>主要目的是赚财产收入的业务；其收入不享小企业扣除，且计入 AAII</td>
+</tr>
+<tr>
+<td>active asset</td>
+<td>经营性资产</td>
+<td>处置时用于经营的资产；它的资本利得不进 AAII，这是最有价值的一条出口</td>
+</tr>
+<tr>
+<td>refundable portion of Part I tax</td>
+<td>Part I 税的可退还部分</td>
+<td>30⅔% × AII（与另两项取最小），填 line 450，全额进 NERDTOH</td>
+</tr>
+<tr>
+<td>additional refundable tax (ART)</td>
+<td>附加可退还税</td>
+<td>CCPC 投资收入另加 10⅔%（ITA s.123.3），填 line 604，使联邦合计成为 38⅔%</td>
+</tr>
+<tr>
+<td>Part IV tax</td>
+<td>Part IV 税</td>
+<td>私人公司收到、且在算应税收入时扣掉的应税股息，非联结来源按 38⅓% 课，填 line 712</td>
+</tr>
+<tr>
+<td>assessable dividend</td>
+<td>应课税股息（Part IV 口径）</td>
+<td>Part IV 的税基：按 s.112/113 扣掉的那部分股息；没扣就不课</td>
+</tr>
+<tr>
+<td>connected corporation</td>
+<td>联结公司</td>
+<td>收款方控制付款方，或持有 &gt;10% 表决权股本且 &gt;10% 市值（ITA s.186(4)）；与「联营」是两套判据</td>
+</tr>
+<tr>
+<td>refundable dividend tax on hand (RDTOH)</td>
+<td>退还性股息税账户</td>
+<td>记录已交、将来会随派息退回的税的通知账户；2019 税年起拆成两个</td>
+</tr>
+<tr>
+<td>eligible RDTOH (ERDTOH)</td>
+<td>合资格池</td>
+<td>进的是非联结公司合资格股息的 Part IV 税；靠派<strong>合资格股息</strong>退，填 line 530</td>
+</tr>
+<tr>
+<td>non-eligible RDTOH (NERDTOH)</td>
+<td>非合资格池</td>
+<td>进的是 Part I 可退还部分与其余 Part IV 税；靠派<strong>非合资格股息</strong>退，填 line 545</td>
+</tr>
+<tr>
+<td>dividend refund</td>
+<td>股息退税</td>
+<td>已付应税股息 × 38⅓% 与对应池余额取小；<strong>税年结束后三年内不报 T2 即永久作废</strong></td>
+</tr>
+<tr>
+<td>capital dividend account (CDA)</td>
+<td>资本股息账户</td>
+<td>资本利得不计税的那一半等项的累计通知账户；余额算到派息那一刻，不是年末</td>
+</tr>
+<tr>
+<td>capital dividend / s.83(2) election</td>
+<td>资本股息 / 资本股息选择</td>
+<td>不晚于股息成为应付之时与首次实际支付日两者较早者就全额作选择（表格 T2054），股东零税收到</td>
+</tr>
+<tr>
+<td>Part III tax</td>
+<td>Part III 税</td>
+<td>资本股息派超 CDA 的惩罚：超额部分的 3/5，即 60%（ITA s.184(2)）</td>
+</tr>
+<tr>
+<td>general rate income pool (GRIP)</td>
+<td>一般税率收入池</td>
+<td>CCPC 能派多少合资格股息的上限；年末计算，年中可先派（Schedule 53）</td>
+</tr>
+<tr>
+<td>low rate income pool (LRIP)</td>
+<td>低税率收入池</td>
+<td><strong>非</strong> CCPC 的阻挡池，必须先派普通股息清零才能派合资格股息（Schedule 54）</td>
+</tr>
+<tr>
+<td>general rate factor</td>
+<td>一般税率因子</td>
+<td>2012 起为 0.72，乘调整后应税收入进 GRIP，代表「已交足税的税后利润比例」</td>
+</tr>
+<tr>
+<td>eligible dividend</td>
+<td>合资格股息</td>
+<td>毛额化 38%、联邦抵免为毛额部分的 6/11；必须在付款当时或之前<strong>书面通知</strong>股东（s.89(14)）</td>
+</tr>
+<tr>
+<td>non-eligible dividend</td>
+<td>非合资格股息</td>
+<td>毛额化 15%、联邦抵免为毛额部分的 9/13；用了小企业扣除的低税利润派出来的那一类</td>
+</tr>
+<tr>
+<td>excessive eligible dividend designation</td>
+<td>超额合资格股息指定</td>
+<td>标超 GRIP 的部分，罚 20%（人为拉高 GRIP 的再加 10%），Schedule 55</td>
+</tr>
+<tr>
+<td>Part III.1 tax</td>
+<td>Part III.1 税</td>
+<td>上一行那道罚税的正式名称；20% 可经股东同意化解，30% 不许</td>
+</tr>
+<tr>
+<td>substantive CCPC</td>
+<td>实质加拿大受控私人公司</td>
+<td>技术上不是 CCPC 但实质仍受加拿大居民控制；2022-04-07 起照样适用附加税与 NERDTOH</td>
+</tr>
+<tr>
+<td>integration</td>
+<td>整合</td>
+<td>公司先交、个人后补，两级合计约等于个人直接赚这笔钱的税负；本页所有规则都在维护这个等式</td>
+</tr>
+<tr>
+<td>Schedule 7 / Schedule 3</td>
+<td>投资收入表 / 股息与 Part IV 税表</td>
+<td>前者出 AII、境外投资收入与 AAII；后者出 Part IV 税与股息退税</td>
+</tr>
+<tr>
+<td>T2SCH89</td>
+<td>CDA 余额核对请求</td>
+<td>派资本股息之前向 CRA 请求核对余额，避免 60% 的 Part III 税</td>
+</tr>
+<tr>
+<td>balance-due day</td>
+<td>欠税截止日</td>
+<td>Part I 与 Part IV 税同一天到期：年结后两个月，符合条件的 CCPC 三个月</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_10">来源</h2>
+<p>法条（现行合订本，Act current to 2026-06-21，last amended 2026-06-18）：s.83(2)(3)(4) 资本股息选择、迟报选择与罚款（TWS-0343）· s.89(1) 的 capital dividend account / general rate income pool / general rate factor / low rate income pool 定义（TWS-0342）· s.123.3 投资收入附加可退还税 10⅔% 与 substantive CCPC（TWS-0341）· s.125(5.1)(b) 被动收入递减公式、s.125(5.2) 反避税、s.125(7) 的 AAII 与 CCPC 定义（TWS-0166）· s.129(1) 股息退税与三年时效、s.129(4) 的 AII 与双池 RDTOH 定义、s.129(6) 联营公司付款视同经营（TWS-0339）· s.184(2)(3) 资本股息超额派发的 Part III 税与补救选择（TWS-0344）· s.185.1(1) 超额合资格股息指定的 Part III.1 税（TWS-0345）· s.186 Part IV 税、assessable dividend 与 connected 定义（TWS-0340）· s.82(1)(b) 股息毛额化（TWS-0170）· s.121 股息税收抵免（TWS-0171）。</p>
+<p>CRA 现行页面（T2 指南页脚更新日 2026-05-28）：第 6 章 Part I 可退还部分、RDTOH 与股息退税（TWS-0346）· 第 7 章 line 604 与 line 608（TWS-0347）· 第 8 章 line 710 Part III.1 税、line 712 Part IV 税与 connected 判据（TWS-0348）· 第 4 章小企业扣除与两条递减（TWS-0162）· 公司税率与省表（TWS-0021）· 公司税变化年表（TWS-0045）· 合资格股息的指定与通知（TWS-0349）。</p>
+<p>卑诗省：公司税率与经营限额页，含「一般率适用于投资收入」的明文（TWS-0169）。</p>
+<p>知识单元：TKU-0024（加速投资激励与即时费用化已恢复）· TKU-0025（联邦三个率未变、省级限额已非通则）· TKU-0106（应税资本递减区间的教材错位）· TKU-0107（CRA 两页自相矛盾，跨省务必对读）。</p>
+<p>本页省级税负的核法边界：BC ITA s.14(2)、(3)及(6)–(8)，2026-09-07 回核；资本利得退还的特殊公司资格与本页普通 CCPC 假设分开（TWS-0056）。</p>
+    <div class="doc-nav"><a href="ca-corporate-01-t2-intro-sbd.html">← 公司是另一个纳税人：T2 入门与小企业扣除（T2 R</a><a href="ca-corporate-03-salary-vs-dividend.html" class="r">业主经理的薪酬：工资还是分红（Salary vs.  →</a></div>
+    <div class="doc-src">来源：<code>self</code></div>
+  </article>
+  <aside class="doc-aside">
+    <details class="doc-toc-details" open>
+      <summary class="doc-toc-summary"><span>本页目录</span><span class="doc-toc-icon">▾</span></summary>
+      <div class="toc"><div class="toc">
+<ul>
+<li><a href="#_1">一、制度设计与底层逻辑：为什么公司投资要单设一整套税</a><ul>
+<li><a href="#11">1.1 一句话的原则：递延可以，永久便宜不行</a></li>
+<li><a href="#12">1.2 三道门，一条出口</a></li>
+<li><a href="#13">1.3 谁与谁在博弈</a></li>
+<li><a href="#14">1.4 错报的三种法律后果</a></li>
+</ul>
+</li>
+<li><a href="#2026">二、2026 税年现行规则与数字</a><ul>
+<li><a href="#21-aii-aaii">2.1 「被动」有两个口径：AII 与 AAII</a></li>
+<li><a href="#22-aaii">2.2 递减：每一元超额AAII削减五元限额</a></li>
+<li><a href="#23-3823-3023">2.3 投资收入自己的税率：38⅔% 里有 30⅔% 会回来</a></li>
+<li><a href="#24-part-iv-3813">2.4 Part IV 税：38⅓%，但要先分联结与非联结</a></li>
+<li><a href="#25-rdtoh2019">2.5 双池 RDTOH：2019 年起，一个账户拆成两个</a></li>
+<li><a href="#26">2.6 资本股息账户：免税的那一半怎么零税送出去</a></li>
+<li><a href="#27-grip">2.7 GRIP 与合资格股息：把「已经交足税」的部分标出来</a></li>
+<li><a href="#28">2.8 三列表：教材那一年、去年、今年</a></li>
+</ul>
+</li>
+<li><a href="#_2">三、实务流程：一张附表、四个账户、两个时点</a><ul>
+<li><a href="#31">3.1 从财报到四个数</a></li>
+<li><a href="#32">3.2 四张附表与两张表格，各管一个账户</a></li>
+<li><a href="#33">3.3 两个时点，和一条时效</a></li>
+<li><a href="#34">3.4 要留什么凭证</a></li>
+</ul>
+</li>
+<li><a href="#_3">四、联邦之外：卑诗省这一格怎么走</a></li>
+<li><a href="#_4">五、历史变革：这套规则是分三次装上去的</a></li>
+<li><a href="#_5">六、案例</a><ul>
+<li><a href="#_6">案例一 · 温哥华的两人咨询公司：一笔利息，明年多交三万二</a></li>
+<li><a href="#part-iv">案例二 · 列治文的家族控股公司：Part IV 税走一圈又回来</a></li>
+<li><a href="#_7">案例三 · 素里的家族制造公司：卖厂房的三重后果</a></li>
+</ul>
+</li>
+<li><a href="#_8">七、常见错报与自查清单</a></li>
+<li><a href="#_9">术语双语对照</a></li>
+<li><a href="#_10">来源</a></li>
+</ul>
+</div>
+</div>
+    </details>
+    
+    <h3>同板块</h3><ul class="rel"><li><a href="ca-corporate-01-t2-intro-sbd.html">公司是另一个纳税人：T2 入门与小企业扣除（T2 Return &amp; Small </a></li><li><a href="ca-corporate-03-salary-vs-dividend.html">业主经理的薪酬：工资还是分红（Salary vs. Dividend）</a></li><li><a href="ca-corporate-04-shareholder-loans-s85-abil-windup.html">公司与股东之间的四种交易：股东贷款、s.85 转让、ABIL 与清算解散（Sha</a></li><li><a href="ca-corporate-05-payroll-taxable-benefits.html">公司给自己人发钱：薪酬、应税福利与股东福利（Corporate Remunera</a></li><li><a href="ca-corporate-06-npo-tax-exempt.html">不交税，但要交三份表：免税组织、非营利组织与 T1044（Tax-Exempt </a></li><li><a href="ca-corporate-07-financial-statements-gifi-schedule1.html">账上的利润不是税上的利润：财报、GIFI 与 Schedule 1 的税会调整（</a></li></ul>
+    
+    <a class="vv-btn vv-btn--primary" style="width:100%;margin-top:16px"
+       href="../drill.html?bp=ca-corporate">练这个板块的题 →</a>
+  </aside>
+</div></main>
+<footer class="foot">
+  <p><b>微出国 · 学</b> — 自雇与小生意 · 公司 T2 · 2 模块复习自测。内容是学习者视角的整理，不是任何机构的培训教材，也不构成税务意见。<br>
+  现行数字一律以 CRA / IRS / 财政部现行文件为准；个案请咨询持牌专业人士。发现错的地方，回论坛帖里说一声。</p>
+</footer>
+<script>var UP_PATH="../";var BUILD_TIME="1789230896";</script>
+<script>
+if((localStorage.getItem('vv-theme')||'')==='dark')
+  document.documentElement.setAttribute('data-theme','dark');
+
+// 自动版本更新检测：对比 DOM 的 BUILD_TIME 与服务器最新 manifest.json，出现新版本时带时间戳无缝重载绕过 HTTP 磁盘缓存
+(function(){
+  function checkVersion(){
+    var up = typeof UP_PATH !== 'undefined' ? UP_PATH : '';
+    fetch(up + 'assets/manifest.json?t=' + Date.now(), { cache: 'no-store' }).then(function(r){
+      return r.ok ? r.json() : null;
+    }).then(function(m){
+      if(!m || !m.build_time) return;
+      var serverBuild = String(m.build_time);
+      var clientBuild = typeof BUILD_TIME !== 'undefined' ? String(BUILD_TIME) : '';
+      if(clientBuild && serverBuild && clientBuild !== serverBuild){
+        var reloaded = sessionStorage.getItem('vv_reloaded_build');
+        if(reloaded !== serverBuild){
+          sessionStorage.setItem('vv_reloaded_build', serverBuild);
+          var u = new URL(location.href);
+          u.searchParams.set('_v', serverBuild);
+          location.replace(u.href);
+        } else if(!document.getElementById('vv-update-banner')) {
+          var bar = document.createElement('div');
+          bar.id = 'vv-update-banner';
+          bar.className = 'vv-update-banner';
+          bar.innerHTML = '🎉 网站已更新到最新版本，建议按 <b>Ctrl+F5</b> (或 <b>Cmd+Shift+R</b>) 强制刷新页面。<button onclick="location.reload(true)">立即刷新</button>';
+          document.body.prepend(bar);
+        }
+      }
+    }).catch(function(){});
+  }
+
+  checkVersion();
+  document.addEventListener('visibilitychange', function(){
+    if(document.visibilityState === 'visible') checkVersion();
+  });
+  window.addEventListener('focus', checkVersion);
+  setInterval(checkVersion, 5 * 60 * 1000);
+})();
+
+// 页眉登录态。身份服务不在（纯静态托管、或还没起 dev-server）时静默跳过——
+// 内容页是公开的，永远不该因为身份服务缺席而坏掉。
+fetch('/api/me').then(function(r){return r.ok?r.json():null;}).then(function(m){
+  if(!m||document.getElementById('vv-auth'))return;
+  var n=document.querySelector('.vv-header nav');if(!n)return;
+  var e=document.createElement('span');e.id='vv-auth';e.className='auth';
+  e.innerHTML=m.loggedIn
+    ?'<span title="学习记录已跨设备同步">'+m.username+'</span> <a href="/auth/logout">退出</a>'
+    :'<a href="/auth/login?next='+encodeURIComponent(location.pathname)+'">登录</a>';
+  n.after(e);
+}).catch(function(){});
+
+// ── 阅读器增强：专注/最大化模式 & 键盘/手势切页 ──
+(function(){
+  var prevUrl = typeof PREV_URL !== 'undefined' ? PREV_URL : '';
+  var nextUrl = typeof NEXT_URL !== 'undefined' ? NEXT_URL : '';
+
+  function updateMaxBtns(isMax) {
+    var btns = document.querySelectorAll('.vv-reader-btn-max');
+    for(var i=0; i<btns.length; i++) {
+      btns[i].innerHTML = isMax ? '✕ 退出专注' : '⛶ 专注阅读';
+    }
+  }
+
+  window.toggleDocMaximize = function() {
+    var root = document.documentElement;
+    var isMax = root.classList.toggle('is-doc-maximized');
+    try { localStorage.setItem('vv_doc_maximized', isMax ? 'true' : 'false'); } catch(e){}
+    updateMaxBtns(isMax);
+  };
+
+  function updateAsideBtns(isCol) {
+    var btns = document.querySelectorAll('.vv-aside-btn');
+    for(var i=0; i<btns.length; i++) {
+      btns[i].innerHTML = isCol ? '◨ 展开侧栏' : '◧ 折叠侧栏';
+    }
+  }
+
+  window.toggleSidebarCollapse = function() {
+    var root = document.documentElement;
+    var isCol = root.classList.toggle('is-aside-collapsed');
+    try { localStorage.setItem('vv_aside_collapsed', isCol ? 'true' : 'false'); } catch(e){}
+    updateAsideBtns(isCol);
+  };
+
+  try {
+    if(localStorage.getItem('vv_aside_collapsed') === 'true') {
+      document.documentElement.classList.add('is-aside-collapsed');
+      setTimeout(function(){ updateAsideBtns(true); }, 0);
+    }
+  } catch(e){}
+
+  // 本页目录 <details> 状态记忆
+  var tocDet = document.querySelector('.doc-toc-details');
+  if(tocDet) {
+    try {
+      if(localStorage.getItem('vv_toc_open') === 'false') {
+        tocDet.removeAttribute('open');
+      }
+    } catch(e){}
+    tocDet.addEventListener('toggle', function() {
+      try { localStorage.setItem('vv_toc_open', tocDet.open ? 'true' : 'false'); } catch(e){}
+    });
+  }
+
+  document.addEventListener('keydown', function(e) {
+    var tag = (e.target && e.target.tagName) || '';
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || e.target.isContentEditable) return;
+    if (e.key === 'ArrowLeft' && prevUrl) {
+      location.href = prevUrl;
+    } else if (e.key === 'ArrowRight' && nextUrl) {
+      location.href = nextUrl;
+    } else if (e.key === 'f' || e.key === 'F' || e.key === 'm' || e.key === 'M') {
+      toggleDocMaximize();
+    } else if (e.key === 'Escape' && document.documentElement.classList.contains('is-doc-maximized')) {
+      toggleDocMaximize();
+    }
+  });
+
+  var touchStartX = 0, touchStartY = 0;
+  document.addEventListener('touchstart', function(e) {
+    if (e.touches && e.touches.length === 1) {
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+    }
+  }, { passive: true });
+
+  document.addEventListener('touchend', function(e) {
+    if (!e.changedTouches || e.changedTouches.length !== 1) return;
+    var dx = e.changedTouches[0].clientX - touchStartX;
+    var dy = e.changedTouches[0].clientY - touchStartY;
+    if (Math.abs(dx) > 90 && Math.abs(dy) < 60) {
+      if (dx > 0 && prevUrl) {
+        location.href = prevUrl;
+      } else if (dx < 0 && nextUrl) {
+        location.href = nextUrl;
+      }
+    }
+  }, { passive: true });
+})();
+</script>
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('../sw.js').catch(()=>{}))}</script>
+</body></html>

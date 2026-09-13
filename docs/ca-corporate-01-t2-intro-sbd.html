@@ -1,0 +1,841 @@
+<!doctype html>
+<html lang="zh-CN"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>公司是另一个纳税人：T2 入门与小企业扣除（T2 Return &amp; Small Business Deduction） · 微出国 · 学</title>
+<link rel="stylesheet" href="../assets/style.css?v=1789230896">
+<script>var PREV_URL="ca-business-08-cpp-owner-manager-boundary.html";var NEXT_URL="ca-corporate-02-passive-income-grind.html";</script>
+<link rel="manifest" href="../manifest.webmanifest">
+</head>
+<body class="vv">
+<header class="vv-header">
+  <a class="vv-brand" href="../index.html"><svg viewBox="102.305 90.391 73.617 59.957" width="28" aria-hidden="true" class="mark">
+<path fill="#30D9C4" d="M 107.894531 95.808594 L 127.277344 95.808594 C 127.277344 95.808594 129.507812 95.628906 130.835938 97.679688 C 131.585938 98.910156 131.65625 100.316406 131.082031 101.546875 L 121.609375 117.953125 C 121.609375 117.953125 120.335938 120.65625 117.011719 120.824219 C 113.714844 120.910156 112.242188 118.40625 112.242188 118.40625 L 103.722656 103.652344 C 103.722656 103.652344 102.304688 101.792969 103.09375 99.332031 C 103.878906 96.878906 106.148438 95.773438 107.894531 95.808594 "/>
+<path fill="#0082CA" d="M 115.964844 124.792969 C 115.847656 124.59375 116.09375 124.378906 116.277344 124.519531 C 117.195312 125.21875 118.664062 125.902344 120.683594 125.515625 C 122.164062 125.210938 123.550781 124.296875 124.402344 122.757812 C 125.242188 121.300781 138.8125 97.8125 138.8125 97.8125 C 138.8125 97.8125 141.9375 90.917969 150.207031 90.550781 L 169.96875 90.550781 C 169.96875 90.550781 173 90.390625 174.503906 93.40625 C 175.921875 96.433594 173.941406 98.695312 173.667969 99.109375 C 173.394531 99.523438 142.203125 146.726562 142.203125 146.726562 C 142.203125 146.726562 140.003906 150.347656 135.40625 150.347656 C 130.808594 150.347656 128.707031 146.878906 128.417969 146.398438 C 128.175781 145.992188 118.835938 129.78125 115.964844 124.792969 "/></svg>微出国 · 学</a>
+  <nav><a href="../index.html">路线</a><a href="../slides.html">讲义</a><a href="../docs/" aria-current="page">讲解</a><a href="../drill.html">练习</a><a href="../exam.html">自测</a><a href="../progress.html">进度</a></nav>
+  <button class="theme" onclick="var r=document.documentElement,d=r.getAttribute('data-theme')==='dark';r.setAttribute('data-theme',d?'light':'dark');localStorage.setItem('vv-theme',d?'light':'dark')">◐</button>
+</header>
+<main><a href="ca-business-08-cpp-owner-manager-boundary.html" class="vv-float-nav vv-float-nav--prev" title="上一篇: 公司老板与自雇 CPP：两层上限为什么不能直接相加套用"><span class="vv-float-nav__icon">‹</span><span class="vv-float-nav__card"><small>← 上一篇</small><strong>公司老板与自雇 CPP：两层上限为什么不能直</strong></span></a><a href="ca-corporate-02-passive-income-grind.html" class="vv-float-nav vv-float-nav--next" title="下一篇: 公司里的钱去做投资，税就变了一个人：被动收入递减、Part IV 税与双池 RDTOH（Passive Investment Income in a CCPC）"><span class="vv-float-nav__card"><small>下一篇 →</small><strong>公司里的钱去做投资，税就变了一个人：被动收入</strong></span><span class="vv-float-nav__icon">›</span></a><div class="vv-max-dock"><span class="vv-max-dock__hint">键盘 ← → 切页 | Esc 退出</span><button class="vv-reader-btn vv-reader-btn-max" onclick="toggleDocMaximize()">✕ 退出专注</button></div>
+<div class="doc-wrap">
+  <article class="doc">
+    <div class="doc-bar">
+      <p class="crumb"><a href="../index.html">路线</a> › 加拿大 · 公司税 T2：SBD、股东贷款、s.85、ABIL、清算、NPO、薪酬规划</p>
+      <div class="doc-bar-actions">
+        <span class="vv-reader-hint">键盘 ← → 翻页</span>
+        <button class="vv-reader-btn vv-aside-btn" onclick="toggleSidebarCollapse()" title="折叠/展开右侧栏">◧ 折叠侧栏</button>
+        <button class="vv-reader-btn vv-reader-btn-max" onclick="toggleDocMaximize()" title="最大化专注阅读 (快捷键 F)">⛶ 专注阅读</button>
+      </div>
+    </div>
+    <h1>公司是另一个纳税人：T2 入门与小企业扣除（T2 Return &amp; Small Business Deduction）</h1>
+    <div class="doc-meta"><span class="vv-badge vv-badge--accent">加拿大 · 公司税 T2：SBD、股东贷款、s.85、ABIL、清算、NPO、薪酬规划 · 练习配比 37%</span><span class="vv-badge">18,613 字</span><span class="vv-badge">约 37 分钟</span></div>
+    <blockquote>
+<p>核实日期：2026-09-05｜现行口径：2026 税年（年结落在 2026 年的公司）｜复核：2027-06-30（省级低税率是本页变动最快的一格）
+法条依据指向《所得税法》(Income Tax Act, ITA) 现行合订本（Act current to 2026-06-21）；数值指向加拿大税务局 (Canada Revenue Agency, CRA) 与卑诗省财政厅的现行页面。</p>
+</blockquote>
+<p>注册一家公司之后，你手上就有了<strong>两个纳税人</strong>：你自己，和这家公司。公司有自己的税号、自己的税年、自己的税率表、自己的申报表 T2，以及一套和个人报税完全不同的时间表——报表在年结后六个月才到期，税款却在两个月或三个月就到期。这一页写给三种人：刚把自雇生意装进公司、第一次面对 T2 的小老板；想搞清楚「9% 那个税率到底怎么拿到、什么时候会被拿走」的读者；以及准备做公司税实务的学员。读完你应该能做到三件事：说清一家卑诗省的 CCPC 在 2026 税年到底交多少税、这个数是怎么从 38% 一路降到 11% 的；判断自己名下两家公司要不要分摊那 $500,000 的限额；把年结日、申报日、欠税日、分期预缴日四个时点在日历上标对位置。</p>
+<hr />
+<h2 id="_1">一、制度设计与底层逻辑：为什么要给小公司一个低税率</h2>
+<h3 id="11">1.1 公司是一个独立的纳税人，这句话的税法后果比想象中多</h3>
+<p>公司在法律上是独立法人，在税法上就是独立纳税人。它自己算收入、自己算扣除、自己交税，<strong>股东只有在真正从公司拿到钱（工资、股息、贷款）时才发生个人层面的税</strong>。这句话推出四个后果，每一个都是新手最容易踩的地方。</p>
+<p>第一，<strong>公司亏损不能拿到个人报表上抵</strong>。自雇时期的经营亏损可以直接抵你的工资收入，装进公司之后就不行了——亏损留在公司里，只能抵公司自己往前三年、往后二十年的收入。第二，<strong>公司的税年不是历年</strong>。《所得税法》s.249(1) 规定，公司的税年就是它的会计期间 (fiscal period)，个人才是历年（TWS-0167）；s.249.1(1)(a) 又规定，公司的会计期间<strong>不得超过 53 周</strong>（TWS-0168）。所以年结日是老板自己选的，选完就锁定了后面所有的期限。第三，<strong>没有活动也要报</strong>。CRA 的口径是：所有居民公司——包括非营利组织、免税公司、全年零活动的空壳公司——每个税年都要报 T2，哪怕一分钱税都不用交；例外只有三类，免税的王室公司、Hutterite 群体和全年都是注册慈善机构的公司（TWS-0163）。第四，<strong>公司交的所得税与利息都不是可扣费用</strong>，它们是税后的钱。</p>
+<h3 id="12-ccpc">1.2 CCPC 不是一个称号，是一个开关</h3>
+<p><strong>加拿大受控私人公司 (Canadian-controlled private corporation, CCPC)</strong> 是全部公司税优惠的总开关。它的定义在 ITA s.125(7)，写法是<strong>先给一个正面条件再连着三条否定</strong>：它得是一家加拿大公司且是私人公司，然后<strong>不得</strong>被一个或多个非居民控制、<strong>不得</strong>被公众公司控制、<strong>不得</strong>有任何一类股份在指定证券交易所上市（TWS-0166）。三条否定里踩中任何一条，这家公司就不是 CCPC。</p>
+<p>这个开关一关，同时消失四样东西：9% 的联邦低税率、卑诗省 2% 的省低税率、欠税期限从两个月延到三个月的那一个月宽限、以及股东转让公司股份时用终身资本利得豁免的资格。<strong>「控制」看的不只是股权比例</strong>——CRA 明确说这里的控制既包括法律上的控制 (de jure control)，也包括事实上的控制 (de facto control)（TWS-0164）。一位非居民父亲虽然只持股 40%，但如果实际上能左右董事会，这家公司就可能不是 CCPC。</p>
+<div class="vv-callout vv-callout--danger">
+<p><span class="vv-callout__icon">✕</span></p>
+<div>
+<p><strong>引入一个海外投资人，可能一次性抹掉一整套优惠</strong></p>
+<p>常见剧本：小公司融资，卖 51% 给一位居住在境外的亲戚或投资人。当年这家公司就不再是 CCPC，联邦率从 9% 跳到 15%，省率从 2% 跳到 12%，合并税负从 11% 变成 27%——<strong>税负翻了不止一倍，而合同上一个字都没提税</strong>。CCPC 的判定是「在整个税年内都是」，中途丢失就整年丢失。</p>
+</div>
+</div>
+<h3 id="13">1.3 小企业扣除的本质是递延，不是减免</h3>
+<p><strong>小企业扣除 (small business deduction, SBD)</strong> 让 CCPC 的前一段经营利润按 9% 而不是 15% 交联邦税。它在报表上是一个<strong>非退还的税额扣减</strong>——只能把应缴税减到零，减不出退税来（TWS-0162）。</p>
+<p>它省下来的钱最终是要还的。加拿大的公司税与个人税之间有一套<strong>整合 (integration)</strong> 设计：公司先交一道税，钱分给股东时，个人这一边先把股息按比例<strong>放大</strong>再课税，然后给一笔抵免把公司已经交过的那道税还回来。具体地，非合资格股息（也就是用了 SBD 的低税利润分出来的那一类）放大 15%，合资格股息放大 38%（ITA s.82(1)(b)，TWS-0170）；联邦股息税收抵免则是放大部分的 9/13 与 6/11（ITA s.121，TWS-0171）。<strong>整合想达到的效果是「公司加个人两级合计，约等于个人直接赚这笔钱的税负」</strong>，所以 SBD 真正给的不是减免，是<strong>把税推迟到分红那一天</strong>——钱留在公司里的每一年，你都在用政府的钱做生意。</p>
+<div class="vv-callout vv-callout--info">
+<p><span class="vv-callout__icon">ℹ️</span></p>
+<div>
+<p><strong>「约等于」三个字要认真读</strong></p>
+<p>抵免率是全国统一的，省级税率各省不同，所以整合永远只是近似。同一笔利润在不同省份、不同年份，走「公司留存再分红」和「直接发工资」两条路的最终税负会差几个百分点，方向还会随税率调整而翻转。<strong>任何声称「开公司一定省税」或「一定不省税」的说法都是错的</strong>——这是一道要按人、按省、按年算的题，本课的薪酬规划一篇专门处理它。</p>
+</div>
+</div>
+<h3 id="14">1.4 谁与谁在博弈</h3>
+<p><strong>第一个战场是分拆。</strong> 既然前 $500,000 享低税率，最直接的想法就是开十家公司拿十个 $500,000。税法用<strong>联营 (association)</strong> 规则封死了这条路：受同一人或同一群人控制的公司必须共享一个限额（ITA s.125(2)，TWS-0166）。这条规则的判据不是持股比例，是控制关系，而且 CRA 列了六条判定条件，其中三条把<strong>亲属关系加 25% 持股</strong>写了进去——<strong>你和你兄弟各开一家公司本来不联营，但只要其中一人在另一家里持有任何一类股份的 25%，两家就联营了</strong>（TWS-0164）。</p>
+<p><strong>第二个战场是把生意变成投资。</strong> 低税率只给<strong>加拿大境内的经营活动收入 (active business income, ABI)</strong>。利息、租金、特许权使用费这类被动收入不但拿不到 SBD，超过一定规模还会<strong>反过来吃掉经营收入的低税额度</strong>（第二节 2.3）。立法者的逻辑是：低税率是为了让小生意把钱留下来扩大再生产，不是为了让它变成一个低税的投资账户。</p>
+<p><strong>第三个战场是规模。</strong> 应税资本超过 $10,000,000 的 CCPC，低税额度按直线递减，到 $50,000,000 归零。<strong>规则想说的是：这个优惠给的是小公司，不是「私人持有的大公司」。</strong></p>
+<h3 id="15">1.5 错报的三个法律后果</h3>
+<p><strong>迟报罚是按月走的。</strong> 迟交 T2，罚款是申报期限当日<strong>未缴税款</strong>的 5%，再加每满一个整月 1%，最多 12 个月——首犯封顶 17%。如果 CRA 曾发出申报要求，且前三年内已经因迟报被罚过，罚则升级为 10% 加每月 2%、最多 20 个月，封顶 50%（TWS-0163、TKU-0030）。</p>
+<p><strong>基数是「未缴税款」而不是「税款总额」。</strong> 一家已经足额预缴、期限时不欠税的公司，哪怕迟报半年，迟报罚也是零——但<strong>这不代表可以迟报</strong>：迟报会让 CRA 的评税推迟、让部分退还性抵免失效，也会把公司推向前面那条「重犯 50%」的轨道。</p>
+<p><strong>欠税利息按季度变，而且不可扣。</strong> CRA 每季公布规定利率，2026 年第四季度的欠税利率是 7%（TWS-0022）。这个数每季度都会动，所以实务里只记机制不记数：欠税利率＝基准利率加 4 个百分点，公司多缴退息＝基准利率（个人是基准加 2 个百分点）。</p>
+<hr />
+<h2 id="2026">二、2026 税年现行规则与数字</h2>
+<h3 id="21-38-9">2.1 联邦三级税率：38% 是怎么变成 9% 的</h3>
+<p>联邦公司税不是一个税率，是一串减法。Part I 基本税率 38%，先减 10% 的<strong>联邦抵免 (federal tax abatement)</strong>（这一段留给省去收），得到 28%；不合资格享 SBD 的那部分收入再减 13% 的<strong>一般税率减免 (general tax reduction)</strong>，得到 15%；CCPC 合资格的那部分则减 19% 的 SBD，得到 9%（TWS-0021、TWS-0162）。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>2024 税年（教材口径）</th>
+<th>2025 税年</th>
+<th>2026 税年（现行）</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Part I 基本率</td>
+<td>38%</td>
+<td>38%</td>
+<td>38%</td>
+<td>长青，2026 未变（TWS-0021）</td>
+</tr>
+<tr>
+<td>联邦抵免后</td>
+<td>28%</td>
+<td>28%</td>
+<td>28%</td>
+<td>长青（TWS-0162）</td>
+</tr>
+<tr>
+<td>一般减免后（非 SBD 部分）</td>
+<td>15%</td>
+<td>15%</td>
+<td>15%</td>
+<td>长青（TWS-0021）</td>
+</tr>
+<tr>
+<td>CCPC 用 SBD 后</td>
+<td>9%</td>
+<td>9%</td>
+<td>9%</td>
+<td>长青（TWS-0021、TKU-0025）</td>
+</tr>
+<tr>
+<td>SBD 率</td>
+<td>19%</td>
+<td>19%</td>
+<td>19%</td>
+<td>长青，2019 起为 19%（ITA s.125(1.1)，TWS-0166）</td>
+</tr>
+<tr>
+<td>联邦 business limit</td>
+<td>500,000 元</td>
+<td>500,000 元</td>
+<td>500,000 元</td>
+<td>长青（ITA s.125(2)，TWS-0166）</td>
+</tr>
+<tr>
+<td>合资格零排放技术制造</td>
+<td>7.5% / 4.5%</td>
+<td>7.5% / 4.5%</td>
+<td>7.5% / 4.5%</td>
+<td>已生效（TWS-0021）</td>
+</tr>
+</tbody>
+</table>
+<p>这七格里没有一格在 2024 到 2026 之间动过，<strong>教材这一节是准的</strong>。CRA 的公司税变化年表里 2026 只有省级一节、<strong>没有联邦一节</strong>，等于官方自己确认了 2026 税年联邦公司税率与 SBD 参数零变化（TWS-0045）。<strong>「查过，没变」也是结论</strong>——年度更新时这一格可以直接跳过。</p>
+<h3 id="22-19">2.2 小企业扣除：四个数取最小，再乘 19%</h3>
+<p>SBD ＝ 19% × 下面四个数里<strong>最小</strong>的那一个（TWS-0162、TWS-0166）：</p>
+<p><strong>第一个，加拿大境内经营活动收入</strong>，落在 T2 表的 line 400。它不包括财产性收入（利息、股息、特许权使用费、租金）、指定投资业务收入和个人服务业务收入。<strong>第二个，应税收入</strong>，line 405，而且要先剔除已经用外国税收抵免抵掉的境外收入和依法免税的部分——<strong>在加拿大没交税的收入，不给低税率</strong>。<strong>第三个，business limit</strong>，line 410，独立公司是 $500,000。<strong>第四个，递减后的 business limit</strong>，line 428。</p>
+<p>四个里取最小，这个顺序本身就是设计：它保证低税率既不会给到没在加拿大经营的收入，也不会给到亏损年份，还要同时受限额和递减两道闸。</p>
+<div class="vv-callout vv-callout--warn">
+<p><span class="vv-callout__icon">⚠️</span></p>
+<div>
+<p><strong>短税年要按天数摊，而且摊的是限额不是税率</strong></p>
+<p>税年不足 51 周的，business limit 按「税年天数 ÷ 365」比例缩减，再填进 line 410（ITA s.125(5)(b)，TWS-0162、TWS-0166）。<strong>新公司第一年几乎一定是短税年</strong>：3 月 1 日注册、12 月 31 日年结，限额就是 $500,000 × 306 ÷ 365 ＝ $419,178，不是 $500,000。<strong>税率不变，变的是能享受低税率的那一段有多长。</strong></p>
+</div>
+</div>
+<h3 id="23-2022">2.3 两条递减：教材停在了 2022 年之前的旧口径</h3>
+<p>低税额度会被两件事削减：公司太大（应税资本），和公司太像投资账户（被动收入）。<strong>两条不叠加，取大者</strong>（ITA s.125(5.1) 的引导句是 "exceeds the greater of"，TWS-0166）。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>2024 税年（教材口径）</th>
+<th>2025 税年</th>
+<th>2026 税年（现行）</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>应税资本起削点</td>
+<td>10,000,000 元</td>
+<td>10,000,000 元</td>
+<td>10,000,000 元</td>
+<td>长青（TWS-0162）</td>
+</tr>
+<tr>
+<td>应税资本归零点</td>
+<td>教材写 <strong>$15,000,000</strong></td>
+<td>$50,000,000</td>
+<td><strong>$50,000,000</strong></td>
+<td>教材停在 2022-04-07 之前开始的税年的旧口径（TKU-0106）</td>
+</tr>
+<tr>
+<td>递减公式分母</td>
+<td>旧口径下应为 $11,250（<strong>待核</strong>：未回旧版条文原文）</td>
+<td>$90,000</td>
+<td><strong>$90,000</strong></td>
+<td>已生效（ITA s.125(5.1)(a)，TWS-0166）</td>
+</tr>
+<tr>
+<td>被动收入起削点</td>
+<td>50,000 元</td>
+<td>50,000 元</td>
+<td>50,000 元</td>
+<td>长青（TWS-0162）</td>
+</tr>
+<tr>
+<td>被动收入归零点</td>
+<td>150,000 元</td>
+<td>150,000 元</td>
+<td>150,000 元</td>
+<td>长青（TWS-0162）</td>
+</tr>
+<tr>
+<td>每 $1 超额被动收入削减</td>
+<td>$5</td>
+<td>$5</td>
+<td>$5</td>
+<td>长青（ITA s.125(5.1)(b)）</td>
+</tr>
+<tr>
+<td>两条递减的关系</td>
+<td>取大者</td>
+<td>取大者</td>
+<td>取大者</td>
+<td>长青（TWS-0166）</td>
+</tr>
+</tbody>
+</table>
+<p><strong>这是本页最重要的一处教材错位。</strong> 教材写的是「应税资本在 $10,000,000 到 $15,000,000 之间按比例削减，$15,000,000 及以上归零」；现行规则是 <strong>$10,000,000 到 $50,000,000 直线递减，$50,000,000 归零</strong>，改动自 2022 年预算，适用于 <strong>2022 年 4 月 7 日之后开始的税年</strong>。CRA 的 T2 指南把新旧两版并排印着，旧的那一句原文写着「For tax years starting before April 7, 2022, the range is $10 million to $15 million」——<strong>所以这不是教材抄错，是教材停在了一个已经作废四年的口径上</strong>（TWS-0162、TKU-0106）。</p>
+<p>条文本身就是证据。ITA s.125(5.1)(a) 的公式是 <strong>A × B ÷ $90,000</strong>，其中 <strong>B ＝ 0.225% × (C − $10 million)</strong>，A 是本来的 business limit、C 是上一税年的应税资本。把 C ＝ $50,000,000 代进去：B ＝ 0.225% × $40,000,000 ＝ $90,000，比值恰好是 1，限额被全额削掉。<strong>分母 $90,000 这个数本身就锁死了归零点是 $50,000,000</strong>（TWS-0166）。</p>
+<p><strong>方向性后果很大。</strong> 一家应税资本 $26,000,000 的家族制造公司，按教材算 SBD 是零，按现行规则还剩 $300,000 的低税额度——差一年将近五万加元的税（第六节案例三）。</p>
+<p>被动收入那条的公式是 <strong>D ÷ $500,000 × 5 × (E − $50,000)</strong>：独立公司 D ＝ $500,000，比值为 1，于是<strong>上一税年每多 $1 超过 $50,000 的调整后被动投资收入，本年就少 $5 的低税额度</strong>，被动收入到 $150,000 时额度归零。这条规则的完整机制、什么算「调整后」、以及它与退还性股息税的互动，在本板块下一篇（ca-corporate-02-passive-income-grind）里展开。</p>
+<div class="vv-callout vv-callout--info">
+<p><span class="vv-callout__icon">🔧</span></p>
+<div>
+<p><strong>两条递减都看「上一年」和「整个联营组」</strong></p>
+<p>应税资本用的是<strong>上一税年</strong>的数，被动收入用的也是<strong>上一税年</strong>的数，而且两者都要把<strong>全部联营公司</strong>加总。所以「今年把投资挪出去」救不了今年，只能救明年；而「把投资放到另一家自己控股的公司里」通常什么也救不了，因为那家公司多半和这家联营。应税资本合计超过 $10,000,000 的，还要随报 Schedule 33／34／35（TWS-0162）。</p>
+</div>
+</div>
+<h3 id="24">2.4 联营与限额分摊：一张表决定几家公司分几份</h3>
+<p>联营 CCPC 必须共同填一张 <strong>Schedule 23</strong>，把那一个 $500,000 按百分比分给各家，<strong>合计不得超过 100%</strong>；一个日历年里只需要其中一家提交，但 CRA 评税时如果找不到这张表，会主动来要（TWS-0164）。另外，凡与其他公司有关联或联营关系的，都要填 <strong>Schedule 9</strong> 把关系报清楚。</p>
+<p>CRA 列的六条联营判定条件，可以压成三句话记：<strong>一家控制另一家</strong>；<strong>同一人或同一群人控制两家</strong>；<strong>两家分别由互相有亲属关系的人控制，且其中一人在两家里都持有某一类股份的 25% 以上</strong>（后一句涵盖第 3 到第 5 条的各种变体）。第六条是<strong>穿透第三家公司</strong>：A 和 B 本来不联营，但两家都与 C 联营，则 A 与 B 视为联营——除非 C 提交 <strong>Schedule 28</strong> 作「不视为通过第三家公司联营」的选择，而这个选择有代价：作出选择之后，从 C 那里流过来的、被视为经营收入的投资收入<strong>不能享受 SBD</strong>（TWS-0162、TWS-0164）。</p>
+<h3 id="25">2.5 已宣布但还不是规则的一条</h3>
+<p>2025 年预算提出对<strong>分层公司结构 (tiered corporate structures) 的递延限制</strong>，收紧通过多层控股公司延后个人层面课税的空间。它写在实施法案 C-31 里，到本页核实日仍在众议院委员会审议、<strong>尚未御准</strong>（TWS-0027）。<strong>没有御准就不是规则</strong>，2026 税年的产物里它只能作提示出现。本课的三态纪律是：已生效 / 已宣布 / 拟议，三者永不混写。</p>
+<p>同一部法案里还有一条对小公司更实际的：<strong>制造加工建筑的临时即时费用化</strong>，同样是「已宣布」。而<strong>加速投资激励与即时费用化的恢复</strong>已经随 C-15 生效，适用于 2025 年 1 月 1 日及以后取得的合资格资产（TKU-0024）——<strong>同一份预算里的措施，生效状态可以完全不同，必须逐条查，不能整份预算一起当真。</strong></p>
+<hr />
+<h2 id="_2">三、实务流程：一张表、一套附表、四个时点</h2>
+<h3 id="31-t2gifi">3.1 从财报到 T2：GIFI 这一步</h3>
+<p>T2 不是从零填起的，它是从公司的财务报表接进来的。这个接口叫 <strong>GIFI（General Index of Financial Information，财务信息通用索引）</strong>：每一个会计科目对应一个标准代码，把资产负债表填进 <strong>Schedule 100</strong>、损益表填进 <strong>Schedule 125</strong>、再用 <strong>Schedule 141</strong> 回答一组关于「财报是谁做的、做到什么程度」的问题。新公司的第一份报表还要附 <strong>Schedule 101</strong> 期初资产负债表（TWS-0164）。</p>
+<p><strong>电子申报之后不需要另交纸质财报和附注</strong>——附注和会计师报告可以随电子申报一起传（TWS-0164）。CRA 对电子申报的服务承诺是 45 天内处理 95% 的 T2（TWS-0163）。</p>
+<p>GIFI 之所以存在，是因为<strong>会计利润不等于税务利润</strong>。GIFI 把会计的数原样搬进来，然后由 <strong>Schedule 1</strong> 负责把两者之间的差异一笔笔调平：把不可扣的加回去（所得税拨备、账面折旧、餐费娱乐费中不可扣的那一半、俱乐部会费、超限车辆费用、罚款利息），再把税法允许的减下来（<strong>Schedule 8</strong> 算出来的资本成本折让 CCA、<strong>Schedule 6</strong> 算出来的应税资本利得口径差异）。Schedule 1 的结果就是<strong>税务净收入</strong>，再减掉捐赠（Schedule 2）、公司间股息（Schedule 3）、亏损结转（Schedule 4），得到<strong>应税收入</strong>。</p>
+<h3 id="32-t2">3.2 T2 附表地图</h3>
+<table>
+<thead>
+<tr>
+<th>附表</th>
+<th>管什么</th>
+<th>什么时候必须有</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Schedule 100 / 125 / 141</td>
+<td>资产负债表 / 损益表 / 财报附加信息（GIFI）</td>
+<td>有账面数据就要（全年零活动的可免）</td>
+</tr>
+<tr>
+<td>Schedule 101</td>
+<td>期初资产负债表</td>
+<td>新公司第一份报表</td>
+</tr>
+<tr>
+<td>Schedule 1</td>
+<td>会计净收入调整到税务净收入</td>
+<td>几乎所有公司</td>
+</tr>
+<tr>
+<td>Schedule 2 / 3 / 4</td>
+<td>捐赠 / 股息收付 / 亏损结转与回抵</td>
+<td>有对应事项时</td>
+</tr>
+<tr>
+<td>Schedule 6 / 8</td>
+<td>资本财产处置 / 资本成本折让</td>
+<td>有处置或有折旧资产时</td>
+</tr>
+<tr>
+<td>Schedule 7</td>
+<td>合计投资收入与合资格 SBD 的收入</td>
+<td>有被动收入的 CCPC</td>
+</tr>
+<tr>
+<td>Schedule 9</td>
+<td>关联与联营公司清单</td>
+<td>与任何公司有关联或联营</td>
+</tr>
+<tr>
+<td>Schedule 23</td>
+<td>联营 CCPC 分摊 business limit 的协议</td>
+<td>所有联营 CCPC（每日历年一份）</td>
+</tr>
+<tr>
+<td>Schedule 28</td>
+<td>选择不通过第三家公司视为联营</td>
+<td>想切断穿透联营时</td>
+</tr>
+<tr>
+<td>Schedule 33 / 34 / 35</td>
+<td>在加拿大使用的应税资本</td>
+<td>应税资本超过 $10,000,000</td>
+</tr>
+<tr>
+<td>Schedule 50</td>
+<td>持股 10% 以上的股东（最多列 10 名）</td>
+<td>私人公司</td>
+</tr>
+<tr>
+<td>Schedule 427</td>
+<td>卑诗省公司税计算</td>
+<td>在 BC 有常设机构</td>
+</tr>
+</tbody>
+</table>
+<p>T2 表本身在 CRA 的编号体系里是 Schedule 200，页 4 是 SBD 的计算区（line 400 / 405 / 410 / 422 / 426 / 428，结果填 line 430），页 8 是 Part I 税的汇总区，SBD 在那里从应缴税里扣下去（TWS-0162）。</p>
+<div class="vv-callout vv-callout--info">
+<p><span class="vv-callout__icon">ℹ️</span></p>
+<div>
+<p><strong>Schedule 50 是一张「谁在开这家公司」的名片</strong></p>
+<p>只要是私人公司，持有普通股或优先股 <strong>10% 以上</strong>的股东都要报上去，最多列十名（TWS-0164）。它不参与算税，却是 CRA 判定控制、联营、股东贷款、股息归属的第一手材料——<strong>填错这张表，后面所有关于「谁控制谁」的判断都会被质疑。</strong></p>
+</div>
+</div>
+<h3 id="33">3.3 四个时点，四个不同的日子</h3>
+<p><strong>第一个是年结日</strong>，老板自己选，会计期间不得超过 53 周。<strong>第二个是申报截止日：年结后六个月。</strong> 年结落在月末的，就是第六个月的月末；年结不在月末的，是第六个月的<strong>同一日</strong>（TWS-0163）。3 月 31 日年结 → 9 月 30 日申报；10 月 2 日年结 → 次年 4 月 2 日申报。</p>
+<p><strong>第三个是欠税截止日：年结后两个月</strong>，而<strong>不是</strong>六个月。这是新老板最常踩的坑：报表还没做，钱已经该交了。满足下面全部条件的 CCPC 可以延到<strong>三个月</strong>：整个税年都是 CCPC；本年申报了 SBD、或上年获准了 SBD；并且——不联营的看自己上一税年的应税收入没超过当年的 business limit，联营的看全组上一日历年结束的那些税年的应税收入合计没超过它们的 limit 合计（TWS-0163）。</p>
+<p><strong>第四个是分期预缴日。</strong> Part I、VI、VI.1、XIII.1 四类税合计，<strong>上一年或本年任一年不超过 $3,000</strong> 就免分期（TWS-0163）。超过就要按月缴；<strong>符合四个并列条件的可以改按季度缴</strong>：是 CCPC；前十二个月<strong>完美合规</strong>（GST/HST、源头扣缴、CPP、EI、所得税全部按时报缴）；连同全部联营公司应税收入不超过 $500,000；连同全部联营公司在加拿大使用的应税资本不超过 $10,000,000（TWS-0165）。</p>
+<div class="vv-callout vv-callout--warn">
+<p><span class="vv-callout__icon">⚠️</span></p>
+<div>
+<p><strong>首期不是「一个月后」，是「一个月差一天」</strong></p>
+<p>CRA 的原话是 one month less a day from the starting day of your tax year（TWS-0165）。税年从 1 月 1 日起的，首期是 1 月 31 日，看起来像月末所以没人出错；但税年从 11 月 11 日起的，首期是 <strong>12 月 10 日</strong>，不是 12 月 11 日、更不是 12 月 31 日。<strong>季度缴同理，是「一个季度差一天」。</strong> 新公司第一个税年不需要分期预缴，但第二个税年的首期，往往在第一年的报表还没做完之前就到了。</p>
+<p>另一处容易漏：中途丢掉季度缴资格（例如一次 GST 迟缴打破完美合规）的公司，允许把当季那一期交完，从下一季开始转月缴（TWS-0165）。<strong>公司税的缴款节奏被销售税和薪资的合规记录绑着，这是三套制度之间少见的硬联动。</strong></p>
+</div>
+</div>
+<hr />
+<h2 id="_3">四、联邦之外：卑诗省这一格怎么走</h2>
+<p>省级公司所得税<strong>没有自己的申报表</strong>。在 BC 有常设机构的公司，用同一份 T2 加一张 <strong>Schedule 427</strong> 就把省税一起算了，不需要单独的省级税号（TWS-0169）。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>2024 税年（教材口径）</th>
+<th>2025 税年</th>
+<th>2026 税年（现行）</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BC 小企业率</td>
+<td>2%</td>
+<td>2%</td>
+<td>2%</td>
+<td>长青，2017-04-01 起未变（TWS-0169）</td>
+</tr>
+<tr>
+<td>BC 一般率</td>
+<td>12%</td>
+<td>12%</td>
+<td>12%</td>
+<td>长青，2018-01-01 起未变（TWS-0169）</td>
+</tr>
+<tr>
+<td>BC business limit</td>
+<td>500,000 元</td>
+<td>500,000 元</td>
+<td>500,000 元</td>
+<td>长青，2010-01-01 起未变（TWS-0021、TWS-0169）</td>
+</tr>
+<tr>
+<td>CCPC 合并税负（限额内）</td>
+<td>11%</td>
+<td>11%</td>
+<td>11%</td>
+<td>已生效（9% ＋ 2%）</td>
+</tr>
+<tr>
+<td>一般合并税负</td>
+<td>27%</td>
+<td>27%</td>
+<td>27%</td>
+<td>已生效（15% ＋ 12%）</td>
+</tr>
+<tr>
+<td>BC 制造加工投资税收抵免</td>
+<td>无此2026新项目</td>
+<td>无此2026新项目</td>
+<td>2026-04-01 起合资格净支出适用15%；每年支出上限200万元，关联公司共享</td>
+<td>已生效：BC ITA ss.110.1–110.7（TWS-0570）</td>
+</tr>
+</tbody>
+</table>
+<p>制造加工抵免要同时核主体、资产、日期。公司须全年为 CCPC、当年在 BC 有常设机构；合资格新资产的取得、支出与可供使用均有日期限制。2026-04-01 至 2031-03-31 支出期的税率为15%，2031年4月后按法定分段递减，不能把15%写成永久税率。净支出要扣指定援助，且只在资产达到可供使用的税年申领；s.110.7 的视同已付款机制支持退还性（TWS-0570）。</p>
+<p>示例：2026年合资格新设备净支出100万元，当年可供使用，其他资格均满足且未占用关联公司共同限额，则本项抵免为15万元。这是抵免金额，不是额外15万元费用扣除；之后出售、改用途或移出BC还可能触发 s.110.5 追回。</p>
+<p><strong>BC 的关键机制是：它的低税率没有自己的资格判据，直接挂在联邦 SBD 上。</strong> 省页的原话是「适用于有合资格享联邦小企业扣除的经营活动收入的 CCPC」（TWS-0169）。<strong>推论有两层</strong>：一，联邦那边因为应税资本或被动收入被削掉的额度，BC 这边同步削掉，一次踩线两处受损；二，BC 不另设省级 business limit，所以不会出现「联邦限额和省限额不一样」的双轨算法——<strong>这一点不能推广到全国</strong>，新斯科舍省的限额是 $700,000、爱德华王子岛与萨斯喀彻温省是 $600,000（TWS-0021、TKU-0025）。</p>
+<p>跨期还有一条：税率或限额在税年中间变了的，要按各段实际适用的天数分摊计算（TWS-0169）。BC 这几年没触发过，但隔壁省 2026 年就触发了。</p>
+<h3 id="41">4.1 官方页会自己跟自己打架，这一处正在打</h3>
+<table>
+<thead>
+<tr>
+<th>省</th>
+<th>CRA 公司税率省表（页面日期 2025-05-30）</th>
+<th>CRA 公司税变化年表（页面日期 2026-06-12）</th>
+<th>2026 税年该怎么用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Newfoundland and Labrador</td>
+<td>2.5%</td>
+<td><strong>2.0%，追溯至 2026-01-01</strong></td>
+<td>用 2.0%</td>
+</tr>
+<tr>
+<td>Ontario</td>
+<td>3.2%</td>
+<td><strong>2.2%，2026-07-01 起</strong></td>
+<td>跨期分段：上半年 3.2%、下半年 2.2%</td>
+</tr>
+<tr>
+<td>British Columbia</td>
+<td>2%</td>
+<td>无变化</td>
+<td>用 2%</td>
+</tr>
+</tbody>
+</table>
+<p>两张页都是 CRA 官方、都是现行页，<strong>给出的数不一样</strong>（TWS-0021、TWS-0045、TKU-0107）。采信规则很简单：<strong>带立法件与日期的那一页优先</strong>——变化年表每条前面都挂着预算日期或法案号，省表没有。更要紧的是<strong>问题本身要问对</strong>：不是「哪个数对」，而是「<strong>这一页是哪一天的快照</strong>」。省表页脚写着 2025-05-30，它就只能代表那一天。</p>
+<div class="vv-callout vv-callout--info">
+<p><span class="vv-callout__icon">🔧</span></p>
+<div>
+<p><strong>越容易搜到的那一页，越可能是旧的</strong></p>
+<p>搜索引擎排在最前面的通常是那张总表，而变化年表要多点两下才到。<strong>做省级税率这一格时，永远两页都开，且以带日期的那一页为准。</strong> 这条纪律的成本是每次多一次抓取，收益是不会把一整年的省税算错。</p>
+</div>
+</div>
+<hr />
+<h2 id="_4">五、历史变革：这套规则是怎么长成现在这样的</h2>
+<p><strong>联邦低税率这一档在 2019 年定型。</strong> ITA s.125(1.1) 把 SBD 率写成「2018 年之后的天数按 19%」（TWS-0166），配合 28% 的抵免后基本率，就得到今天的 9%。此前它是分年往下走的一串数，2019 年之后再没动过——<strong>七个税年不变，这在本课里是罕见的稳定</strong>。</p>
+<p><strong>BC 这两个率也在同一个窗口定型：</strong> 小企业率 2017 年 4 月 1 日从 2.5% 降到 2.0%，一般率 2018 年 1 月 1 日从 11.0% 升到 12.0%，此后至 2026 税年再未变动（TWS-0169）。<strong>注意方向相反</strong>——省级政策在同一时期一边补贴小公司、一边向大公司加价，这不是笔误，是取向。</p>
+<p><strong>大 CCPC 的门槛在 2022 年放宽。</strong> 应税资本递减的归零点从 $15,000,000 抬到 $50,000,000，适用于 2022 年 4 月 7 日之后开始的税年（TWS-0162）。政策理由是通胀与资产价格已经让原来的门槛把很多真正的中小企业挡在外面。<strong>教材停在了这次改动之前</strong>，这一条是本页写作的首要理由。</p>
+<p><strong>被动收入递减是 2018 年那一轮私人公司税制改革的产物。</strong> 那一轮改革回应的问题是：低税率让 CCPC 成了一个高效的储蓄工具，同样一笔钱在公司里滚存比在个人手里滚存有明显优势。立法者没有取消低税率，而是加了这条「你越像投资账户、低税额度越少」的递减——<strong>这是一条典型的「不禁止，只定价」的规则</strong>。</p>
+<p><strong>2026 年的动静全在省一级。</strong> 纽芬兰与拉布拉多把低税率从 2.5% 降到 2.0%，并已排好 2027 年降到 1.5%、2028 年降到 1% 的时间表；安大略把低税率从 3.2% 降到 2.2%；新斯科舍把金融机构资本税从 4% 提到 6%（TWS-0045）。<strong>省际竞争已经取代联邦调整，成为公司税率变动的主要来源</strong>——年度更新时，联邦那一格通常可以跳过，省级那一格必须逐省重扫。</p>
+<hr />
+<h2 id="_5">六、案例</h2>
+<h3 id="11_1">案例一 · 温哥华的两人咨询公司：11% 是怎么来的</h3>
+<p><strong>情景（示例）。</strong> 陈先生与合伙人在温哥华注册了一家 IT 咨询公司，两人都是加拿大居民、各持 50%，公司没有其他股东、不与任何公司联营、应税资本远低于千万级、没有投资收入。2026 税年年结 12 月 31 日，全部收入都是加拿大境内经营活动收入，应税收入 $320,000。</p>
+<p><strong>适用规则。</strong> 公司是 CCPC；SBD ＝ 19% × min（line 400 的 $320,000、line 405 的 $320,000、line 410 的 $500,000、line 428 的 $500,000）＝ 19% × $320,000 ＝ <strong>$60,800</strong>。</p>
+<p><strong>算出的数。</strong> 联邦：38% × $320,000 ＝ $121,600，减 10% 抵免的 $32,000 得 $89,600，再减 SBD 的 $60,800，<strong>联邦应缴 $28,800</strong>——正好是 9%。BC：2% × $320,000 ＝ <strong>$6,400</strong>。<strong>合计 $35,200，合并税负 11%。</strong> 作为对照：如果这家公司因为引入了一位非居民股东而不再是 CCPC，同一笔收入要交 15% ＋ 12% ＝ 27%，也就是 <strong>$86,400，多交 $51,200</strong>。</p>
+<p><strong>日历。</strong> 年结 2026-12-31 → 欠税日 2027-03-31（符合三个月宽限）→ 申报日 2027-06-30。<strong>报表还有三个月才到期，钱已经该交了</strong>。</p>
+<p><strong>如果这是第一年。</strong> 假设公司是 2026 年 3 月 1 日注册、当年 12 月 31 日首次年结，税年 306 天，business limit ＝ $500,000 × 306 ÷ 365 ＝ <strong>$419,178</strong>。$320,000 仍在限额内，SBD 不受影响；但如果当年应税收入是 $460,000，就有 $40,822 落到 15% ＋ 12% 上。<strong>第一年不需要分期预缴，第二年要，而第二年的首期常常在第一年报表做完之前就到了。</strong></p>
+<p><strong>常见错报。</strong> 把 $500,000 当成「免税额」，以为前五十万不用交税——它是<strong>享受低税率的上限</strong>，不是免税额；限额内的收入照样交 11%。</p>
+<h3 id="_6">案例二 · 素里的一对夫妻两家公司：联营还是不联营</h3>
+<p><strong>情景（示例）。</strong> 王先生 100% 持有一家装修公司 A，王太太 100% 持有一家清洁公司 B，两人是配偶。A 的 2026 税年应税收入 $380,000，B 是 $260,000，两家都全是加拿大经营活动收入。</p>
+<p><strong>适用规则。</strong> 光是「配偶各开一家公司」<strong>不构成联营</strong>——判定条件要求的是：两家分别由互相有亲属关系的人控制，<strong>并且其中一人在两家公司里都持有某一类股份（指定股份除外）的 25% 以上</strong>（TWS-0164）。王先生在 B 里持股为零，条件不成立，两家各自享有完整的 $500,000。</p>
+<p><strong>算出的数（不联营）。</strong> $380,000 与 $260,000 都在各自限额内，全部按 11% 计：合计 $70,400。</p>
+<p><strong>变量一改，结论就翻。</strong> 假设为了让王先生能签合同，公司给了他 B 的 30% 普通股。这时条件成立，两家<strong>联营</strong>，必须共填一张 Schedule 23 分摊那一个 $500,000。假设按 $300,000 / $200,000 分：A 有 $80,000、B 有 $60,000 共 $140,000 落到一般率，<strong>多交 $140,000 × 16% ＝ $22,400</strong>。</p>
+<p><strong>常见错报。</strong> 只报了 Schedule 9 却没报 Schedule 23，或者两家各填 100%。<strong>合计超过 100% 的分摊 CRA 会直接调整</strong>；而一张都不填，CRA 会来要，要不到就自行分配。</p>
+<h3 id="_7">案例三 · 列治文的家族制造公司：教材算法差了四万八</h3>
+<p><strong>情景（示例）。</strong> 一家列治文的家族制造公司，CCPC，无联营，上一税年在加拿大使用的应税资本 $26,000,000，2026 税年应税收入 $700,000，全部是经营活动收入；上一税年调整后被动投资收入 $80,000。</p>
+<p><strong>按现行规则算。</strong> 应税资本那条：B ＝ 0.225% × ($26,000,000 − $10,000,000) ＝ $36,000；递减额 ＝ $500,000 × $36,000 ÷ $90,000 ＝ <strong>$200,000</strong>。被动收入那条：5 × ($80,000 − $50,000) ＝ <strong>$150,000</strong>。<strong>两条取大者，取 $200,000</strong>（不是相加的 $350,000）。递减后 business limit ＝ $500,000 − $200,000 ＝ <strong>$300,000</strong>。SBD ＝ 19% × min($700,000, $700,000, $500,000, $300,000) ＝ 19% × $300,000 ＝ <strong>$57,000</strong>。</p>
+<p><strong>按教材算法算。</strong> 应税资本 $26,000,000 已经超过教材写的 $15,000,000 归零点 → business limit 为零 → SBD 为零。</p>
+<p><strong>差多少。</strong> $300,000 这一段按 11% 还是按 27% 交，差 <strong>$300,000 × 16% ＝ $48,000</strong>，一年。这家公司还要随报 Schedule 33（应税资本超过 $10,000,000）。</p>
+<p><strong>常见错报。</strong> 把两条递减相加。条文写的是 exceeds the <strong>greater</strong> of，取大者；相加会把这家公司的限额算成 $150,000，SBD 少算 $28,500。</p>
+<hr />
+<h2 id="_8">七、常见错报与自查清单</h2>
+<ol>
+<li><strong>把 $500,000 当免税额。</strong> 识别方法：看有没有人说「前五十万不用交税」。它是<strong>享低税率的上限</strong>，限额内照样按 11%（联邦 9% ＋ BC 2%）交税。</li>
+<li><strong>以为报表和税款是同一个截止日。</strong> 识别方法：把年结日加两个月、加三个月、加六个月三个日期都写在日历上。<strong>先到期的是钱，不是表。</strong></li>
+<li><strong>短税年不摊 business limit。</strong> 识别方法：数一数这个税年有多少天，只要不足 51 周就必须按天数 ÷ 365 摊，尤其是公司成立的第一年和变更年结日的那一年。</li>
+<li><strong>两条递减相加。</strong> 识别方法：看计算底稿里有没有把应税资本递减额和被动收入递减额加在一起。条文是<strong>取大者</strong>。</li>
+<li><strong>用教材的 $15,000,000 判归零。</strong> 识别方法：只要底稿里出现 $15,000,000 或 $11,250 这两个数，整段按 $10,000,000–$50,000,000 与分母 $90,000 重算（2022 年 4 月 7 日之前开始的税年除外）。</li>
+<li><strong>两条递减用了本年的数。</strong> 识别方法：看应税资本和被动收入取的是哪一年——两条都看<strong>上一税年</strong>，而且都要把全部联营公司加总。</li>
+<li><strong>配偶各持一家就认定联营（或反过来，交叉持股了还当不联营）。</strong> 识别方法：先问「有没有人在两家里都持有某一类股份的 25% 以上」，再问「有没有第三家公司把两边穿起来」。</li>
+<li><strong>联营了却不填 Schedule 23，或者各填 100%。</strong> 识别方法：把所有联营公司分到的百分比加起来，必须不超过 100，且一个日历年至少有一份在 CRA 手上。</li>
+<li><strong>零活动就不报 T2。</strong> 识别方法：公司只要还没注销，就每个税年都要报，哪怕账面全零、税额为零。例外只有免税王室公司、Hutterite 群体和全年注册慈善机构三类。</li>
+<li><strong>把公司交的所得税和欠税利息当费用扣掉。</strong> 识别方法：看 Schedule 1 有没有把所得税拨备加回去。<strong>加不回去，Schedule 1 就是错的</strong>，后面的应税收入、SBD、省税会一路错下去。</li>
+<li><strong>CCPC 身份变了却没意识到。</strong> 识别方法：这一年有没有新股东是非居民或公众公司、有没有任何一类股份上市。<strong>判定要求「整个税年都是」，中途失去就整年失去</strong>，9%、2%、三个月宽限一起没。</li>
+<li><strong>省级税率照抄那张总表。</strong> 识别方法：看引用的页面日期。跨省客户务必再开一次 CRA 的公司税变化年表，2026 税年至少有两个省的低税率与总表对不上。</li>
+</ol>
+<p><strong>下一步练习</strong>：122</p>
+<hr />
+<h2 id="_9">术语双语对照</h2>
+<table>
+<thead>
+<tr>
+<th>English</th>
+<th>中文</th>
+<th>一句话机制</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T2 Corporation Income Tax Return</td>
+<td>T2 公司所得税申报表</td>
+<td>公司唯一的联邦所得税申报表；省税同表附加省级附表</td>
+</tr>
+<tr>
+<td>Canadian-controlled private corporation (CCPC)</td>
+<td>加拿大受控私人公司</td>
+<td>加拿大私人公司，且不被非居民或公众公司控制、无股份上市；全部公司税优惠的总开关（ITA s.125(7)）</td>
+</tr>
+<tr>
+<td>small business deduction (SBD)</td>
+<td>小企业扣除</td>
+<td>19% × 四个数取最小，从 Part I 税里扣，把 28% 打到 9%；非退还</td>
+</tr>
+<tr>
+<td>business limit</td>
+<td>经营限额</td>
+<td>享低税率的收入上限，联邦 $500,000；短税年按天数 ÷365 摊</td>
+</tr>
+<tr>
+<td>active business income (ABI)</td>
+<td>经营活动收入</td>
+<td>经营所得，不含利息、股息、租金、特许权使用费等财产性收入；填 line 400</td>
+</tr>
+<tr>
+<td>adjusted aggregate investment income (AAII)</td>
+<td>调整后合计投资收入</td>
+<td>被动收入递减的计量口径，用上一税年的数，全联营组加总</td>
+</tr>
+<tr>
+<td>taxable capital employed in Canada</td>
+<td>在加拿大使用的应税资本</td>
+<td>大 CCPC 递减的计量口径；超 $10,000,000 要随报 Schedule 33/34/35</td>
+</tr>
+<tr>
+<td>business limit reduction</td>
+<td>限额递减</td>
+<td>应税资本与被动收入两条，取大者不叠加（ITA s.125(5.1)）</td>
+</tr>
+<tr>
+<td>associated corporations</td>
+<td>联营公司</td>
+<td>受同一控制的公司必须共享一个 business limit，判据是控制不是持股比例</td>
+</tr>
+<tr>
+<td>de jure control / de facto control</td>
+<td>法律控制 / 事实控制</td>
+<td>前者看表决权多数，后者看实际影响力；两者都算控制</td>
+</tr>
+<tr>
+<td>federal tax abatement</td>
+<td>联邦抵免</td>
+<td>从 38% 里减 10%，把这一段税基让给省，得到 28%</td>
+</tr>
+<tr>
+<td>general tax reduction</td>
+<td>一般税率减免</td>
+<td>对不享 SBD 的收入再减 13%，得到 15%</td>
+</tr>
+<tr>
+<td>integration</td>
+<td>整合</td>
+<td>公司先交、个人后补，两级合计约等于个人直接赚这笔钱的税负</td>
+</tr>
+<tr>
+<td>dividend gross-up</td>
+<td>股息毛额化</td>
+<td>个人收到应税股息先放大再课税；非合资格 15%、合资格 38%（ITA s.82(1)(b)）</td>
+</tr>
+<tr>
+<td>dividend tax credit (DTC)</td>
+<td>股息税收抵免</td>
+<td>抵掉公司已交的那道税；联邦为毛额部分的 9/13 与 6/11（ITA s.121）</td>
+</tr>
+<tr>
+<td>fiscal period / tax year</td>
+<td>会计期间 / 税年</td>
+<td>公司的税年就是它的会计期间，不得超过 53 周（ITA s.249、s.249.1）</td>
+</tr>
+<tr>
+<td>balance-due day</td>
+<td>欠税截止日</td>
+<td>年结后两个月；符合条件的 CCPC 延到三个月</td>
+</tr>
+<tr>
+<td>tax instalments</td>
+<td>分期预缴</td>
+<td>四类税合计超 $3,000 就要按月缴；符合四条件的 CCPC 可按季</td>
+</tr>
+<tr>
+<td>perfect compliance history</td>
+<td>完美合规记录</td>
+<td>前 12 个月 GST/HST、源头扣缴、CPP、EI、所得税全部按时；季度缴的前提</td>
+</tr>
+<tr>
+<td>GIFI (General Index of Financial Information)</td>
+<td>财务信息通用索引</td>
+<td>把财报科目映射成标准代码填进 T2 的接口</td>
+</tr>
+<tr>
+<td>Schedule 100 / 125 / 141</td>
+<td>资产负债表 / 损益表 / 财报附加信息</td>
+<td>GIFI 三张表；新公司另附 Schedule 101 期初资产负债表</td>
+</tr>
+<tr>
+<td>Schedule 1</td>
+<td>税务净收入调整表</td>
+<td>把会计净收入加回不可扣、减去税法扣除，得到税务净收入</td>
+</tr>
+<tr>
+<td>Schedule 8</td>
+<td>资本成本折让表</td>
+<td>税法折旧，替代账面折旧</td>
+</tr>
+<tr>
+<td>Schedule 9</td>
+<td>关联与联营公司表</td>
+<td>与任何公司有关联或联营关系就要填</td>
+</tr>
+<tr>
+<td>Schedule 23</td>
+<td>联营 CCPC 限额分摊协议</td>
+<td>把一个 $500,000 按百分比分给各家，合计不超过 100%</td>
+</tr>
+<tr>
+<td>Schedule 28</td>
+<td>不通过第三家公司联营的选择</td>
+<td>切断穿透联营，代价是那部分视同经营收入不享 SBD</td>
+</tr>
+<tr>
+<td>Schedule 50</td>
+<td>股东信息表</td>
+<td>私人公司报持股 10% 以上的股东，最多十名</td>
+</tr>
+<tr>
+<td>Schedule 427</td>
+<td>卑诗省公司税计算表</td>
+<td>BC 省税随 T2 一起报，不需要单独的省级税号</td>
+</tr>
+<tr>
+<td>royal assent</td>
+<td>御准</td>
+<td>法案成为法律的那一刻；未御准的措施只能写「已宣布」</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_10">来源</h2>
+<p>法条（现行合订本，Act current to 2026-06-21）：s.125(1) 与 (1.1) 的 SBD 与 19% 率、s.125(2) 的 $500,000、s.125(5)(b) 的短税年摊分、s.125(5.1) 的两条递减公式、s.125(7) 的 CCPC 定义（TWS-0166）· s.249(1) 公司税年即会计期间（TWS-0167）· s.249.1(1)(a) 会计期间不得超过 53 周（TWS-0168）· s.82(1)(b) 股息毛额化（TWS-0170）· s.121 股息税收抵免（TWS-0171）· s.162(1)、(2) 迟报罚（TWS-0163、TKU-0030）。</p>
+<p>CRA 现行页面：公司税率与省表（TWS-0021）· 规定利率（TWS-0022）· 公司税变化年表 2026 省级节（TWS-0045）· T2 指南「开始之前」的申报与缴款期限、罚则（TWS-0163）· T2 指南第 2 章 GIFI 与信息附表（TWS-0164）· T2 指南第 4 章 SBD 与两条递减（TWS-0162）· 公司分期预缴的季度资格与到期日（TWS-0165）。</p>
+<p>卑诗省：公司税率与经营限额页（TWS-0169）。立法进度：C-31 仍在委员会审议（TWS-0027）。</p>
+<p>知识单元：TKU-0024（加速投资激励与即时费用化已恢复）· TKU-0025（联邦三个率未变、省级限额已非通则）· TKU-0030（迟报罚封顶与基数陷阱）· TKU-0106（应税资本递减区间的教材错位）· TKU-0107（CRA 两页自相矛盾）。</p>
+    <div class="doc-nav"><a href="ca-business-08-cpp-owner-manager-boundary.html">← 公司老板与自雇 CPP：两层上限为什么不能直接相加套</a><a href="ca-corporate-02-passive-income-grind.html" class="r">公司里的钱去做投资，税就变了一个人：被动收入递减、P →</a></div>
+    <div class="doc-src">来源：<code>self</code></div>
+  </article>
+  <aside class="doc-aside">
+    <details class="doc-toc-details" open>
+      <summary class="doc-toc-summary"><span>本页目录</span><span class="doc-toc-icon">▾</span></summary>
+      <div class="toc"><div class="toc">
+<ul>
+<li><a href="#_1">一、制度设计与底层逻辑：为什么要给小公司一个低税率</a><ul>
+<li><a href="#11">1.1 公司是一个独立的纳税人，这句话的税法后果比想象中多</a></li>
+<li><a href="#12-ccpc">1.2 CCPC 不是一个称号，是一个开关</a></li>
+<li><a href="#13">1.3 小企业扣除的本质是递延，不是减免</a></li>
+<li><a href="#14">1.4 谁与谁在博弈</a></li>
+<li><a href="#15">1.5 错报的三个法律后果</a></li>
+</ul>
+</li>
+<li><a href="#2026">二、2026 税年现行规则与数字</a><ul>
+<li><a href="#21-38-9">2.1 联邦三级税率：38% 是怎么变成 9% 的</a></li>
+<li><a href="#22-19">2.2 小企业扣除：四个数取最小，再乘 19%</a></li>
+<li><a href="#23-2022">2.3 两条递减：教材停在了 2022 年之前的旧口径</a></li>
+<li><a href="#24">2.4 联营与限额分摊：一张表决定几家公司分几份</a></li>
+<li><a href="#25">2.5 已宣布但还不是规则的一条</a></li>
+</ul>
+</li>
+<li><a href="#_2">三、实务流程：一张表、一套附表、四个时点</a><ul>
+<li><a href="#31-t2gifi">3.1 从财报到 T2：GIFI 这一步</a></li>
+<li><a href="#32-t2">3.2 T2 附表地图</a></li>
+<li><a href="#33">3.3 四个时点，四个不同的日子</a></li>
+</ul>
+</li>
+<li><a href="#_3">四、联邦之外：卑诗省这一格怎么走</a><ul>
+<li><a href="#41">4.1 官方页会自己跟自己打架，这一处正在打</a></li>
+</ul>
+</li>
+<li><a href="#_4">五、历史变革：这套规则是怎么长成现在这样的</a></li>
+<li><a href="#_5">六、案例</a><ul>
+<li><a href="#11_1">案例一 · 温哥华的两人咨询公司：11% 是怎么来的</a></li>
+<li><a href="#_6">案例二 · 素里的一对夫妻两家公司：联营还是不联营</a></li>
+<li><a href="#_7">案例三 · 列治文的家族制造公司：教材算法差了四万八</a></li>
+</ul>
+</li>
+<li><a href="#_8">七、常见错报与自查清单</a></li>
+<li><a href="#_9">术语双语对照</a></li>
+<li><a href="#_10">来源</a></li>
+</ul>
+</div>
+</div>
+    </details>
+    
+    <h3>同板块</h3><ul class="rel"><li><a href="ca-corporate-02-passive-income-grind.html">公司里的钱去做投资，税就变了一个人：被动收入递减、Part IV 税与双池 RD</a></li><li><a href="ca-corporate-03-salary-vs-dividend.html">业主经理的薪酬：工资还是分红（Salary vs. Dividend）</a></li><li><a href="ca-corporate-04-shareholder-loans-s85-abil-windup.html">公司与股东之间的四种交易：股东贷款、s.85 转让、ABIL 与清算解散（Sha</a></li><li><a href="ca-corporate-05-payroll-taxable-benefits.html">公司给自己人发钱：薪酬、应税福利与股东福利（Corporate Remunera</a></li><li><a href="ca-corporate-06-npo-tax-exempt.html">不交税，但要交三份表：免税组织、非营利组织与 T1044（Tax-Exempt </a></li><li><a href="ca-corporate-07-financial-statements-gifi-schedule1.html">账上的利润不是税上的利润：财报、GIFI 与 Schedule 1 的税会调整（</a></li></ul>
+    
+    <a class="vv-btn vv-btn--primary" style="width:100%;margin-top:16px"
+       href="../drill.html?bp=ca-corporate">练这个板块的题 →</a>
+  </aside>
+</div></main>
+<footer class="foot">
+  <p><b>微出国 · 学</b> — 自雇与小生意 · 公司 T2 · 2 模块复习自测。内容是学习者视角的整理，不是任何机构的培训教材，也不构成税务意见。<br>
+  现行数字一律以 CRA / IRS / 财政部现行文件为准；个案请咨询持牌专业人士。发现错的地方，回论坛帖里说一声。</p>
+</footer>
+<script>var UP_PATH="../";var BUILD_TIME="1789230896";</script>
+<script>
+if((localStorage.getItem('vv-theme')||'')==='dark')
+  document.documentElement.setAttribute('data-theme','dark');
+
+// 自动版本更新检测：对比 DOM 的 BUILD_TIME 与服务器最新 manifest.json，出现新版本时带时间戳无缝重载绕过 HTTP 磁盘缓存
+(function(){
+  function checkVersion(){
+    var up = typeof UP_PATH !== 'undefined' ? UP_PATH : '';
+    fetch(up + 'assets/manifest.json?t=' + Date.now(), { cache: 'no-store' }).then(function(r){
+      return r.ok ? r.json() : null;
+    }).then(function(m){
+      if(!m || !m.build_time) return;
+      var serverBuild = String(m.build_time);
+      var clientBuild = typeof BUILD_TIME !== 'undefined' ? String(BUILD_TIME) : '';
+      if(clientBuild && serverBuild && clientBuild !== serverBuild){
+        var reloaded = sessionStorage.getItem('vv_reloaded_build');
+        if(reloaded !== serverBuild){
+          sessionStorage.setItem('vv_reloaded_build', serverBuild);
+          var u = new URL(location.href);
+          u.searchParams.set('_v', serverBuild);
+          location.replace(u.href);
+        } else if(!document.getElementById('vv-update-banner')) {
+          var bar = document.createElement('div');
+          bar.id = 'vv-update-banner';
+          bar.className = 'vv-update-banner';
+          bar.innerHTML = '🎉 网站已更新到最新版本，建议按 <b>Ctrl+F5</b> (或 <b>Cmd+Shift+R</b>) 强制刷新页面。<button onclick="location.reload(true)">立即刷新</button>';
+          document.body.prepend(bar);
+        }
+      }
+    }).catch(function(){});
+  }
+
+  checkVersion();
+  document.addEventListener('visibilitychange', function(){
+    if(document.visibilityState === 'visible') checkVersion();
+  });
+  window.addEventListener('focus', checkVersion);
+  setInterval(checkVersion, 5 * 60 * 1000);
+})();
+
+// 页眉登录态。身份服务不在（纯静态托管、或还没起 dev-server）时静默跳过——
+// 内容页是公开的，永远不该因为身份服务缺席而坏掉。
+fetch('/api/me').then(function(r){return r.ok?r.json():null;}).then(function(m){
+  if(!m||document.getElementById('vv-auth'))return;
+  var n=document.querySelector('.vv-header nav');if(!n)return;
+  var e=document.createElement('span');e.id='vv-auth';e.className='auth';
+  e.innerHTML=m.loggedIn
+    ?'<span title="学习记录已跨设备同步">'+m.username+'</span> <a href="/auth/logout">退出</a>'
+    :'<a href="/auth/login?next='+encodeURIComponent(location.pathname)+'">登录</a>';
+  n.after(e);
+}).catch(function(){});
+
+// ── 阅读器增强：专注/最大化模式 & 键盘/手势切页 ──
+(function(){
+  var prevUrl = typeof PREV_URL !== 'undefined' ? PREV_URL : '';
+  var nextUrl = typeof NEXT_URL !== 'undefined' ? NEXT_URL : '';
+
+  function updateMaxBtns(isMax) {
+    var btns = document.querySelectorAll('.vv-reader-btn-max');
+    for(var i=0; i<btns.length; i++) {
+      btns[i].innerHTML = isMax ? '✕ 退出专注' : '⛶ 专注阅读';
+    }
+  }
+
+  window.toggleDocMaximize = function() {
+    var root = document.documentElement;
+    var isMax = root.classList.toggle('is-doc-maximized');
+    try { localStorage.setItem('vv_doc_maximized', isMax ? 'true' : 'false'); } catch(e){}
+    updateMaxBtns(isMax);
+  };
+
+  function updateAsideBtns(isCol) {
+    var btns = document.querySelectorAll('.vv-aside-btn');
+    for(var i=0; i<btns.length; i++) {
+      btns[i].innerHTML = isCol ? '◨ 展开侧栏' : '◧ 折叠侧栏';
+    }
+  }
+
+  window.toggleSidebarCollapse = function() {
+    var root = document.documentElement;
+    var isCol = root.classList.toggle('is-aside-collapsed');
+    try { localStorage.setItem('vv_aside_collapsed', isCol ? 'true' : 'false'); } catch(e){}
+    updateAsideBtns(isCol);
+  };
+
+  try {
+    if(localStorage.getItem('vv_aside_collapsed') === 'true') {
+      document.documentElement.classList.add('is-aside-collapsed');
+      setTimeout(function(){ updateAsideBtns(true); }, 0);
+    }
+  } catch(e){}
+
+  // 本页目录 <details> 状态记忆
+  var tocDet = document.querySelector('.doc-toc-details');
+  if(tocDet) {
+    try {
+      if(localStorage.getItem('vv_toc_open') === 'false') {
+        tocDet.removeAttribute('open');
+      }
+    } catch(e){}
+    tocDet.addEventListener('toggle', function() {
+      try { localStorage.setItem('vv_toc_open', tocDet.open ? 'true' : 'false'); } catch(e){}
+    });
+  }
+
+  document.addEventListener('keydown', function(e) {
+    var tag = (e.target && e.target.tagName) || '';
+    if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT' || e.target.isContentEditable) return;
+    if (e.key === 'ArrowLeft' && prevUrl) {
+      location.href = prevUrl;
+    } else if (e.key === 'ArrowRight' && nextUrl) {
+      location.href = nextUrl;
+    } else if (e.key === 'f' || e.key === 'F' || e.key === 'm' || e.key === 'M') {
+      toggleDocMaximize();
+    } else if (e.key === 'Escape' && document.documentElement.classList.contains('is-doc-maximized')) {
+      toggleDocMaximize();
+    }
+  });
+
+  var touchStartX = 0, touchStartY = 0;
+  document.addEventListener('touchstart', function(e) {
+    if (e.touches && e.touches.length === 1) {
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+    }
+  }, { passive: true });
+
+  document.addEventListener('touchend', function(e) {
+    if (!e.changedTouches || e.changedTouches.length !== 1) return;
+    var dx = e.changedTouches[0].clientX - touchStartX;
+    var dy = e.changedTouches[0].clientY - touchStartY;
+    if (Math.abs(dx) > 90 && Math.abs(dy) < 60) {
+      if (dx > 0 && prevUrl) {
+        location.href = prevUrl;
+      } else if (dx < 0 && nextUrl) {
+        location.href = nextUrl;
+      }
+    }
+  }, { passive: true });
+})();
+</script>
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('../sw.js').catch(()=>{}))}</script>
+</body></html>
