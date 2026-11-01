@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1546" width="900" height="1546" role="img" aria-labelledby="t d" font-family="'PingFang SC','Hiragino Sans GB','Noto Sans SC','Microsoft YaHei',sans-serif">
+<title id="t">给老板改发股息后，为什么家庭福利可能变少？</title>
+<desc id="d">福利看的是报税单上的家庭净收入，不是银行到账的现金。非合格股息要按 115% 计入收入；而且这些福利几乎都看上一年的家庭净收入：公司 2026 年怎么发薪，影响的是 2027 年 7 月以后的福利。</desc>
+<rect width="900" height="1546" fill="#FAFBFC"/>
+<rect x="0" y="0" width="900" height="122" rx="0" fill="#12355B"/>
+<text x="40" y="46" font-size="18" fill="#BFD3E6" font-weight="500" text-anchor="start">股息与牛奶金联动 · 信息图</text>
+<text x="40" y="92" font-size="30" fill="#FFFFFF" font-weight="700" text-anchor="start">给老板改发股息后，为什么家庭福利可能变少？</text>
+<rect x="40" y="146" width="820" height="165" rx="16" fill="#FFFFFF" stroke="#12355B" stroke-width="2"/>
+<text x="64" y="177" font-size="17" fill="#0E7C7B" font-weight="700" text-anchor="start">一句话答案</text>
+<text x="64" y="213" font-size="21" fill="#1F2A37" font-weight="600" text-anchor="start">福利看的是报税单上的家庭净收入，不是银行到账的现金。非合格股息要按 115% </text>
+<text x="64" y="246" font-size="21" fill="#1F2A37" font-weight="600" text-anchor="start">计入收入；而且这些福利几乎都看上一年的家庭净收入：公司 2026 年怎么发薪，</text>
+<text x="64" y="279" font-size="21" fill="#1F2A37" font-weight="600" text-anchor="start">影响的是 2027 年 7 月以后的福利。</text>
+<text x="40" y="355" font-size="22" fill="#12355B" font-weight="700" text-anchor="start">从公司分红到家庭福利，一环一环看</text>
+<rect x="40" y="373" width="820" height="129" rx="14" fill="#EAF1F8" stroke="#2F5D8A" stroke-width="1.5"/>
+<text x="58" y="407" font-size="20" fill="#2F5D8A" font-weight="700" text-anchor="start">第一环：公司怎么把钱给你</text>
+<circle cx="64" cy="436" r="3.2" fill="#2F5D8A"/>
+<text x="76" y="441" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">同样从公司拿走 10 万加元，全部发工资、全部发非合格股息、两者混合，个人净收入都不一样</text>
+<circle cx="64" cy="468" r="3.2" fill="#2F5D8A"/>
+<text x="76" y="472" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">工资、奖金、股息按实际付款日报进正确的税年和表格（T4、T5）</text>
+<line x1="450" y1="504" x2="450" y2="531" stroke="#5B6B7F" stroke-width="2.5"/>
+<path d="M442,528 L458,528 L450,540 Z" fill="#5B6B7F"/>
+<text x="466" y="523" font-size="15" fill="#5B6B7F" font-weight="500" text-anchor="start">进个人报税单</text>
+<rect x="40" y="542" width="820" height="129" rx="14" fill="#E6F4F3" stroke="#0E7C7B" stroke-width="1.5"/>
+<text x="58" y="576" font-size="20" fill="#0E7C7B" font-weight="700" text-anchor="start">第二环：报税单上的金额</text>
+<circle cx="64" cy="605" r="3.2" fill="#0E7C7B"/>
+<text x="76" y="610" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">非合格股息要按 115% 计入收入：报税单上的数比到账现金大</text>
+<circle cx="64" cy="636" r="3.2" fill="#0E7C7B"/>
+<text x="76" y="642" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">比较方案时，要拿个人报税软件按全家收入算，不能只看 payroll 毛额</text>
+<line x1="450" y1="673" x2="450" y2="700" stroke="#5B6B7F" stroke-width="2.5"/>
+<path d="M442,697 L458,697 L450,709 Z" fill="#5B6B7F"/>
+<text x="466" y="692" font-size="15" fill="#5B6B7F" font-weight="500" text-anchor="start">福利看上一年</text>
+<rect x="40" y="711" width="820" height="154" rx="14" fill="#F4F6F9" stroke="#5B6B7F" stroke-width="1.5"/>
+<text x="58" y="745" font-size="20" fill="#5B6B7F" font-weight="700" text-anchor="start">第三环：福利期与基年</text>
+<circle cx="64" cy="774" r="3.2" fill="#5B6B7F"/>
+<text x="76" y="779" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">2026 年 7 月到 2027 年 6 月这个福利期，用的是 2025 年报税单上的收入</text>
+<circle cx="64" cy="806" r="3.2" fill="#5B6B7F"/>
+<text x="76" y="810" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">2026 年 12 月批、2027 年 1 月付的奖金，进 2027 年的 T4，也就影响 2028 年 7 月起的福</text>
+<text x="76" y="836" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">利</text>
+<line x1="450" y1="868" x2="450" y2="894" stroke="#5B6B7F" stroke-width="2.5"/>
+<path d="M442,892 L458,892 L450,904 Z" fill="#5B6B7F"/>
+<text x="466" y="886" font-size="15" fill="#5B6B7F" font-weight="500" text-anchor="start">对照门槛</text>
+<rect x="40" y="906" width="820" height="192" rx="14" fill="#FDECEA" stroke="#B42318" stroke-width="1.5"/>
+<text x="58" y="940" font-size="20" fill="#B42318" font-weight="700" text-anchor="start">第四环：2026–27 福利期的几条收入线</text>
+<circle cx="64" cy="968" r="3.2" fill="#B42318"/>
+<text x="76" y="974" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">CCB：调整后家庭净收入超过 38,237 加元开始第一段扣减，超过 82,847 加元进入第二段</text>
+<circle cx="64" cy="1000" r="3.2" fill="#B42318"/>
+<text x="76" y="1005" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">CDB：家庭净收入超过 82,847 加元开始递减</text>
+<circle cx="64" cy="1032" r="3.2" fill="#B42318"/>
+<text x="76" y="1036" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">CGEB：家庭净收入过了 46,432 加元，整笔补助开始扣减</text>
+<circle cx="64" cy="1063" r="3.2" fill="#B42318"/>
+<text x="76" y="1068" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">CDCP 牙科：调整后家庭净收入低于 90,000 加元，正好 90,000 加元就不符合</text>
+<rect x="40" y="1120" width="820" height="237" rx="14" fill="#FFF4E5" stroke="#B45309" stroke-width="1.5"/>
+<text x="58" y="1154" font-size="20" fill="#B45309" font-weight="700" text-anchor="start">最容易弄错</text>
+<circle cx="64" cy="1182" r="3.2" fill="#B45309"/>
+<text x="76" y="1188" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">「少拿一点分红现金，就一定比工资更利于福利」：福利按家庭收入口径计算，须以税表金额比较，不</text>
+<text x="76" y="1213" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">能只看现金。</text>
+<circle cx="64" cy="1240" r="3.2" fill="#B45309"/>
+<text x="76" y="1244" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">「股息也算工作收入」：加拿大培训抵免（CTC）的工作收入是工资、自雇营业收入这类劳动所得，股</text>
+<text x="76" y="1270" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">息不算；全靠股息、不领工资的股东经理攒不到 CTC 额度。</text>
+<circle cx="64" cy="1296" r="3.2" fill="#B45309"/>
+<text x="76" y="1302" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">「公司可以替员工估福利」：福利由 CRA 按全家的收入计算，公司不在任何文件里写「保证能领」或</text>
+<text x="76" y="1327" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">预估金额。</text>
+<line x1="40" y1="1382" x2="860" y2="1382" stroke="#D5DEE8" stroke-width="1.5"/>
+<text x="40" y="1408" font-size="15" fill="#5B6B7F" font-weight="700" text-anchor="start">来源</text>
+<text x="40" y="1430" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">CRA · Lines 12000/12010 – Taxable amount of dividends；Line 23600 – Net income（canada.ca）</text>
+<text x="40" y="1452" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">CRA · How we calculate your CCB；Adjustment of personal income tax and benefit amounts（2026 列）</text>
+<text x="40" y="1474" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">《所得税法》第 122.91 条（加拿大培训抵免）</text>
+<text x="40" y="1502" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">本页正文核实日 2026-10-30。福利金额由 CRA 按家庭收入、孩子人数与资格计算；本图只列机制与收入线，不替个案估算。</text>
+</svg>

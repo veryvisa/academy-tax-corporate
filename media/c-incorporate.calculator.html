@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>留存还是全取计算器</title>
+<meta name="description" content="成立公司后税率看起来低，家庭最后一定少交税吗？同一笔税前利润，比较做个体户与开公司后留存或全部取出时的公司税、个人股息税和递延金额。">
+<style>
+:root{--bg:#ffffff;--ink:#1b2430;--muted:#5d6b7b;--line:#e3e8ef;--raised:#f6f8fb;--acc:#0b5fff;--ok:#1a7f4b;--okbg:#e9f7ef;--warn:#b54708;--warnbg:#fff3e6}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1419;--ink:#e6ebf2;--muted:#9aa7b5;--line:#2a3340;--raised:#171d25;--acc:#6ea8ff;--ok:#5fd39a;--okbg:#122a1d;--warn:#ffb86b;--warnbg:#2d1f0f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:1.45rem;line-height:1.35;margin:0 0 6px}
+h2{font-size:1.1rem;margin:28px 0 10px;padding-top:14px;border-top:1px solid var(--line)}
+.sub{color:var(--muted);margin:0 0 16px}
+.answer{background:var(--raised);border-left:4px solid var(--acc);padding:12px 14px;border-radius:8px;margin:14px 0}
+.answer b{display:block;margin-bottom:4px}
+label.f{display:block;margin:10px 0}
+label.f span{display:block;font-weight:600}
+label.f small{display:block;color:var(--muted)}
+input[type=number]{font:inherit;width:160px;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+button{font:inherit;padding:5px 10px;border:1px solid var(--line);border-radius:8px;background:var(--raised);color:var(--ink);cursor:pointer}
+.result{border-radius:10px;padding:12px 14px;margin:14px 0;border:1px solid var(--line);background:var(--raised)}
+.result.warn{background:var(--warnbg);border-color:var(--warn)}
+table{border-collapse:collapse;width:100%;font-size:.93rem;margin:10px 0}
+th,td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+th{background:var(--raised)}
+.wrap{overflow-x:auto}
+.pit{margin:0;padding-left:1.2em}
+.pit li{margin:6px 0}
+.foot{margin-top:28px;padding-top:12px;border-top:1px dashed var(--line);font-size:.86rem;color:var(--muted)}
+.foot a{color:var(--acc);overflow-wrap:anywhere}
+</style>
+<!-- vf:start --><meta name="vf-version" content="2026.09.30.2"><link rel="stylesheet" href="../vf/framework.css"><style>body[data-vf-site]{--vf-accent:#48537d;--vf-paper:#f4f5fb;--vf-heading:Georgia, "Songti SC", serif;--vf-radius:8px;}</style><script defer src="../vf/framework.js"></script><!-- vf:end --><link rel="manifest" href="../manifest.webmanifest">
+</head>
+<body data-vf-site="tax-corporate"><!-- vf:start --><nav class="vf-network" aria-label="微出国跨站导航" data-pagefind-ignore><a class="vf-wordmark" href="https://veryvisa.github.io/">微出国<span> / VERYVISA</span></a><span class="vf-network-label">企业税务</span><a href="../workspace/index.html">我的清单</a><a href="https://veryvisa.github.io/#professional">专业人员入口</a></nav><!-- vf:end -->
+<main>
+<h1>成立公司后税率看起来低，家庭最后一定少交税吗？</h1>
+<p class="sub">留存还是全取 · BC 2026 税年 · 同一笔税前利润摆在一起比</p>
+
+<div class="answer"><b>不一定。</b>公司和股东是两层纳税人。利润留在公司，当年只交 11% 的小企业综合税率，和你个人边际税率之间的差额是「晚交」，不是「免交」；钱以股息取出来花掉时，个人还要再交一层税。下面用同一笔利润把两条路摆在一起算。</div>
+
+<h2>先看一个算好的例子（不需要脚本）</h2>
+<p>税前利润 $100,000，个人已在最高档（联邦 33%＋BC 20.5%），全部以非合资格股息取出：</p>
+<div class="wrap"><table>
+<thead><tr><th></th><th class="n">个体户</th><th class="n">公司，全部取出</th><th class="n">公司，全部留存</th></tr></thead>
+<tbody>
+<tr><td>公司税（11%）</td><td class="n">—</td><td class="n">$11,000</td><td class="n">$11,000</td></tr>
+<tr><td>个人税</td><td class="n">$53,500</td><td class="n">$43,509</td><td class="n">暂不交</td></tr>
+<tr><td>当年合计税</td><td class="n">$53,500</td><td class="n">$54,509</td><td class="n">$11,000</td></tr>
+<tr><td>到你手上</td><td class="n">$46,500</td><td class="n">$45,491</td><td class="n">$0（公司里留 $89,000）</td></tr>
+</tbody>
+</table></div>
+<p>全部取出时，开公司这条路当年反而多交约 $1,009，这还没算会计费和年报费。全部留存时，当年少交 $42,500，但这是递延：将来这 $89,000 作股息取出时，个人层面的税要补上。</p>
+
+<form id="f" novalidate>
+<h2>换成你的数字</h2>
+<label class="f"><span>税前活跃经营利润（加元）</span><small>本工具只算小企业扣除范围内的部分：加拿大受控私人公司（CCPC）、活跃经营、不超过 $500,000、不是个人服务业务。</small><input type="number" id="P" min="0" step="1000" value="100000"></label>
+<label class="f"><span>留在公司的比例（%）</span><small>0＝全部取出花掉，100＝全部留在公司。取出部分按非合资格股息算。</small><input type="number" id="r" min="0" max="100" step="5" value="0"></label>
+<label class="f"><span>你的联邦边际税率（%）</span><small>看你个人收入落在哪一档；不确定就请报税人告诉你。</small><input type="number" id="fed" min="0" max="33" step="0.5" value="33"></label>
+<label class="f"><span>你的 BC 边际税率（%）</span><input type="number" id="bc" min="0" max="20.5" step="0.1" value="20.5"></label>
+<p><button type="button" id="top">填入最高档：联邦 33%＋BC 20.5%</button></p>
+<label class="f"><span>开公司每年多出的固定成本（加元）</span><small>会计做 T2 的费用、年报费等。会计费差别很大，填你实际拿到的报价；BC 公司年报费为 $43.39。</small><input type="number" id="cost" min="0" step="100" value="0"></label>
+
+<div id="out" class="result" aria-live="polite"><p>启用脚本后这里显示你的结果；未启用时请看上面的例子。</p></div>
+</form>
+
+<h2>这个工具不算的东西</h2>
+<ul class="pit">
+<li><b>家庭福利</b>：判不了。儿童福利、GIS 等按家庭净收入算，股息按放大后的金额计入净收入，影响要按家庭资格和基年另算。</li>
+<li><b>跨档</b>：判不了。这里假设整笔金额都落在你填的那一档；金额大到跨档时，结果只适合看方向。</li>
+<li><b>工资路线、CPP、RRSP 额度</b>：不在本工具范围，见「工资还是股息」那一课。</li>
+<li><b>股息抵免超过税款</b>：边际税率很低时，抵免可能比应交税还多。本工具把个人股息税最低算到 0，多出来的抵免能否抵其他收入的税，判不了。</li>
+<li><b>超过 $500,000、被动收入、个人服务业务、外省</b>：都不适用这里的 11%。</li>
+</ul>
+
+<h2>算法（全部写在这里，可以手算复核）</h2>
+<ul class="pit">
+<li>公司税＝利润 × 11%（联邦 9%＋BC 2%）。</li>
+<li>取出的股息＝取出部分的利润 × 89%。应税股息＝股息 × 1.15（非合资格毛额化 15%）。</li>
+<li>个人股息税＝应税股息 ×（联邦＋BC 边际税率）－ 联邦抵免（毛额化部分的 9/13）－ BC 抵免（应税股息的 1.96%），最低为 0。</li>
+<li>个体户个人税＝利润 ×（联邦＋BC 边际税率）。</li>
+<li>递延＝留存部分 ×（你的合并边际税率－11%）。这笔钱将来取出时要补税。</li>
+</ul>
+
+<div class="foot">
+<p>本页只做机制演算，不构成个案税务建议；是否开公司、怎么取钱，请交给报税人或会计师按你的全部收入与家庭情况判断。税率为 2026 税年 BC 口径。</p>
+<p>来源：<a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4012/t2-corporation-income-tax-guide-before-you-start.html">CRA T4012 T2 Corporation Income Tax Guide</a>；<a href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-82.html">ITA s.82（股息毛额化）</a>；<a href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-121.html">ITA s.121（联邦股息抵免）</a>；<a href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html">ITA s.125（小企业扣除）</a>。</p>
+</div>
+<!-- vf:start --><div class="vf-tools" role="group" data-pagefind-ignore aria-label="阅读工具"><button type="button" data-vf-save hidden>保存本页</button><button type="button" data-vf-print hidden>打印 / 存为 PDF</button><span data-vf-status role="status" aria-live="polite"></span></div><!-- vf:end --></main>
+<script>
+function calc(i){
+  var P=Math.max(0,+i.P||0),r=Math.min(100,Math.max(0,+i.r||0))/100,m=(Math.max(0,+i.fed||0)+Math.max(0,+i.bc||0))/100,cost=Math.max(0,+i.cost||0);
+  var corp=P*0.11,R=P*r,W=P-R,D=W*0.89,G=D*1.15;
+  var dtcFed=(D*0.15)*9/13,dtcBC=G*0.0196,div=Math.max(0,G*m-dtcFed-dtcBC);
+  var sp=P*m;
+  return{over:P>500000,corp:corp,div:div,corpTotal:corp+div,cashCorp:D-div,keptInCorp:R*0.89,sp:sp,cashSp:P-sp,deferral:R*(m-0.11),withdrawnGap:(W*0.11+div)-W*m,cost:cost};
+}
+(function(){
+  var ids=['P','r','fed','bc','cost'],out=document.getElementById('out');
+  function $(k){return document.getElementById(k)}
+  function money(x){return (x<0?'－$':'$')+Math.round(Math.abs(x)).toLocaleString('en-CA')}
+  function upd(){
+    var v={};ids.forEach(function(k){v[k]=$(k).value});var c=calc(v);
+    if(c.over){out.className='result warn';out.innerHTML='<p>超过 $500,000 的部分不适用小企业税率，本工具不算。请把利润改到 $500,000 以内，或交给会计师。</p>';return}
+    var gap=c.withdrawnGap+c.cost;
+    out.className='result';
+    out.innerHTML='<div class="wrap"><table><thead><tr><th></th><th class="n">个体户</th><th class="n">开公司</th></tr></thead><tbody>'+
+      '<tr><td>公司税</td><td class="n">—</td><td class="n">'+money(c.corp)+'</td></tr>'+
+      '<tr><td>个人税（当年）</td><td class="n">'+money(c.sp)+'</td><td class="n">'+money(c.div)+'</td></tr>'+
+      '<tr><td>当年合计税</td><td class="n">'+money(c.sp)+'</td><td class="n">'+money(c.corpTotal)+'</td></tr>'+
+      '<tr><td>到你手上</td><td class="n">'+money(c.cashSp)+'</td><td class="n">'+money(c.cashCorp)+'</td></tr>'+
+      '<tr><td>留在公司（已交公司税）</td><td class="n">—</td><td class="n">'+money(c.keptInCorp)+'</td></tr>'+
+      '</tbody></table></div>'+
+      '<p><b>取出部分：</b>开公司比个体户'+(gap>0?'多交 '+money(gap):'少交 '+money(-gap))+'（含你填的每年固定成本）。</p>'+
+      '<p><b>留存部分：</b>当年晚交 '+money(c.deferral)+'。这是递延，不是免税；将来以股息取出时要补个人税。</p>';
+  }
+  ids.forEach(function(k){$(k).addEventListener('input',upd)});
+  $('top').addEventListener('click',function(){$('fed').value=33;$('bc').value=20.5;upd()});
+  upd();
+})();
+</script>
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('../sw.js').catch(()=>{}))}</script>
+</body>
+</html>

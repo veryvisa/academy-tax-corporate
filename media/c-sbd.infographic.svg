@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1498" width="900" height="1498" role="img" aria-labelledby="t d" font-family="'PingFang SC','Hiragino Sans GB','Noto Sans SC','Microsoft YaHei',sans-serif">
+<title id="t">公司规模小，就一定能享受小企业税率吗？</title>
+<desc id="d">不一定。小企业扣除要过三道门：公司得是 CCPC，收入得是加拿大境内经营活动收入，还要看限额。三道都过，限额内那一段利润在 BC 才是 9%＋2%＝11%。</desc>
+<rect width="900" height="1498" fill="#FAFBFC"/>
+<rect x="0" y="0" width="900" height="122" rx="0" fill="#12355B"/>
+<text x="40" y="46" font-size="18" fill="#BFD3E6" font-weight="500" text-anchor="start">小企业扣除资格 · 信息图</text>
+<text x="40" y="92" font-size="30" fill="#FFFFFF" font-weight="700" text-anchor="start">公司规模小，就一定能享受小企业税率吗？</text>
+<rect x="40" y="146" width="820" height="132" rx="16" fill="#FFFFFF" stroke="#12355B" stroke-width="2"/>
+<text x="64" y="177" font-size="17" fill="#0E7C7B" font-weight="700" text-anchor="start">一句话答案</text>
+<text x="64" y="213" font-size="21" fill="#1F2A37" font-weight="600" text-anchor="start">不一定。小企业扣除要过三道门：公司得是 CCPC，收入得是加拿大境内经营活动</text>
+<text x="64" y="246" font-size="21" fill="#1F2A37" font-weight="600" text-anchor="start">收入，还要看限额。三道都过，限额内那一段利润在 BC 才是 9%＋2%＝11%。</text>
+<text x="40" y="322" font-size="22" fill="#12355B" font-weight="700" text-anchor="start">三道门，一道一道过</text>
+<rect x="40" y="340" width="820" height="160" rx="14" fill="#EAF1F8" stroke="#2F5D8A" stroke-width="1.5"/>
+<text x="58" y="374" font-size="20" fill="#2F5D8A" font-weight="700" text-anchor="start">第一道门：公司身份（CCPC）</text>
+<circle cx="64" cy="403" r="3.2" fill="#2F5D8A"/>
+<text x="76" y="408" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">得是一家加拿大公司且是私人公司</text>
+<circle cx="64" cy="434" r="3.2" fill="#2F5D8A"/>
+<text x="76" y="440" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">不得被一个或多个非居民控制、不得被公众公司控制、不得有任何一类股份在指定证券交易所上市</text>
+<circle cx="64" cy="466" r="3.2" fill="#2F5D8A"/>
+<text x="76" y="471" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">控制既包括法律上的控制，也包括事实上的控制</text>
+<line x1="450" y1="502" x2="450" y2="530" stroke="#5B6B7F" stroke-width="2.5"/>
+<path d="M442,526 L458,526 L450,538 Z" fill="#5B6B7F"/>
+<text x="466" y="522" font-size="15" fill="#5B6B7F" font-weight="500" text-anchor="start">是 CCPC，再看收入</text>
+<rect x="40" y="540" width="820" height="160" rx="14" fill="#E6F4F3" stroke="#0E7C7B" stroke-width="1.5"/>
+<text x="58" y="574" font-size="20" fill="#0E7C7B" font-weight="700" text-anchor="start">第二道门：收入性质</text>
+<circle cx="64" cy="604" r="3.2" fill="#0E7C7B"/>
+<text x="76" y="608" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">只有加拿大境内经营活动收入（T2 line 400）能用</text>
+<circle cx="64" cy="635" r="3.2" fill="#0E7C7B"/>
+<text x="76" y="640" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">利息、股息、特许权使用费、租金这类财产性收入不能用</text>
+<circle cx="64" cy="666" r="3.2" fill="#0E7C7B"/>
+<text x="76" y="672" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">指定投资业务收入和个人服务业务收入也不能用</text>
+<line x1="450" y1="703" x2="450" y2="730" stroke="#5B6B7F" stroke-width="2.5"/>
+<path d="M442,727 L458,727 L450,739 Z" fill="#5B6B7F"/>
+<text x="466" y="722" font-size="15" fill="#5B6B7F" font-weight="500" text-anchor="start">是经营收入，再看限额</text>
+<rect x="40" y="741" width="820" height="218" rx="14" fill="#FFF4E5" stroke="#B45309" stroke-width="1.5"/>
+<text x="58" y="775" font-size="20" fill="#B45309" font-weight="700" text-anchor="start">第三道门：限额</text>
+<circle cx="64" cy="804" r="3.2" fill="#B45309"/>
+<text x="76" y="809" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">独立公司 $500,000；联营公司共同填 Schedule 23 分这一个限额，合计不得超过 100%</text>
+<circle cx="64" cy="836" r="3.2" fill="#B45309"/>
+<text x="76" y="840" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">上一税年应税资本超过 $10,000,000 开始直线递减，到 $50,000,000 归零</text>
+<circle cx="64" cy="867" r="3.2" fill="#B45309"/>
+<text x="76" y="872" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">上一税年调整后被动投资收入每多 $1 超过 $50,000，本年就少 $5 的低税额度，到 $150,000 </text>
+<text x="76" y="898" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">归零</text>
+<circle cx="64" cy="924" r="3.2" fill="#B45309"/>
+<text x="76" y="929" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">两条递减不叠加，取大者；税年不足 51 周的，限额按天数比例缩减</text>
+<line x1="450" y1="960" x2="450" y2="988" stroke="#5B6B7F" stroke-width="2.5"/>
+<path d="M442,984 L458,984 L450,996 Z" fill="#5B6B7F"/>
+<text x="466" y="980" font-size="15" fill="#5B6B7F" font-weight="500" text-anchor="start">限额内那一段</text>
+<rect x="40" y="998" width="820" height="129" rx="14" fill="#E9F7EF" stroke="#1A7F4B" stroke-width="1.5"/>
+<text x="58" y="1032" font-size="20" fill="#1A7F4B" font-weight="700" text-anchor="start">结果</text>
+<circle cx="64" cy="1062" r="3.2" fill="#1A7F4B"/>
+<text x="76" y="1066" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">限额内的经营利润：联邦 9%＋BC 2%＝11%</text>
+<circle cx="64" cy="1093" r="3.2" fill="#1A7F4B"/>
+<text x="76" y="1098" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">不是 CCPC、或超出限额的部分：联邦 15%＋BC 12%＝27%</text>
+<rect x="40" y="1150" width="820" height="160" rx="14" fill="#FFF4E5" stroke="#B45309" stroke-width="1.5"/>
+<text x="58" y="1184" font-size="20" fill="#B45309" font-weight="700" text-anchor="start">最容易弄错</text>
+<circle cx="64" cy="1212" r="3.2" fill="#B45309"/>
+<text x="76" y="1218" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">「叫小公司，所有收入都能用小企业税率」：被动收入和个人服务业务不能只因规模小就套用。</text>
+<circle cx="64" cy="1244" r="3.2" fill="#B45309"/>
+<text x="76" y="1249" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">「开十家公司拿十个 $500,000」：受同一人或同一群人控制的公司必须共享一个限额。</text>
+<circle cx="64" cy="1276" r="3.2" fill="#B45309"/>
+<text x="76" y="1280" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">「今年把投资挪出去」救不了今年：应税资本和被动收入都用上一税年的数，只能救明年。</text>
+<line x1="40" y1="1336" x2="860" y2="1336" stroke="#D5DEE8" stroke-width="1.5"/>
+<text x="40" y="1361" font-size="15" fill="#5B6B7F" font-weight="700" text-anchor="start">来源</text>
+<text x="40" y="1383" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">Income Tax Act s.125 – Small business deduction（laws-lois.justice.gc.ca）</text>
+<text x="40" y="1405" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">CRA · T4012 T2 Corporation – Income Tax Guide, Chapter 4: Page 4 of the T2 return（canada.ca）</text>
+<text x="40" y="1434" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">2026 税年 BC 口径；本页正文核实日 2026-10-30。是否构成 CCPC、联营与收入定性是事实判断，本图只列要过的门，不替个</text>
+<text x="40" y="1454" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">案下结论。</text>
+</svg>
