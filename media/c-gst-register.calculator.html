@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GST/HST 注册门槛筛查</title>
+<meta name="description" content="生意还没赚钱，也可能要注册和收取 GST/HST 吗？按行业和连续四个日历季度的应税供应，筛查 30,000 元小供应商门槛的两条路径。">
+<style>
+:root{--bg:#ffffff;--ink:#1b2430;--muted:#5d6b7b;--line:#e3e8ef;--raised:#f6f8fb;--acc:#0b5fff;--ok:#1a7f4b;--okbg:#e9f7ef;--warn:#b54708;--warnbg:#fff3e6}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1419;--ink:#e6ebf2;--muted:#9aa7b5;--line:#2a3340;--raised:#171d25;--acc:#6ea8ff;--ok:#5fd39a;--okbg:#122a1d;--warn:#ffb86b;--warnbg:#2d1f0f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:1.45rem;line-height:1.35;margin:0 0 6px}
+h2{font-size:1.1rem;margin:28px 0 10px;padding-top:14px;border-top:1px solid var(--line)}
+.sub{color:var(--muted);margin:0 0 16px}
+.answer{background:var(--raised);border-left:4px solid var(--acc);padding:12px 14px;border-radius:8px;margin:14px 0}
+.answer b{display:block;margin-bottom:4px}
+label.f{display:block;margin:10px 0}
+label.f span{display:block;font-weight:600}
+label.f small{display:block;color:var(--muted)}
+input[type=number],select{font:inherit;width:180px;max-width:100%;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+fieldset{border:1px solid var(--line);border-radius:10px;margin:12px 0;padding:8px 14px}
+legend{font-weight:600;padding:0 6px}
+label.c{display:block;margin:6px 0}
+button{font:inherit;padding:5px 10px;border:1px solid var(--line);border-radius:8px;background:var(--raised);color:var(--ink);cursor:pointer}
+.result{border-radius:10px;padding:12px 14px;margin:14px 0;border:1px solid var(--line);background:var(--raised)}
+.result.warn{background:var(--warnbg);border-color:var(--warn)}
+.result.ok{background:var(--okbg);border-color:var(--ok)}
+table{border-collapse:collapse;width:100%;font-size:.93rem;margin:10px 0}
+th,td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+th{background:var(--raised)}
+.wrap{overflow-x:auto}
+.pit{margin:0;padding-left:1.2em}
+.pit li{margin:6px 0}
+.foot{margin-top:28px;padding-top:12px;border-top:1px dashed var(--line);font-size:.86rem;color:var(--muted)}
+.foot a{color:var(--acc);overflow-wrap:anywhere}
+</style>
+<!-- vf:start --><meta name="vf-version" content="2026.09.30.2"><link rel="stylesheet" href="../vf/framework.css"><style>body[data-vf-site]{--vf-accent:#48537d;--vf-paper:#f4f5fb;--vf-heading:Georgia, "Songti SC", serif;--vf-radius:8px;}</style><script defer src="../vf/framework.js"></script><!-- vf:end --><link rel="manifest" href="../manifest.webmanifest">
+</head>
+<body data-vf-site="tax-corporate"><!-- vf:start --><nav class="vf-network" aria-label="微出国跨站导航" data-pagefind-ignore><a class="vf-wordmark" href="https://veryvisa.github.io/">微出国<span> / VERYVISA</span></a><span class="vf-network-label">企业税务</span><a href="../workspace/index.html">我的清单</a><a href="https://veryvisa.github.io/#professional">专业人员入口</a></nav><!-- vf:end -->
+<main>
+<h1>生意还没赚钱，也可能要注册和收取 GST/HST 吗？</h1>
+<p class="sub">营业税注册与亏损无关 · 先判行业，再按季度数应税供应</p>
+
+<div class="answer"><b>可能。门槛数的是应税供应（销售额），不是利润。</b>小供应商门槛 30,000 元，按本人全部生意连同关联人的全球应税供应来数，有「单个日历季度超过」和「连续四个（或更少）日历季度累计超过」两条路径。出租车与商业网约车不论收入多少，第一天就必须注册。</div>
+
+<h2>先看三个算好的例子（不需要脚本）</h2>
+<div class="wrap"><table>
+<thead><tr><th>连续四季应税供应</th><th>结果</th></tr></thead>
+<tbody>
+<tr><td>$31,000 · $0 · $0 · $0</td><td>路径一：第 1 季内单季超过，从跨线的那一笔起就不再是小供应商，那一笔本身要收税</td></tr>
+<tr><td>$10,000 · $25,000 · $0 · $0</td><td>路径二：第 2 季累计 $35,000 超过，在第 2 季结束后的下一个月末失去小供应商身份</td></tr>
+<tr><td>$7,000 · $7,000 · $7,000 · $7,000</td><td>累计 $28,000，没到门槛；可以自愿注册</td></tr>
+</tbody>
+</table></div>
+
+<form id="f" novalidate>
+<h2>换成你的数字</h2>
+<fieldset><legend>第一步：先判行业</legend>
+<label class="c"><input type="radio" name="ind" value="taxi"> 自雇提供出租车或商业网约车客运服务</label>
+<label class="c"><input type="radio" name="ind" value="general" checked> 其他生意（含送餐、代购、代跑腿类平台工作）</label>
+</fieldset>
+<fieldset><legend>第二步：按时间先后填连续四个日历季度的应税供应（加元）</legend>
+<small>日历季度＝1–3、4–6、7–9、10–12 月。填你名下全部生意连同关联人的全球应税供应，含零税率供应；豁免供应、金融服务收入、资本财产的处置与出售企业的商誉不计入。</small>
+<label class="f"><span>第 1 季</span><input type="number" id="q1" min="0" step="500" value="10000"></label>
+<label class="f"><span>第 2 季</span><input type="number" id="q2" min="0" step="500" value="25000"></label>
+<label class="f"><span>第 3 季</span><input type="number" id="q3" min="0" step="500" value="0"></label>
+<label class="f"><span>第 4 季</span><input type="number" id="q4" min="0" step="500" value="0"></label>
+</fieldset>
+<label class="f"><span>同期利润或亏损（加元，可填负数）</span><small>只为让你看到它不进算式。</small><input type="number" id="profit" step="1000" value="-8000"></label>
+<div id="out" class="result" aria-live="polite"><p>启用脚本后这里显示结果；未启用时请看上面的例子。</p></div>
+</form>
+
+<h2>结果之后要做的事</h2>
+<ul class="pit">
+<li>两条路径都要求在生效日后 <b>29 天内</b>完成注册。</li>
+<li>没到门槛也可以自愿注册：生效日通常是申请那天，也可以往前回溯最多 30 天。客户全是企业、开办期投入大、做出口或其他零税率供应时，自愿注册常常划算。</li>
+<li>平台申报规则里的「30 笔、2,800 元」只决定平台要不要报你的信息，不是注册门槛。</li>
+</ul>
+
+<h2>这个工具不算的东西</h2>
+<ul class="pit">
+<li><b>跨线的具体日期</b>：路径一要找出是哪一笔把单季累计推过 30,000 元，那一笔的日期就是生效日上限；本工具只按季度判。</li>
+<li><b>其他行业特别规则、非居民与数字服务</b>：判不了，部分行业另有规则，请回 CRA 原页核对。</li>
+<li><b>供应怎么分类</b>：零税率和豁免怎么分，要按你卖的东西逐项判断。</li>
+</ul>
+
+<h2>算法（全部写在这里，可以手算复核）</h2>
+<ul class="pit">
+<li>客运服务（出租车、商业网约车）：不论收入多少，第一天就必须注册。</li>
+<li>路径一：任一季度的应税供应超过 30,000 元（正好 30,000 元不算超过）。</li>
+<li>路径二：从第 1 季起逐季累加，累计第一次超过 30,000 元的那一季，结束后的下一个月末失去小供应商身份。</li>
+<li>利润或亏损不进任何一步。</li>
+</ul>
+
+<div class="foot">
+<p>本页只做门槛筛查演示，不是注册义务的个案判定；是否注册、何时生效以 CRA 现行页面为准，拿不准请交给报税人。30,000 元门槛自 1991 年未变、不指数化；核实日 2026-10-30。</p>
+<p>来源：<a href="https://bbs.fcgvisa.com/t/56411" data-vf-official-url="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/when-register-charge.html">CRA When to register for and start charging the GST/HST<span class="vf-forum-link-label">（论坛解读）</span></a>；<a href="https://bbs.fcgvisa.com/t/56442" data-vf-official-url="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/charge-collect-specific-situations/taxi-ride-sharing-drivers.html">CRA GST/HST information for taxi operators and commercial ride-sharing drivers</a>。</p>
+</div>
+<!-- vf:start --><div class="vf-tools" role="group" data-pagefind-ignore aria-label="阅读工具"><button type="button" data-vf-save hidden>保存本页</button><button type="button" data-vf-print hidden>打印 / 存为 PDF</button><span data-vf-status role="status" aria-live="polite"></span></div><!-- vf:end --></main>
+<script>
+var LIMIT=30000;
+function calc(i){
+  if(i.ind==='taxi')return{path:'taxi'};
+  var q=[i.q1,i.q2,i.q3,i.q4].map(function(x){return Math.max(0,+x||0)});
+  for(var k=0;k<4;k++)if(q[k]>LIMIT)return{path:1,quarter:k+1,q:q};
+  var s=0;for(var k=0;k<4;k++){s+=q[k];if(s>LIMIT)return{path:2,quarter:k+1,sum:s,q:q}}
+  return{path:0,sum:s,q:q};
+}
+(function(){
+  var out=document.getElementById('out'),ids=['q1','q2','q3','q4','profit'];
+  function $(k){return document.getElementById(k)}
+  function money(x){return (x<0?'－$':'$')+Math.round(Math.abs(x)).toLocaleString('en-CA')}
+  function upd(){
+    var v={ind:document.querySelector('input[name=ind]:checked').value};ids.forEach(function(k){v[k]=$(k).value});
+    var c=calc(v),p=+v.profit||0,pl='<p>你填的利润/亏损是 '+money(p)+'：它不进门槛算式，结果和它无关。</p>';
+    if(c.path==='taxi'){out.className='result warn';out.innerHTML='<p><b>客运服务：第一天就必须注册。</b>30,000 元门槛对出租车与商业网约车不适用；车费视为含税，销项要从车费里倒算。</p>'+pl;return}
+    if(c.path===1){out.className='result warn';out.innerHTML='<p><b>路径一：第 '+c.quarter+' 季单季 '+money(c.q[c.quarter-1])+'，超过 30,000 元。</b>从把这一季累计推过 30,000 元的那一笔供应起就不再是小供应商，那一笔本身就要收税，没有缓冲期；生效日后 29 天内完成注册。</p>'+pl;return}
+    if(c.path===2){out.className='result warn';out.innerHTML='<p><b>路径二：到第 '+c.quarter+' 季累计 '+money(c.sum)+'，超过 30,000 元。</b>在第 '+c.quarter+' 季结束后的下一个月末失去小供应商身份，从此后的第一笔供应起收税；生效日后 29 天内完成注册。</p>'+pl;return}
+    out.className='result ok';out.innerHTML='<p><b>四季累计 '+money(c.sum)+'，没有超过 30,000 元。</b>按你填的数还是小供应商；可以自愿注册。之后每一季都要接着往前数连续四季。</p>'+pl;
+  }
+  ids.forEach(function(k){$(k).addEventListener('input',upd)});
+  document.querySelectorAll('input[name=ind]').forEach(function(r){r.addEventListener('change',upd)});
+  upd();
+})();
+</script>
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('../sw.js').catch(()=>{}))}</script>
+</body>
+</html>

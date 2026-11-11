@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1313" width="900" height="1313" role="img" aria-labelledby="t d" font-family="'PingFang SC','Hiragino Sans GB','Noto Sans SC','Microsoft YaHei',sans-serif">
+<title id="t">成立公司与家庭总税负：公司赚钱、留存与取款的双层现金图</title>
+<desc id="d">不一定。公司税率低，省下的大多是「晚交」不是「少交」：利润留在公司里才有递延，一旦取出来花掉，个人那一层税迟早要补上。</desc>
+<rect width="900" height="1313" fill="#FAFBFC"/>
+<rect x="0" y="0" width="900" height="142" fill="#12355B"/>
+<text x="40" y="46" font-size="18" fill="#BFD3E6" font-weight="500" text-anchor="start">成立公司与家庭总税负 · 信息图</text>
+<text x="40" y="92" font-size="30" fill="#FFFFFF" font-weight="700" text-anchor="start">成立公司后税率看起来低，家庭最后一定少交税吗？</text>
+<rect x="40" y="166" width="820" height="143" rx="16" fill="#FFFFFF" stroke="#12355B" stroke-width="2"/>
+<text x="64" y="198" font-size="17" fill="#0E7C7B" font-weight="700" text-anchor="start">一句话答案</text>
+<text x="64" y="234" font-size="21" fill="#1F2A37" font-weight="600" text-anchor="start">不一定。公司税率低，省下的大多是「晚交」不是「少交」：利润留在公司里才有</text>
+<text x="64" y="266" font-size="21" fill="#1F2A37" font-weight="600" text-anchor="start">递延，一旦取出来花掉，个人那一层税迟早要补上。</text>
+<text x="40" y="360" font-size="22" fill="#12355B" font-weight="700" text-anchor="start">同样 100 元利润，个人已在最高税档（BC，2026 税年）</text>
+<rect x="40.0" y="378" width="401" height="141" rx="14" fill="#F4F6F9" stroke="#5B6B7F" stroke-width="1.5"/>
+<text x="58" y="411" font-size="19" fill="#5B6B7F" font-weight="700" text-anchor="start">做自雇：只有一层</text>
+<circle cx="64.0" cy="440" r="3.2" fill="#5B6B7F"/>
+<text x="76" y="444" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">T2125 利润并进个人 T1</text>
+<circle cx="64.0" cy="464" r="3.2" fill="#5B6B7F"/>
+<text x="76" y="468" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">当年按个人边际税率交：约 53.5 元</text>
+<circle cx="64.0" cy="488" r="3.2" fill="#5B6B7F"/>
+<text x="76" y="492" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">手上剩约 46.5 元</text>
+<rect x="459.0" y="378" width="401" height="141" rx="14" fill="#E6F4F3" stroke="#0E7C7B" stroke-width="1.5"/>
+<text x="477" y="411" font-size="19" fill="#0E7C7B" font-weight="700" text-anchor="start">开公司：先交公司这一层</text>
+<circle cx="483.0" cy="440" r="3.2" fill="#0E7C7B"/>
+<text x="495" y="444" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">前 50 万活跃经营利润用小企业税率</text>
+<circle cx="483.0" cy="464" r="3.2" fill="#0E7C7B"/>
+<text x="495" y="468" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">公司当年交：约 11 元</text>
+<circle cx="483.0" cy="488" r="3.2" fill="#0E7C7B"/>
+<text x="495" y="492" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">公司账上剩约 89 元</text>
+<text x="40" y="566" font-size="22" fill="#12355B" font-weight="700" text-anchor="start">公司账上的钱，接下来怎么走</text>
+<rect x="40.0" y="584" width="401" height="189" rx="14" fill="#E8F5EC" stroke="#1E7B34" stroke-width="1.5"/>
+<text x="58" y="617" font-size="19" fill="#1E7B34" font-weight="700" text-anchor="start">留在公司再投资</text>
+<circle cx="64.0" cy="647" r="3.2" fill="#1E7B34"/>
+<text x="76" y="651" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">当年比自雇少交约 42.5 元</text>
+<circle cx="64.0" cy="671" r="3.2" fill="#1E7B34"/>
+<text x="76" y="675" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">这是递延：把交个人税的时间往后推</text>
+<circle cx="64.0" cy="695" r="3.2" fill="#1E7B34"/>
+<text x="76" y="699" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">钱一直留着做生意，差额才一直在</text>
+<rect x="459.0" y="584" width="401" height="189" rx="14" fill="#FFF4E5" stroke="#B45309" stroke-width="1.5"/>
+<text x="477" y="617" font-size="19" fill="#B45309" font-weight="700" text-anchor="start">取出来给家里花</text>
+<circle cx="483.0" cy="647" r="3.2" fill="#B45309"/>
+<text x="495" y="651" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">发工资或股息，个人再交一层税</text>
+<circle cx="483.0" cy="671" r="3.2" fill="#B45309"/>
+<text x="495" y="675" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">股息先毛额化，再用股息税收抵免抵掉公司已交</text>
+<text x="495" y="699" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">的大部分</text>
+<circle cx="483.0" cy="719" r="3.2" fill="#B45309"/>
+<text x="495" y="723" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">抵不满：两层加起来和自雇差不太多，不是低一</text>
+<text x="495" y="747" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">大截</text>
+<rect x="40" y="799" width="820" height="146" rx="14" fill="#FDECEA" stroke="#B42318" stroke-width="1.5"/>
+<text x="58" y="833" font-size="20" fill="#B42318" font-weight="700" text-anchor="start">这三种情况，注册的税务好处很小甚至倒贴</text>
+<circle cx="64" cy="863" r="3.2" fill="#B42318"/>
+<text x="76" y="868" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">利润每年几乎全取出来花掉：递延几乎为零</text>
+<circle cx="64" cy="889" r="3.2" fill="#B42318"/>
+<text x="76" y="893" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">个人收入本来不高：比如边际税率约 20.5%，与 11% 只差 9.5 个点</text>
+<circle cx="64" cy="914" r="3.2" fill="#B42318"/>
+<text x="76" y="919" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">落入个人服务业务：公司层面合计 45%，小企业低税率没有，留存差额只剩约 8.5 个点</text>
+<rect x="40" y="971" width="820" height="146" rx="14" fill="#EAF1F8" stroke="#2F5D8A" stroke-width="1.5"/>
+<text x="58" y="1005" font-size="20" fill="#2F5D8A" font-weight="700" text-anchor="start">算账时别漏的两件事</text>
+<circle cx="64" cy="1036" r="3.2" fill="#2F5D8A"/>
+<text x="76" y="1040" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">固定成本：每家居民公司每年都要报 T2，没生意也要报；BC 公司年报费 43.39 元；公司报表通常</text>
+<text x="76" y="1066" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">要请会计</text>
+<circle cx="64" cy="1087" r="3.2" fill="#2F5D8A"/>
+<text x="76" y="1091" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">家里的到手钱：取工资还是股息，会改变家庭收入，进而影响按家庭收入计算的福利，要和税一起算</text>
+<line x1="40" y1="1144" x2="860" y2="1144" stroke="#D5DEE8" stroke-width="1.5"/>
+<text x="40" y="1169" font-size="15" fill="#5B6B7F" font-weight="700" text-anchor="start">官方来源</text>
+<text x="40" y="1190" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">CRA · T4012 T2 Corporation – Income Tax Guide, Before you start（canada.ca）</text>
+<text x="40" y="1211" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">CRA · Corporation tax rates（canada.ca）；B.C. Corporate income tax rates（gov.bc.ca）</text>
+<text x="40" y="1231" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">Income Tax Act s.82（股息毛额化）、s.121（股息税收抵免）（laws-lois.justice.gc.ca）</text>
+<text x="40" y="1257" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">核对日 2026-10-14。100 元是示意，按 BC 2026 税年个人最高边际税率 53.5%、小企业综合税率 11% 计；股息取出后的确切</text>
+<text x="40" y="1278" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">税负随股息类别与个人收入档位变化，本图不代算。</text>
+</svg>

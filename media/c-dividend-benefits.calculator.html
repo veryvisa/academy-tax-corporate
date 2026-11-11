@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>股息进税表、再进福利基年</title>
+<meta name="description" content="给老板改发股息后，为什么家庭福利可能变少？把到账现金、报税单上的应税股息和它影响的福利期并排列出来。">
+<style>
+:root{--bg:#ffffff;--ink:#1b2430;--muted:#5d6b7b;--line:#e3e8ef;--raised:#f6f8fb;--acc:#0b5fff;--ok:#1a7f4b;--okbg:#e9f7ef;--warn:#b54708;--warnbg:#fff3e6}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1419;--ink:#e6ebf2;--muted:#9aa7b5;--line:#2a3340;--raised:#171d25;--acc:#6ea8ff;--ok:#5fd39a;--okbg:#122a1d;--warn:#ffb86b;--warnbg:#2d1f0f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:1.45rem;line-height:1.35;margin:0 0 6px}
+h2{font-size:1.1rem;margin:28px 0 10px;padding-top:14px;border-top:1px solid var(--line)}
+.sub{color:var(--muted);margin:0 0 16px}
+.answer{background:var(--raised);border-left:4px solid var(--acc);padding:12px 14px;border-radius:8px;margin:14px 0}
+.answer b{display:block;margin-bottom:4px}
+label.f{display:block;margin:10px 0}
+label.f span{display:block;font-weight:600}
+label.f small{display:block;color:var(--muted)}
+input[type=number],select{font:inherit;width:180px;max-width:100%;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+fieldset{border:1px solid var(--line);border-radius:10px;margin:12px 0;padding:8px 14px}
+legend{font-weight:600;padding:0 6px}
+label.c{display:block;margin:6px 0}
+button{font:inherit;padding:5px 10px;border:1px solid var(--line);border-radius:8px;background:var(--raised);color:var(--ink);cursor:pointer}
+.result{border-radius:10px;padding:12px 14px;margin:14px 0;border:1px solid var(--line);background:var(--raised)}
+.result.warn{background:var(--warnbg);border-color:var(--warn)}
+.result.ok{background:var(--okbg);border-color:var(--ok)}
+table{border-collapse:collapse;width:100%;font-size:.93rem;margin:10px 0}
+th,td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+th{background:var(--raised)}
+.wrap{overflow-x:auto}
+.pit{margin:0;padding-left:1.2em}
+.pit li{margin:6px 0}
+.foot{margin-top:28px;padding-top:12px;border-top:1px dashed var(--line);font-size:.86rem;color:var(--muted)}
+.foot a{color:var(--acc);overflow-wrap:anywhere}
+</style>
+<!-- vf:start --><meta name="vf-version" content="2026.09.30.2"><link rel="stylesheet" href="../vf/framework.css"><style>body[data-vf-site]{--vf-accent:#48537d;--vf-paper:#f4f5fb;--vf-heading:Georgia, "Songti SC", serif;--vf-radius:8px;}</style><script defer src="../vf/framework.js"></script><!-- vf:end --><link rel="manifest" href="../manifest.webmanifest">
+</head>
+<body data-vf-site="tax-corporate"><!-- vf:start --><nav class="vf-network" aria-label="微出国跨站导航" data-pagefind-ignore><a class="vf-wordmark" href="https://veryvisa.github.io/">微出国<span> / VERYVISA</span></a><span class="vf-network-label">企业税务</span><a href="../workspace/index.html">我的清单</a><a href="https://veryvisa.github.io/#professional">专业人员入口</a></nav><!-- vf:end -->
+<main>
+<h1>给老板改发股息后，为什么家庭福利可能变少？</h1>
+<p class="sub">股息与牛奶金联动 · 现金、税表金额与下一福利期并排看</p>
+
+<div class="answer"><b>福利看的是报税单上的家庭净收入，不是银行到账的现金。</b>非合格股息要按 115% 计入收入，合格股息按 138%；同样的现金，税表上的数更大。而且这些福利几乎都看上一年的家庭净收入：今年怎么发，影响的是明年 7 月以后的福利期。</div>
+
+<h2>先看一个算好的例子（不需要脚本）</h2>
+<p>2026 年从公司拿到 $10,000 现金：</p>
+<div class="wrap"><table>
+<thead><tr><th></th><th class="n">发工资</th><th class="n">非合格股息</th><th class="n">合格股息</th></tr></thead>
+<tbody>
+<tr><td>到账现金（税前）</td><td class="n">$10,000</td><td class="n">$10,000</td><td class="n">$10,000</td></tr>
+<tr><td>计入个人收入的金额</td><td class="n">$10,000</td><td class="n">$11,500</td><td class="n">$13,800</td></tr>
+<tr><td>影响哪个福利期</td><td class="n" colspan="3">2027 年 7 月至 2028 年 6 月</td></tr>
+</tbody>
+</table></div>
+<p>工资这一列只看计入收入的金额；工资在公司层面可以扣、还要扣 CPP，两条路的公司成本并不相同，完整比较见「工资与股息」那一课。</p>
+
+<form id="f" novalidate>
+<h2>换成你家的数字</h2>
+<label class="f"><span>这一年从公司拿到的股息现金（加元）</span><input type="number" id="cash" min="0" step="1000" value="10000"></label>
+<label class="f"><span>股息类型</span><small>公司用小企业税率交过税的利润分出来的，一般是非合格股息；拿不准就问报税人或看 T5 的框号。</small>
+<select id="kind"><option value="ne">非合格股息（按 115% 计入）</option><option value="el">合格股息（按 138% 计入）</option></select></label>
+<label class="f"><span>股息实际付款的年份</span><input type="number" id="year" min="2020" max="2040" step="1" value="2026"></label>
+<label class="f"><span>家里同一年的其他净收入合计（加元，可留 0）</span><small>夫妻双方工资、租金等其他收入扣除后的净额；不确定就先填 0，只看股息这一块。</small><input type="number" id="other" min="0" step="1000" value="0"></label>
+<div id="out" class="result" aria-live="polite"><p>启用脚本后这里显示结果；未启用时请看上面的例子。</p></div>
+</form>
+
+<h2>2026–27 福利期的几条收入线（参照用）</h2>
+<div class="wrap"><table>
+<thead><tr><th>福利</th><th>收入线（家庭净收入）</th></tr></thead>
+<tbody>
+<tr><td>加拿大儿童福利（CCB）</td><td>超过 38,237 加元开始第一段扣减；超过 82,847 加元进入第二段</td></tr>
+<tr><td>儿童残障福利（CDB）</td><td>超过 82,847 加元开始递减</td></tr>
+<tr><td>日用品与必需品补助（CGEB，原 GST/HST 抵免）</td><td>过了 46,432 加元，整笔补助开始扣减</td></tr>
+<tr><td>加拿大牙科护理计划（CDCP）</td><td>调整后家庭净收入低于 90,000 加元；正好 90,000 加元就不符合</td></tr>
+</tbody>
+</table></div>
+<p>这些线属于 2026 年 7 月到 2027 年 6 月这个福利期（看 2025 年收入）。今年发的股息影响的是之后的福利期，那时的线会按年度指数化调整，所以这里只作参照，不能直接拿来判定。</p>
+
+<h2>这个工具不算的东西</h2>
+<ul class="pit">
+<li><b>福利金额</b>：判不了。CCB 等按孩子人数、年龄、资格和递减比例计算，请用 CRA 的福利计算器按全家收入算。</li>
+<li><b>其他扣除</b>：RRSP 供款等可用扣除会改变净收入，这里没算。</li>
+<li><b>个人所得税</b>：股息还有股息税收抵免，税额另算；福利看的是净收入，不是交了多少税。</li>
+</ul>
+
+<h2>算法（全部写在这里，可以手算复核）</h2>
+<ul class="pit">
+<li>计入收入的应税股息＝现金股息 × 1.15（非合格）或 × 1.38（合格）。</li>
+<li>家庭净收入（本工具口径）＝其他净收入＋应税股息。</li>
+<li>影响的福利期＝付款年份的下一年 7 月，到再下一年 6 月。</li>
+</ul>
+
+<div class="foot">
+<p>本页只演示机制，不构成个案税务或福利建议；福利由 CRA 按你全家的收入计算。参数为 2026 税年与 2026–27 福利期口径，核实日 2026-10-30。</p>
+<p>来源：<a href="https://bbs.fcgvisa.com/t/49111" data-vf-official-url="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-12000-taxable-amount-dividends-eligible-other-than-eligible-taxable-canadian-corporations.html">CRA Lines 12000/12010 应税股息<span class="vf-forum-link-label">（论坛解读）</span></a>；<a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-23600-net-income.html">CRA Line 23600 净收入</a>；<a href="https://www.canada.ca/en/revenue-agency/services/child-family-benefits/canada-child-benefit-overview/canada-child-benefit-we-calculate-your-ccb.html">CRA How we calculate your CCB</a>；<a href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-82.html">ITA s.82（股息毛额化）</a>。</p>
+</div>
+<!-- vf:start --><div class="vf-tools" role="group" data-pagefind-ignore aria-label="阅读工具"><button type="button" data-vf-save hidden>保存本页</button><button type="button" data-vf-print hidden>打印 / 存为 PDF</button><span data-vf-status role="status" aria-live="polite"></span></div><!-- vf:end --></main>
+<script>
+var LINES=[[38237,'CCB 第一段扣减线'],[46432,'CGEB 开始扣减线'],[82847,'CCB 第二段与 CDB 递减线'],[90000,'CDCP 收入线（达到即不符合）']];
+function calc(i){
+  var cash=Math.max(0,+i.cash||0),other=Math.max(0,+i.other||0),y=Math.round(+i.year||2026);
+  var g=i.kind==='el'?1.38:1.15,taxable=cash*g,net=other+taxable;
+  var crossed=LINES.filter(function(l){return l[0]===90000?net>=l[0]:net>l[0]}).map(function(l){return l[1]});
+  var crossedByDiv=LINES.filter(function(l){var a=l[0]===90000?other>=l[0]:other>l[0];var b=l[0]===90000?net>=l[0]:net>l[0];return b&&!a}).map(function(l){return l[1]});
+  return{taxable:taxable,extra:taxable-cash,net:net,period:(y+1)+' 年 7 月至 '+(y+2)+' 年 6 月',crossed:crossed,crossedByDiv:crossedByDiv};
+}
+(function(){
+  var ids=['cash','kind','year','other'],out=document.getElementById('out');
+  function $(k){return document.getElementById(k)}
+  function money(x){return '$'+Math.round(x).toLocaleString('en-CA')}
+  function upd(){
+    var v={};ids.forEach(function(k){v[k]=$(k).value});var c=calc(v);
+    out.className='result';
+    out.innerHTML='<div class="wrap"><table><tbody>'+
+      '<tr><td>到账现金</td><td class="n">'+money(+v.cash||0)+'</td></tr>'+
+      '<tr><td>报税单上的应税股息</td><td class="n">'+money(c.taxable)+'</td></tr>'+
+      '<tr><td>比现金多计入</td><td class="n">'+money(c.extra)+'</td></tr>'+
+      '<tr><td>家庭净收入（本工具口径）</td><td class="n">'+money(c.net)+'</td></tr>'+
+      '<tr><td>影响的福利期</td><td class="n">'+c.period+'</td></tr>'+
+      '</tbody></table></div>'+
+      '<p>对照 2026–27 福利期的收入线：'+(c.crossed.length?'已超过 '+c.crossed.join('、')+'。':'低于表中各条线。')+
+      (c.crossedByDiv.length?' 其中因为这笔股息才越过的是：<b>'+c.crossedByDiv.join('、')+'</b>。':'')+'</p>'+
+      '<p>这只说明收入落在哪一段，不说明能领多少；实际福利期的线会按年度调整，金额请用 CRA 福利计算器按全家资料算。</p>';
+  }
+  ids.forEach(function(k){$(k).addEventListener('input',upd);$(k).addEventListener('change',upd)});
+  upd();
+})();
+</script>
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('../sw.js').catch(()=>{}))}</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1403" width="900" height="1403" role="img" aria-labelledby="t d" font-family="'PingFang SC','Hiragino Sans GB','Noto Sans SC','Microsoft YaHei',sans-serif">
+<title id="t">老板给自己发工资还是股息，为什么不能只比较所得税？</title>
+<desc id="d">发工资买的不是税率，是资格。工资同时带来 RRSP 额度、CPP 记录和托儿费扣除资格，也同时背上公司与个人两份 CPP；股息这三样一样都买不到。走哪条路要看现金需求、退休规划、家庭结构。</desc>
+<rect width="900" height="1403" fill="#FAFBFC"/>
+<rect x="0" y="0" width="900" height="122" rx="0" fill="#12355B"/>
+<text x="40" y="46" font-size="18" fill="#BFD3E6" font-weight="500" text-anchor="start">工资与股息的完整比较 · 信息图</text>
+<text x="40" y="92" font-size="30" fill="#FFFFFF" font-weight="700" text-anchor="start">老板给自己发工资还是股息，为什么不能只比较所得税？</text>
+<rect x="40" y="146" width="820" height="165" rx="16" fill="#FFFFFF" stroke="#12355B" stroke-width="2"/>
+<text x="64" y="177" font-size="17" fill="#0E7C7B" font-weight="700" text-anchor="start">一句话答案</text>
+<text x="64" y="213" font-size="21" fill="#1F2A37" font-weight="600" text-anchor="start">发工资买的不是税率，是资格。工资同时带来 RRSP 额度、CPP 记录和托儿费扣</text>
+<text x="64" y="246" font-size="21" fill="#1F2A37" font-weight="600" text-anchor="start">除资格，也同时背上公司与个人两份 CPP；股息这三样一样都买不到。走哪条路要</text>
+<text x="64" y="279" font-size="21" fill="#1F2A37" font-weight="600" text-anchor="start">看现金需求、退休规划、家庭结构。</text>
+<text x="40" y="355" font-size="22" fill="#12355B" font-weight="700" text-anchor="start">四栏一起比（BC，2026 税年）</text>
+<rect x="40.0" y="375" width="194.5" height="265" rx="14" fill="#EAF1F8" stroke="#2F5D8A" stroke-width="1.5"/>
+<text x="54.0" y="407" font-size="19" fill="#2F5D8A" font-weight="700" text-anchor="start">税</text>
+<text x="54.0" y="435" font-size="14" fill="#5B6B7F" font-weight="700" text-anchor="start">工资</text>
+<text x="54.0" y="457" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">公司层面可以扣，税只</text>
+<text x="54.0" y="480" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">在个人这一层交一次</text>
+<text x="54.0" y="538" font-size="14" fill="#5B6B7F" font-weight="700" text-anchor="start">股息</text>
+<text x="54.0" y="560" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">公司先交税（享小企业</text>
+<text x="54.0" y="583" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">扣除时 11%），到你手</text>
+<text x="54.0" y="606" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">上再交第二道个人税</text>
+<rect x="248.5" y="375" width="194.5" height="265" rx="14" fill="#E6F4F3" stroke="#0E7C7B" stroke-width="1.5"/>
+<text x="262.5" y="407" font-size="19" fill="#0E7C7B" font-weight="700" text-anchor="start">RRSP 额度</text>
+<text x="262.5" y="435" font-size="14" fill="#5B6B7F" font-weight="700" text-anchor="start">工资</text>
+<text x="262.5" y="457" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">按上一年 18% 的赚取</text>
+<text x="262.5" y="480" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">收入累积，年度上限封</text>
+<text x="262.5" y="503" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">顶</text>
+<text x="262.5" y="538" font-size="14" fill="#5B6B7F" font-weight="700" text-anchor="start">股息</text>
+<text x="262.5" y="560" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">股息不在赚取收入清单</text>
+<text x="262.5" y="583" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">里，只靠分红额度是零</text>
+<rect x="457.0" y="375" width="194.5" height="265" rx="14" fill="#FFF4E5" stroke="#B45309" stroke-width="1.5"/>
+<text x="471.0" y="407" font-size="19" fill="#B45309" font-weight="700" text-anchor="start">CPP</text>
+<text x="471.0" y="435" font-size="14" fill="#5B6B7F" font-weight="700" text-anchor="start">工资</text>
+<text x="471.0" y="457" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">产生 CPP 可保收入；</text>
+<text x="471.0" y="480" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">公司与你各付 5.95</text>
+<text x="471.0" y="503" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">%，合计 11.9%</text>
+<text x="471.0" y="538" font-size="14" fill="#5B6B7F" font-weight="700" text-anchor="start">股息</text>
+<text x="471.0" y="560" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">不产生 CPP 记录，退</text>
+<text x="471.0" y="583" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">休时的 CPP 按贡献记</text>
+<text x="471.0" y="606" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">录算</text>
+<rect x="665.5" y="375" width="194.5" height="265" rx="14" fill="#F4F6F9" stroke="#5B6B7F" stroke-width="1.5"/>
+<text x="679.5" y="407" font-size="19" fill="#5B6B7F" font-weight="700" text-anchor="start">福利与扣除</text>
+<text x="679.5" y="435" font-size="14" fill="#5B6B7F" font-weight="700" text-anchor="start">工资</text>
+<text x="679.5" y="457" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">托儿费扣除按三分之二</text>
+<text x="679.5" y="480" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">的赚取收入封顶</text>
+<text x="679.5" y="538" font-size="14" fill="#5B6B7F" font-weight="700" text-anchor="start">股息</text>
+<text x="679.5" y="560" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">股息不算赚取收入，全</text>
+<text x="679.5" y="583" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">部来自分红的可能一分</text>
+<text x="679.5" y="606" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">钱托儿费都扣不了</text>
+<text x="40" y="684" font-size="22" fill="#12355B" font-weight="700" text-anchor="start">比较时要一起放上桌的东西</text>
+<rect x="40" y="702" width="820" height="129" rx="14" fill="#EAF1F8" stroke="#2F5D8A" stroke-width="1.5"/>
+<text x="58" y="736" font-size="20" fill="#2F5D8A" font-weight="700" text-anchor="start">先问这笔钱要不要立刻花掉</text>
+<circle cx="64" cy="765" r="3.2" fill="#2F5D8A"/>
+<text x="76" y="770" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">本来就要留在公司里滚存投资的，晚一点分红反而争取到递延的好处</text>
+<circle cx="64" cy="797" r="3.2" fill="#2F5D8A"/>
+<text x="76" y="802" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">高收入的业主经理把利润交完公司税再全部分红花掉，两道税合计往往高于直接发工资</text>
+<rect x="40" y="853" width="820" height="129" rx="14" fill="#F4F6F9" stroke="#5B6B7F" stroke-width="1.5"/>
+<text x="58" y="887" font-size="20" fill="#5B6B7F" font-weight="700" text-anchor="start">整合只是近似</text>
+<circle cx="64" cy="916" r="3.2" fill="#5B6B7F"/>
+<text x="76" y="921" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">毛额化加股息税收抵免想让两条路合计税负差不多，但抵免率全国统一、各省税率各不相同</text>
+<circle cx="64" cy="948" r="3.2" fill="#5B6B7F"/>
+<text x="76" y="953" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">两条路径留给个人手上的钱，会因省份、税年、收入档位差几个百分点，方向甚至会反转</text>
+<rect x="40" y="1004" width="820" height="212" rx="14" fill="#FFF4E5" stroke="#B45309" stroke-width="1.5"/>
+<text x="58" y="1038" font-size="20" fill="#B45309" font-weight="700" text-anchor="start">最容易弄错</text>
+<circle cx="64" cy="1067" r="3.2" fill="#B45309"/>
+<text x="76" y="1072" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">「不交 CPP 的股息在任何情况下都优于工资」：工资与股息对 CPP、RRSP 额度及税表收入的影响</text>
+<text x="76" y="1098" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">不同，不存在只看一项税率就适用所有家庭的结论。</text>
+<circle cx="64" cy="1124" r="3.2" fill="#B45309"/>
+<text x="76" y="1129" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">「开公司一定省税」「分红一定比工资划算」：都是错的，要按人、按省、按年现算。</text>
+<circle cx="64" cy="1156" r="3.2" fill="#B45309"/>
+<text x="76" y="1161" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">控制公司超过 40% 有表决权股份的人，其雇佣属于不可保雇佣：不用缴 EI，也不能领 EI 常规福</text>
+<text x="76" y="1186" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">利。</text>
+<line x1="40" y1="1242" x2="860" y2="1242" stroke="#D5DEE8" stroke-width="1.5"/>
+<text x="40" y="1267" font-size="15" fill="#5B6B7F" font-weight="700" text-anchor="start">来源</text>
+<text x="40" y="1289" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">Income Tax Act s.82(1)(b)（股息毛额化）、s.121（股息税收抵免）（laws-lois.justice.gc.ca）</text>
+<text x="40" y="1311" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">CRA · How contributions affect your RRSP deduction limit；Line 22200 – CPP or QPP contributions（c</text>
+<text x="40" y="1331" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">anada.ca）</text>
+<text x="40" y="1360" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">本页正文核实日 2026-10-30。本图只比机制，不给工资与股息的固定比例；具体组合请按全家收入与会计师测算。</text>
+</svg>

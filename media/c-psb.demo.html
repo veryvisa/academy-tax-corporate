@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>个人服务业务事实清单</title>
+<meta name="description" content="把原来的工作改成自己公司开票，就能享受一般公司税优惠吗？逐条核对个人服务业务的五个条件，整理交给报税人的工作事实，不输出个案裁决。">
+<style>
+:root{--bg:#ffffff;--ink:#1b2430;--muted:#5d6b7b;--line:#e3e8ef;--raised:#f6f8fb;--acc:#0b5fff;--ok:#1a7f4b;--okbg:#e9f7ef;--warn:#b54708;--warnbg:#fff3e6}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1419;--ink:#e6ebf2;--muted:#9aa7b5;--line:#2a3340;--raised:#171d25;--acc:#6ea8ff;--ok:#5fd39a;--okbg:#122a1d;--warn:#ffb86b;--warnbg:#2d1f0f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:1.45rem;line-height:1.35;margin:0 0 6px}
+h2{font-size:1.1rem;margin:28px 0 10px;padding-top:14px;border-top:1px solid var(--line)}
+.sub{color:var(--muted);margin:0 0 16px}
+.answer{background:var(--raised);border-left:4px solid var(--acc);padding:12px 14px;border-radius:8px;margin:14px 0}
+.answer b{display:block;margin-bottom:4px}
+.check{display:block;padding:9px 12px;border:1px solid var(--line);border-radius:10px;background:var(--raised);margin:8px 0;cursor:pointer}
+.check input{margin-right:8px;transform:scale(1.15)}
+.check small{display:block;color:var(--muted);margin-left:26px}
+.result{border-radius:10px;padding:12px 14px;margin:14px 0;border:1px solid var(--line);background:var(--raised)}
+.result.warn{background:var(--warnbg);border-color:var(--warn)}
+.result.ok{background:var(--okbg);border-color:var(--ok)}
+.result h3{margin:0 0 6px;font-size:1rem}
+table{border-collapse:collapse;width:100%;font-size:.93rem;margin:10px 0}
+th,td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
+th{background:var(--raised)}
+.wrap{overflow-x:auto}
+.pit{margin:0;padding-left:1.2em}
+.pit li{margin:6px 0}
+.foot{margin-top:28px;padding-top:12px;border-top:1px dashed var(--line);font-size:.86rem;color:var(--muted)}
+.foot a{color:var(--acc);overflow-wrap:anywhere}
+</style>
+<!-- vf:start --><meta name="vf-version" content="2026.09.30.2"><link rel="stylesheet" href="../vf/framework.css"><style>body[data-vf-site]{--vf-accent:#48537d;--vf-paper:#f4f5fb;--vf-heading:Georgia, "Songti SC", serif;--vf-radius:8px;}</style><script defer src="../vf/framework.js"></script><!-- vf:end --><link rel="manifest" href="../manifest.webmanifest">
+</head>
+<body data-vf-site="tax-corporate"><!-- vf:start --><nav class="vf-network" aria-label="微出国跨站导航" data-pagefind-ignore><a class="vf-wordmark" href="https://veryvisa.github.io/">微出国<span> / VERYVISA</span></a><span class="vf-network-label">企业税务</span><a href="../workspace/index.html">我的清单</a><a href="https://veryvisa.github.io/#professional">专业人员入口</a></nav><!-- vf:end -->
+<main>
+<h1>把原来的工作改成自己公司开票，就能享受一般公司税优惠吗？</h1>
+<p class="sub">个人服务业务 · 事实清单 · 先看工作事实，再看公司形式</p>
+
+<div class="answer"><b>不一定。</b>税法看的不是合同抬头写的是公司还是个人，而是你实际怎么干活。五个条件同时成立，公司就可能被认定为个人服务业务：拿不到小企业扣除，拿不到一般税率减免，还要多交 5% 的附加税，能扣的费用也被压到很窄。这个工具不替你下结论，它把五个条件和要准备的工作事实摆出来，交给报税的人判断。</div>
+
+<h2>五个条件，要全部成立才算</h2>
+<p>CRA 的说法是：五条同时满足，才可能是个人服务业务；有一条不满足，就按普通公司处理。逐条勾选你的情况。</p>
+
+<form id="f" novalidate>
+<label class="check"><input type="checkbox" name="c" value="1"> ① 你是通过自己的公司提供服务<small>客户付款给你的公司，而不是直接付给你个人。</small></label>
+<label class="check"><input type="checkbox" name="c" value="2"> ② 你本人或你的关系人是公司的特定股东<small>一般指直接或间接持有任一类别已发行股份至少 10%。关系人包括血亲、配偶或同居伴侣、领养关系。</small></label>
+<label class="check"><input type="checkbox" name="c" value="3"> ③ 公司全年雇用的全职员工不超过 5 人<small>全职员工＝每个工作日都干满一整天，正常病假与休假除外。全年超过 5 人，这一条就不成立。</small></label>
+<label class="check"><input type="checkbox" name="c" value="4"> ④ 付款方不是与你的公司有关联关系的公司<small>客户若是你自己控制的关联公司，这一条不成立。</small></label>
+<label class="check"><input type="checkbox" name="c" value="5"> ⑤ 假如没有这家公司，你会被合理地视为客户的雇员<small>这一条是事实问题，没有公式可算，见下一节的事实清单。</small></label>
+
+<div id="out" class="result" aria-live="polite">
+<h3>勾选后这里显示结果</h3>
+<p>未启用脚本时：五条全部成立＝可能是个人服务业务，须交专业判断；任何一条不成立＝按普通公司处理。</p>
+</div>
+
+<h2>第 ⑤ 条：把工作事实写下来，不只看合同叫法</h2>
+<p>判断「没有公司时你是不是雇员」，和判断一个人是雇员还是自雇用的是同一套事实。CRA 先问双方当初的意图，再用下面这些事实核对意图是否站得住。逐条写出你的真实情况：</p>
+<div class="wrap"><table>
+<thead><tr><th>事实</th><th>要写清楚的</th><th>偏向雇员的样子</th></tr></thead>
+<tbody>
+<tr><td>双方意图</td><td>合同怎么写、为什么这样写，双方理解是否一致</td><td>只把称呼从工资改成发票，其余照旧</td></tr>
+<tr><td>控制</td><td>谁定工作时间、地点、方法，谁审你的成果</td><td>客户排班、管流程、按员工标准考核</td></tr>
+<tr><td>工具与设备</td><td>电脑、软件、车辆、场地由谁提供、谁付钱</td><td>全部用客户的</td></tr>
+<tr><td>分包与雇帮手</td><td>能不能自己找人替你做、自己付钱</td><td>必须本人亲自做</td></tr>
+<tr><td>财务风险</td><td>有没有自担的固定开销、坏账、返工成本</td><td>不承担任何亏损可能</td></tr>
+<tr><td>投资与管理</td><td>是否为这门生意投入资金、自己管理运营</td><td>没有投入，也不管经营</td></tr>
+<tr><td>赚取利润的机会</td><td>能否靠定价、效率、多接客户多赚</td><td>按时间拿固定报酬，干多干少一个价</td></tr>
+</tbody>
+</table></div>
+<p>单独一条说明不了问题，要看整体关系。CRA 还提醒：不能请 CRA 就「没有公司时你算不算客户雇员」出具 CPP/EI 裁定；能请求裁定的，是你算不算自己公司的雇员。</p>
+
+<h2>落进去以后会怎样</h2>
+<ul class="pit">
+<li>拿不到小企业扣除，也拿不到一般税率减免；联邦另加 5% 的个人服务业务附加税。</li>
+<li>BC 的低税率只给能拿联邦小企业扣除的收入，个人服务业务按一般税率走。公司留存的这部分利润，BC 合计约按 45% 计（联邦 28%＋附加 5%＋BC 12%，2026 税年）。</li>
+<li>能扣的费用大幅收窄，主要剩下付给本人的薪酬与相关福利，以及少数销售或催收费用。</li>
+<li>最后整个家庭是不是比当雇员交得更多，要把工资、股息提取和个人收入档位一起算，单看公司税率下不了结论。能确定的只是：小企业低税率和递延这两样好处没有了。</li>
+</ul>
+
+<h2>容易看错的三处</h2>
+<ul class="pit">
+<li><b>「我开了发票，所以不是雇员」</b>：发票和公司只是形式，第 ⑤ 条看的是干活的事实。</li>
+<li><b>「只有一个客户就一定是」</b>：雇了超过 5 名全职员工全年在岗，第 ③ 条就不成立；客户单一不等于个人服务业务。</li>
+<li><b>「客户多就一定不是」</b>：客户数量不是五个条件之一。每份合同的工作事实都要单独看。</li>
+</ul>
+
+<div class="foot">
+<p>本页只整理条件与事实，不对任何个案下结论；涉及具体安排请交给报税人或会计师按全部事实判断。税率为 2026 税年 BC 口径。</p>
+<p>来源：<a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-income-tax-return/tax-implications-personal-services-business/factors-psb.html">CRA：Determine if the worker’s corporation is carrying on a PSB</a>；<a href="https://bbs.fcgvisa.com/t/56832" data-vf-official-url="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/corporations/corporation-income-tax-return/tax-implications-personal-services-business/fact-sheet-personal-business.html">CRA：Fact sheet – Personal services business<span class="vf-forum-link-label">（论坛解读）</span></a>；<a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4110/employee-self-employed.html">CRA RC4110：Employee or Self-Employed?</a>；<a href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html">ITA s.125</a>；<a href="https://laws-lois.justice.gc.ca/eng/acts/i-3.3/section-123.4.html">ITA s.123.4</a>；<a href="https://bbs.fcgvisa.com/t/56832" data-vf-official-url="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-123.5.html">ITA s.123.5<span class="vf-forum-link-label">（论坛解读）</span></a>。</p>
+</div>
+</form>
+<!-- vf:start --><div class="vf-tools" role="group" data-pagefind-ignore aria-label="阅读工具"><button type="button" data-vf-save hidden>保存本页</button><button type="button" data-vf-print hidden>打印 / 存为 PDF</button><span data-vf-status role="status" aria-live="polite"></span></div><!-- vf:end --></main>
+<script>
+(function(){
+  var f=document.getElementById('f'),out=document.getElementById('out');
+  function upd(){
+    var on=[].slice.call(f.querySelectorAll('input[name=c]')).filter(function(x){return x.checked}).map(function(x){return x.value});
+    var miss=['1','2','3','4','5'].filter(function(v){return on.indexOf(v)<0});
+    if(on.length===0){out.className='result';out.innerHTML='<h3>勾选后这里显示结果</h3><p>五条全部成立＝可能是个人服务业务，须交专业判断；任何一条不成立＝按普通公司处理。</p>';return}
+    if(miss.length===0){out.className='result warn';out.innerHTML='<h3>五条都勾了：可能落入个人服务业务</h3><p>这不是结论。第 ⑤ 条是事实问题，请把下一节的工作事实逐条写好，连同合同一起交给报税人判断。</p>';return}
+    var only5=miss.length===1&&miss[0]==='5';
+    out.className=only5?'result':'result ok';
+    out.innerHTML=only5?'<h3>前四条成立，第 ⑤ 条没勾</h3><p>结果完全取决于第 ⑤ 条。没勾不代表已经排除：请按下一节写清工作事实，交专业判断。</p>':'<h3>有条件不成立：'+miss.map(function(v){return '第 '+'①②③④⑤'.charAt(v-1)+' 条'}).join('、')+'</h3><p>按 CRA 的说法，五条缺一条就不是个人服务业务，按普通公司处理。请确认没勾的那条确实符合你的真实情况。</p>';
+  }
+  f.addEventListener('change',upd);upd();
+})();
+</script>
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('../sw.js').catch(()=>{}))}</script>
+</body>
+</html>

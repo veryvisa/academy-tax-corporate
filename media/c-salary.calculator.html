@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>工资与股息并排计算</title>
+<meta name="description" content="老板给自己发工资还是股息，为什么不能只比较所得税？同一公司成本下，并排比较到手现金、CPP、RRSP 额度、托儿费扣除与税表收入。">
+<style>
+:root{--bg:#ffffff;--ink:#1b2430;--muted:#5d6b7b;--line:#e3e8ef;--raised:#f6f8fb;--acc:#0b5fff;--ok:#1a7f4b;--okbg:#e9f7ef;--warn:#b54708;--warnbg:#fff3e6}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1419;--ink:#e6ebf2;--muted:#9aa7b5;--line:#2a3340;--raised:#171d25;--acc:#6ea8ff;--ok:#5fd39a;--okbg:#122a1d;--warn:#ffb86b;--warnbg:#2d1f0f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:1.45rem;line-height:1.35;margin:0 0 6px}
+h2{font-size:1.1rem;margin:28px 0 10px;padding-top:14px;border-top:1px solid var(--line)}
+.sub{color:var(--muted);margin:0 0 16px}
+.answer{background:var(--raised);border-left:4px solid var(--acc);padding:12px 14px;border-radius:8px;margin:14px 0}
+.answer b{display:block;margin-bottom:4px}
+label.f{display:block;margin:10px 0}
+label.f span{display:block;font-weight:600}
+label.f small{display:block;color:var(--muted)}
+input[type=number],select{font:inherit;width:180px;max-width:100%;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+fieldset{border:1px solid var(--line);border-radius:10px;margin:12px 0;padding:8px 14px}
+legend{font-weight:600;padding:0 6px}
+label.c{display:block;margin:6px 0}
+button{font:inherit;padding:5px 10px;border:1px solid var(--line);border-radius:8px;background:var(--raised);color:var(--ink);cursor:pointer}
+.result{border-radius:10px;padding:12px 14px;margin:14px 0;border:1px solid var(--line);background:var(--raised)}
+.result.warn{background:var(--warnbg);border-color:var(--warn)}
+.result.ok{background:var(--okbg);border-color:var(--ok)}
+table{border-collapse:collapse;width:100%;font-size:.93rem;margin:10px 0}
+th,td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+th{background:var(--raised)}
+.wrap{overflow-x:auto}
+.pit{margin:0;padding-left:1.2em}
+.pit li{margin:6px 0}
+.foot{margin-top:28px;padding-top:12px;border-top:1px dashed var(--line);font-size:.86rem;color:var(--muted)}
+.foot a{color:var(--acc);overflow-wrap:anywhere}
+</style>
+<!-- vf:start --><meta name="vf-version" content="2026.09.30.2"><link rel="stylesheet" href="../vf/framework.css"><style>body[data-vf-site]{--vf-accent:#48537d;--vf-paper:#f4f5fb;--vf-heading:Georgia, "Songti SC", serif;--vf-radius:8px;}</style><script defer src="../vf/framework.js"></script><!-- vf:end --><link rel="manifest" href="../manifest.webmanifest">
+</head>
+<body data-vf-site="tax-corporate"><!-- vf:start --><nav class="vf-network" aria-label="微出国跨站导航" data-pagefind-ignore><a class="vf-wordmark" href="https://veryvisa.github.io/">微出国<span> / VERYVISA</span></a><span class="vf-network-label">企业税务</span><a href="../workspace/index.html">我的清单</a><a href="https://veryvisa.github.io/#professional">专业人员入口</a></nav><!-- vf:end -->
+<main>
+<h1>老板给自己发工资还是股息，为什么不能只比较所得税？</h1>
+<p class="sub">工资与股息的完整比较 · BC 2026 税年 · 同一笔公司成本摆在一起比</p>
+
+<div class="answer"><b>发工资买的不是税率，是资格。</b>工资在公司层面可以扣，同时带来 RRSP 额度、CPP 记录和托儿费扣除资格，也同时背上公司与个人两份 CPP；股息是公司税后的钱，这三样一样都买不到。下面把同一笔公司成本走两条路的结果并排列出。</div>
+
+<h2>先看一个算好的例子（不需要脚本）</h2>
+<p>公司为你准备了 $100,000 税前成本，个人整笔按最高档（联邦 33%＋BC 20.5%）算，股息全部按非合资格股息取出：</p>
+<div class="wrap"><table>
+<thead><tr><th></th><th class="n">全发工资</th><th class="n">全发股息</th></tr></thead>
+<tbody>
+<tr><td>工资 / 股息金额</td><td class="n">$95,354</td><td class="n">$89,000</td></tr>
+<tr><td>公司付的雇主 CPP＋CPP2</td><td class="n">$4,646</td><td class="n">—</td></tr>
+<tr><td>公司税（11%）</td><td class="n">—</td><td class="n">$11,000</td></tr>
+<tr><td>你付的 CPP＋CPP2</td><td class="n">$4,646</td><td class="n">—</td></tr>
+<tr><td>个人所得税（整笔按 53.5%）</td><td class="n">$51,014</td><td class="n">$43,509</td></tr>
+<tr><td>到你手上</td><td class="n">$39,693</td><td class="n">$45,491</td></tr>
+<tr><td>CPP 记录（双方合计供款）</td><td class="n">$9,293</td><td class="n">$0</td></tr>
+<tr><td>下一年 RRSP 额度</td><td class="n">$17,164</td><td class="n">$0</td></tr>
+<tr><td>托儿费扣除的赚取收入基数</td><td class="n">$95,354</td><td class="n">$0</td></tr>
+<tr><td>报税单上的收入</td><td class="n">$95,354</td><td class="n">$102,350</td></tr>
+</tbody>
+</table></div>
+<p>这个例子里股息到手多，但工资那一列多出了 $9,293 的 CPP 供款记录和 $17,164 的 RRSP 额度；而且这里把工资整笔按最高档算，实际上工资收入跨档时税率更低，方向可能反过来。<b>哪条路更好，要按你的档位、家庭和退休规划现算。</b></p>
+
+<form id="f" novalidate>
+<h2>换成你的数字</h2>
+<label class="f"><span>公司为你准备的税前成本（加元）</span><small>工资路线下包括公司要配缴的 CPP；股息路线下是交公司税前的利润。本工具只算小企业扣除范围内的利润（11%）。</small><input type="number" id="C" min="0" step="1000" value="100000"></label>
+<label class="f"><span>你的联邦边际税率（%）</span><small>整笔按这一档算；不确定就请报税人告诉你。</small><input type="number" id="fed" min="0" max="33" step="0.5" value="33"></label>
+<label class="f"><span>你的 BC 边际税率（%）</span><input type="number" id="bc" min="0" max="20.5" step="0.1" value="20.5"></label>
+<p><button type="button" id="top">填入最高档：联邦 33%＋BC 20.5%</button></p>
+<div id="out" class="result" aria-live="polite"><p>启用脚本后这里显示结果；未启用时请看上面的例子。</p></div>
+</form>
+
+<h2>这个工具不算的东西</h2>
+<ul class="pit">
+<li><b>跨档</b>：判不了。整笔按你填的那一档算；金额大到跨档时，结果只适合看方向。</li>
+<li><b>CPP 的税务处理</b>：雇员 CPP 有抵免、增强部分可扣除，这里没算，工资一列的个人税会略高估。</li>
+<li><b>养老金调整（PA）</b>：参加雇主养老金计划的，RRSP 新额度要扣 PA；这里按没有 PA 算。</li>
+<li><b>EI</b>：控制公司超过 40% 有表决权股份的人，其雇佣属于不可保雇佣，不用缴 EI，这里按这一口径不算 EI。</li>
+<li><b>家庭福利</b>：判不了。股息按放大后的金额计入收入，福利另看「股息与牛奶金联动」那一页。</li>
+<li><b>混合方案、给家人发工资或分红（TOSI）、公司留存</b>：不在本工具范围。</li>
+</ul>
+
+<h2>算法（全部写在这里，可以手算复核）</h2>
+<ul class="pit">
+<li>工资 S 满足：S＋雇主 CPP＋雇主 CPP2＝公司成本。CPP＝5.95% ×（S 与 $74,600 取小－$3,500），最低为 0、最多 $4,230.45；CPP2＝4% ×（S 与 $85,000 取小－$74,600），最低为 0、最多 $416。雇员与雇主各付一份。</li>
+<li>工资个人税＝S ×（联邦＋BC 边际税率）。到手＝S－个人税－雇员 CPP－雇员 CPP2。</li>
+<li>股息＝公司成本 × 89%（先交 11% 公司税）。应税股息＝股息 × 1.15。个人股息税＝应税股息 × 边际税率－联邦抵免（毛额化部分的 9/13）－BC 抵免（应税股息的 1.96%），最低为 0。</li>
+<li>RRSP 额度＝18% × 当年工资与 $33,810（2026 年上限）取小，在下一年可用；本工具假设没有雇主养老金计划（养老金调整 PA 为 0），有 PA 的要先扣掉。股息不算赚取收入。托儿费扣除按三分之二的赚取收入封顶，股息同样不算。</li>
+</ul>
+
+<div class="foot">
+<p>本页只做机制演算，不构成个案税务建议，也不给工资与股息的固定比例；具体组合请交给报税人或会计师按全家收入测算。参数为 2026 税年 BC 口径，核实日 2026-10-30。</p>
+<p>来源：<a href="https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html">CRA CPP 供款率与上限</a>；<a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans/contributing-a-rrsp-prpp/contributions-affect-your-rrsp-prpp-deduction-limit.html">CRA How contributions affect your RRSP deduction limit</a>；<a href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-82.html">ITA s.82（股息毛额化）</a>；<a href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-121.html">ITA s.121（联邦股息抵免）</a>；<a href="https://bbs.fcgvisa.com/t/56829" data-vf-official-url="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-22200-deduction-cpp-qpp-contributions-on-self-employment-other-earnings.html">CRA Line 22200<span class="vf-forum-link-label">（论坛解读）</span></a>。</p>
+</div>
+<!-- vf:start --><div class="vf-tools" role="group" data-pagefind-ignore aria-label="阅读工具"><button type="button" data-vf-save hidden>保存本页</button><button type="button" data-vf-print hidden>打印 / 存为 PDF</button><span data-vf-status role="status" aria-live="polite"></span></div><!-- vf:end --></main>
+<script>
+var P={cppRate:0.0595,ympe:74600,exempt:3500,cppMax:4230.45,cpp2Rate:0.04,yampe:85000,cpp2Max:416,rrspPct:0.18,rrspMax:33810,corp:0.11,gu:1.15,bcDtc:0.0196};
+function cpp(S){return Math.min(P.cppMax,Math.max(0,P.cppRate*(Math.min(S,P.ympe)-P.exempt)))}
+function cpp2(S){return Math.min(P.cpp2Max,Math.max(0,P.cpp2Rate*(Math.min(S,P.yampe)-P.ympe)))}
+function salaryFor(C){var lo=0,hi=C;for(var n=0;n<80;n++){var m=(lo+hi)/2;if(m+cpp(m)+cpp2(m)>C)hi=m;else lo=m}return lo}
+function calc(i){
+  var C=Math.max(0,+i.C||0),m=(Math.max(0,+i.fed||0)+Math.max(0,+i.bc||0))/100;
+  var S=salaryFor(C),e1=cpp(S),e2=cpp2(S),stax=S*m;
+  var D=C*(1-P.corp),G=D*P.gu,dtax=Math.max(0,G*m-(D*(P.gu-1))*9/13-G*P.bcDtc);
+  return{over:C>500000,S:S,er:e1+e2,ee:e1+e2,stax:stax,scash:S-stax-e1-e2,cppRec:2*(e1+e2),rrsp:Math.min(P.rrspMax,P.rrspPct*S),
+    D:D,corp:C*P.corp,dtax:dtax,dcash:D-dtax,G:G};
+}
+(function(){
+  var ids=['C','fed','bc'],out=document.getElementById('out');
+  function $(k){return document.getElementById(k)}
+  function money(x){return (x<0?'－$':'$')+Math.round(Math.abs(x)).toLocaleString('en-CA')}
+  function row(a,b,c){return '<tr><td>'+a+'</td><td class="n">'+b+'</td><td class="n">'+c+'</td></tr>'}
+  function upd(){
+    var v={};ids.forEach(function(k){v[k]=$(k).value});var c=calc(v);
+    if(c.over){out.className='result warn';out.innerHTML='<p>超过 $500,000 的利润不适用小企业税率，本工具不算。请把金额改到 $500,000 以内。</p>';return}
+    out.className='result';
+    out.innerHTML='<div class="wrap"><table><thead><tr><th></th><th class="n">全发工资</th><th class="n">全发股息</th></tr></thead><tbody>'+
+      row('工资 / 股息金额',money(c.S),money(c.D))+row('公司付的雇主 CPP＋CPP2',money(c.er),'—')+row('公司税（11%）','—',money(c.corp))+
+      row('你付的 CPP＋CPP2',money(c.ee),'—')+row('个人所得税',money(c.stax),money(c.dtax))+row('<b>到你手上</b>','<b>'+money(c.scash)+'</b>','<b>'+money(c.dcash)+'</b>')+
+      row('CPP 记录（双方合计供款）',money(c.cppRec),'$0')+row('下一年 RRSP 额度',money(c.rrsp),'$0')+row('托儿费扣除的赚取收入基数',money(c.S),'$0')+
+      row('报税单上的收入',money(c.S),money(c.G))+'</tbody></table></div>'+
+      '<p>到手现金只是一栏。工资那一列换来的 CPP 记录、RRSP 额度（按没有 PA 算）和托儿费扣除的收入基数，股息那一列都是零；股息计入收入的金额又比到账多 15%，会影响家庭福利。</p>';
+  }
+  ids.forEach(function(k){$(k).addEventListener('input',upd)});
+  $('top').addEventListener('click',function(){$('fed').value=33;$('bc').value=20.5;upd()});
+  upd();
+})();
+</script>
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('../sw.js').catch(()=>{}))}</script>
+</body>
+</html>

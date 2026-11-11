@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>小企业扣除三道门演示</title>
+<meta name="description" content="公司规模小，就一定能享受小企业税率吗？按公司身份、收入性质、限额三道门一步步走，三道门都走完才显示适用的税率。">
+<style>
+:root{--bg:#ffffff;--ink:#1b2430;--muted:#5d6b7b;--line:#e3e8ef;--raised:#f6f8fb;--acc:#0b5fff;--ok:#1a7f4b;--okbg:#e9f7ef;--warn:#b54708;--warnbg:#fff3e6}
+@media (prefers-color-scheme:dark){:root{--bg:#0f1419;--ink:#e6ebf2;--muted:#9aa7b5;--line:#2a3340;--raised:#171d25;--acc:#6ea8ff;--ok:#5fd39a;--okbg:#122a1d;--warn:#ffb86b;--warnbg:#2d1f0f}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 -apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:1.45rem;line-height:1.35;margin:0 0 6px}
+h2{font-size:1.1rem;margin:28px 0 10px;padding-top:14px;border-top:1px solid var(--line)}
+.sub{color:var(--muted);margin:0 0 16px}
+.answer{background:var(--raised);border-left:4px solid var(--acc);padding:12px 14px;border-radius:8px;margin:14px 0}
+.answer b{display:block;margin-bottom:4px}
+label.f{display:block;margin:10px 0}
+label.f span{display:block;font-weight:600}
+label.f small{display:block;color:var(--muted)}
+input[type=number],select{font:inherit;width:180px;max-width:100%;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)}
+fieldset{border:1px solid var(--line);border-radius:10px;margin:12px 0;padding:8px 14px}
+legend{font-weight:600;padding:0 6px}
+label.c{display:block;margin:6px 0}
+button{font:inherit;padding:5px 10px;border:1px solid var(--line);border-radius:8px;background:var(--raised);color:var(--ink);cursor:pointer}
+.result{border-radius:10px;padding:12px 14px;margin:14px 0;border:1px solid var(--line);background:var(--raised)}
+.result.warn{background:var(--warnbg);border-color:var(--warn)}
+.result.ok{background:var(--okbg);border-color:var(--ok)}
+table{border-collapse:collapse;width:100%;font-size:.93rem;margin:10px 0}
+th,td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+th{background:var(--raised)}
+.wrap{overflow-x:auto}
+.pit{margin:0;padding-left:1.2em}
+.pit li{margin:6px 0}
+.foot{margin-top:28px;padding-top:12px;border-top:1px dashed var(--line);font-size:.86rem;color:var(--muted)}
+.foot a{color:var(--acc);overflow-wrap:anywhere}
+.step[hidden]{display:none}
+</style>
+<!-- vf:start --><meta name="vf-version" content="2026.09.30.2"><link rel="stylesheet" href="../vf/framework.css"><style>body[data-vf-site]{--vf-accent:#48537d;--vf-paper:#f4f5fb;--vf-heading:Georgia, "Songti SC", serif;--vf-radius:8px;}</style><script defer src="../vf/framework.js"></script><!-- vf:end --><link rel="manifest" href="../manifest.webmanifest">
+</head>
+<body data-vf-site="tax-corporate"><!-- vf:start --><nav class="vf-network" aria-label="微出国跨站导航" data-pagefind-ignore><a class="vf-wordmark" href="https://veryvisa.github.io/">微出国<span> / VERYVISA</span></a><span class="vf-network-label">企业税务</span><a href="../workspace/index.html">我的清单</a><a href="https://veryvisa.github.io/#professional">专业人员入口</a></nav><!-- vf:end -->
+<main>
+<h1>公司规模小，就一定能享受小企业税率吗？</h1>
+<p class="sub">小企业扣除资格 · 三道门一道一道过 · BC 2026 税年</p>
+
+<div class="answer"><b>不一定。</b>小企业扣除有公司身份、收入种类与限额条件：公司得是加拿大受控私人公司（CCPC），收入得是加拿大境内经营活动收入，还要看限额。被动收入和个人服务业务不能只因规模小就套用。下面先走资格分支，三道门都走完才显示税率。</div>
+
+<h2>没有脚本时：三道门清单</h2>
+<ol class="pit">
+<li><b>公司身份</b>：是加拿大公司且是私人公司；不被一个或多个非居民控制、不被公众公司控制、没有任何一类股份在指定证券交易所上市。控制既包括法律上的控制，也包括事实上的控制。</li>
+<li><b>收入性质</b>：只有加拿大境内经营活动收入能用；利息、股息、特许权使用费、租金这类财产性收入，以及指定投资业务收入、个人服务业务收入都不能用。</li>
+<li><b>限额</b>：独立公司 $500,000，联营公司共享一个；上一税年应税资本超过 $10,000,000 开始直线递减、$50,000,000 归零；上一税年调整后被动投资收入超过 $50,000 的部分每 $1 削减 $5、到 $150,000 归零；两条取大者；税年不足 51 周的按天数比例缩减。</li>
+</ol>
+<p>三道都过，限额内那一段经营利润：联邦 9%＋BC 2%＝11%；其余：联邦 15%＋BC 12%＝27%。</p>
+
+<form id="f" novalidate>
+<h2>一步一步走</h2>
+<section class="step" id="s1"><fieldset><legend>第一道门：公司身份</legend>
+<label class="c"><input type="checkbox" id="g1a"> 是加拿大公司，并且是私人公司</label>
+<label class="c"><input type="checkbox" id="g1b"> 不被一个或多个非居民控制（含事实上的控制）</label>
+<label class="c"><input type="checkbox" id="g1c"> 不被公众公司控制</label>
+<label class="c"><input type="checkbox" id="g1d"> 没有任何一类股份在指定证券交易所上市</label>
+<label class="c"><input type="checkbox" id="g1e"> 整个税年内都是这样</label>
+</fieldset></section>
+<section class="step" id="s2" hidden><fieldset><legend>第二道门：收入性质</legend>
+<label class="f"><span>加拿大境内经营活动收入（加元，T2 line 400 的口径）</span><small>不含利息、股息、特许权使用费、租金，不含指定投资业务收入和个人服务业务收入。</small><input type="number" id="abi" min="0" step="10000" value="320000"></label>
+<label class="c"><input type="checkbox" id="psb"> 这笔收入可能属于个人服务业务（没有这家公司，提供服务的人会被看作客户的雇员）</label>
+</fieldset></section>
+<section class="step" id="s3" hidden><fieldset><legend>第三道门：限额</legend>
+<label class="f"><span>本公司分到的限额比例（%）</span><small>不与任何公司联营填 100；联营的按 Schedule 23 协议填，各家合计不得超过 100%。</small><input type="number" id="share" min="0" max="100" step="5" value="100"></label>
+<label class="f"><span>本税年天数</span><small>满 51 周以上填 365；新公司第一年常常是短税年。</small><input type="number" id="days" min="1" max="371" step="1" value="365"></label>
+<label class="f"><span>上一税年应税资本，连同全部联营公司（加元）</span><input type="number" id="cap" min="0" step="1000000" value="0"></label>
+<label class="f"><span>上一税年调整后被动投资收入，连同全部联营公司（加元）</span><input type="number" id="aaii" min="0" step="10000" value="0"></label>
+</fieldset></section>
+<div id="out" class="result" aria-live="polite"><p>启用脚本后这里按你的选择一步步显示；未启用时请看上面的清单。</p></div>
+</form>
+
+<h2>可以手算复核的三个例子</h2>
+<ul class="pit">
+<li>独立公司，全年 365 天，经营收入 $320,000，没有递减：限额 $500,000，$320,000 全部按 11%，公司税 $35,200。</li>
+<li>3 月 1 日注册、12 月 31 日年结，税年 306 天：限额＝$500,000 × 306 ÷ 365＝$419,178。</li>
+<li>上一税年应税资本 $26,000,000：B＝0.225% ×（$26,000,000－$10,000,000）＝$36,000，削减＝$500,000 × $36,000 ÷ $90,000＝$200,000，还剩 $300,000。</li>
+</ul>
+
+<h2>这个演示不判的东西</h2>
+<ul class="pit">
+<li><b>是不是 CCPC、是否联营、收入怎么定性、是不是个人服务业务</b>：都是事实判断，本演示只按你勾选的走分支，不替个案下结论。</li>
+<li><b>应税收入那一项</b>：小企业扣除实际取经营收入、应税收入、限额、递减后限额四个数里最小的，这里假设应税收入不小于经营收入。</li>
+<li><b>外省</b>：新斯科舍、爱德华王子岛、萨斯喀彻温的省限额不同，安大略不跟被动收入递减；这里只按 BC。</li>
+</ul>
+
+<div class="foot">
+<p>本页只演示规则的走法，不构成个案税务建议；公司税务申报请交给会计师。参数为 2026 税年 BC 口径，核实日 2026-10-30。</p>
+<p>来源：<a href="https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-125.html">Income Tax Act s.125 – Small business deduction</a>；<a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4012/t2-corporation-income-tax-guide-chapter-4-page-4-t2-return.html">CRA T4012 Chapter 4: Page 4 of the T2 return</a>。</p>
+</div>
+<!-- vf:start --><div class="vf-tools" role="group" data-pagefind-ignore aria-label="阅读工具"><button type="button" data-vf-save hidden>保存本页</button><button type="button" data-vf-print hidden>打印 / 存为 PDF</button><span data-vf-status role="status" aria-live="polite"></span></div><!-- vf:end --></main>
+<script>
+var R={limit:500000,capStart:10000000,capDen:90000,capPct:0.00225,pasStart:50000,pasMul:5,small:0.11,general:0.27};
+function calc(i){
+  var g1=i.g1a&&i.g1b&&i.g1c&&i.g1d&&i.g1e;
+  if(!g1)return{gate:1};
+  var abi=Math.max(0,+i.abi||0);
+  if(i.psb)return{gate:2,abi:abi};
+  var share=Math.min(100,Math.max(0,+i.share||0))/100,days=Math.max(1,+i.days||365);
+  var A=R.limit*share;if(days<357)A=A*days/365;
+  var cap=Math.max(0,+i.cap||0),aaii=Math.max(0,+i.aaii||0);
+  var capRed=cap>R.capStart?A*(R.capPct*(cap-R.capStart))/R.capDen:0;
+  var pasRed=aaii>R.pasStart?(R.limit*share)/R.limit*R.pasMul*(aaii-R.pasStart):0;
+  var red=Math.max(capRed,pasRed),lim=Math.max(0,A-red),low=Math.min(abi,lim),high=abi-low;
+  return{gate:3,abi:abi,A:A,capRed:capRed,pasRed:pasRed,lim:lim,low:low,high:high,tax:low*R.small+high*R.general};
+}
+(function(){
+  var out=document.getElementById('out'),ids=['g1a','g1b','g1c','g1d','g1e','abi','psb','share','days','cap','aaii'];
+  function $(k){return document.getElementById(k)}
+  function money(x){return '$'+Math.round(x).toLocaleString('en-CA')}
+  function upd(){
+    var v={};ids.forEach(function(k){var e=$(k);v[k]=e.type==='checkbox'?e.checked:e.value});
+    var c=calc(v);
+    $('s2').hidden=c.gate<2;$('s3').hidden=c.gate<3;
+    if(c.gate===1){out.className='result';out.innerHTML='<p><b>第一道门还没过。</b>五项都勾上才算 CCPC 这一分支成立；有一项不成立，这家公司拿不到小企业扣除，经营利润按一般税率走。逐项核对后再往下。</p>';return}
+    if(c.gate===2){out.className='result warn';out.innerHTML='<p><b>停在第二道门。</b>个人服务业务收入不是可以用小企业扣除的经营收入，规模小也不能套用；这种情形还有额外附加税和费用限制，见「个人服务业务风险」那一页。</p>';return}
+    out.className='result ok';
+    out.innerHTML='<p><b>三道门走完。</b>以下按你填的事实演示：</p><div class="wrap"><table><tbody>'+
+      '<tr><td>分到的限额（含短税年缩减）</td><td class="n">'+money(c.A)+'</td></tr>'+
+      '<tr><td>应税资本递减</td><td class="n">'+money(c.capRed)+'</td></tr>'+
+      '<tr><td>被动收入递减</td><td class="n">'+money(c.pasRed)+'</td></tr>'+
+      '<tr><td>递减后限额（两条取大者扣）</td><td class="n">'+money(c.lim)+'</td></tr>'+
+      '<tr><td>按 11%（联邦 9%＋BC 2%）的经营利润</td><td class="n">'+money(c.low)+'</td></tr>'+
+      '<tr><td>按 27%（联邦 15%＋BC 12%）的经营利润</td><td class="n">'+money(c.high)+'</td></tr>'+
+      '<tr><td>经营利润的公司税合计</td><td class="n">'+money(c.tax)+'</td></tr>'+
+      '</tbody></table></div><p>应税资本和被动收入都看上一税年，今年把投资挪出去救不了今年。</p>';
+  }
+  ids.forEach(function(k){$(k).addEventListener('input',upd);$(k).addEventListener('change',upd)});
+  upd();
+})();
+</script>
+<script>if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('../sw.js').catch(()=>{}))}</script>
+</body>
+</html>

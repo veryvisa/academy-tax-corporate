@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1492" width="900" height="1492" role="img" aria-labelledby="t d" font-family="'PingFang SC','Hiragino Sans GB','Noto Sans SC','Microsoft YaHei',sans-serif">
+<title id="t">个人服务业务：法律形式与工作事实的双层判定</title>
+<desc id="d">不一定。公司、发票和合同称呼只是外壳；税法看的是：要是没有这家公司，你是不是本来就该算客户的雇员。是的话，就可能落入个人服务业务，低税率全拿不到。</desc>
+<rect width="900" height="1492" fill="#FAFBFC"/>
+<rect x="0" y="0" width="900" height="183" fill="#12355B"/>
+<text x="40" y="46" font-size="18" fill="#BFD3E6" font-weight="500" text-anchor="start">个人服务业务风险 · 信息图</text>
+<text x="40" y="92" font-size="30" fill="#FFFFFF" font-weight="700" text-anchor="start">把原来的工作改成自己公司开票，就能享受一般公司税优惠</text>
+<text x="40" y="132" font-size="30" fill="#FFFFFF" font-weight="700" text-anchor="start">吗？</text>
+<rect x="40" y="207" width="820" height="143" rx="16" fill="#FFFFFF" stroke="#12355B" stroke-width="2"/>
+<text x="64" y="238" font-size="17" fill="#0E7C7B" font-weight="700" text-anchor="start">一句话答案</text>
+<text x="64" y="274" font-size="21" fill="#1F2A37" font-weight="600" text-anchor="start">不一定。公司、发票和合同称呼只是外壳；税法看的是：要是没有这家公司，你是</text>
+<text x="64" y="307" font-size="21" fill="#1F2A37" font-weight="600" text-anchor="start">不是本来就该算客户的雇员。是的话，就可能落入个人服务业务，低税率全拿不到。</text>
+<text x="40" y="400" font-size="22" fill="#12355B" font-weight="700" text-anchor="start">从外壳看到事实，一层一层判</text>
+<rect x="40" y="418" width="820" height="121" rx="14" fill="#F4F6F9" stroke="#5B6B7F" stroke-width="1.5"/>
+<text x="58" y="452" font-size="20" fill="#5B6B7F" font-weight="700" text-anchor="start">第一层：法律形式（不能单独定结论）</text>
+<circle cx="64" cy="483" r="3.2" fill="#5B6B7F"/>
+<text x="76" y="487" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">有公司、开发票、合同写独立承包人</text>
+<circle cx="64" cy="508" r="3.2" fill="#5B6B7F"/>
+<text x="76" y="513" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">只有一个客户，也不自动等于个人服务业务</text>
+<line x1="450" y1="541" x2="450" y2="568" stroke="#5B6B7F" stroke-width="2.5"/>
+<path d="M442,565 L458,565 L450,577 Z" fill="#5B6B7F"/>
+<text x="466" y="560" font-size="15" fill="#5B6B7F" font-weight="500" text-anchor="start">继续看事实</text>
+<rect x="40" y="579" width="820" height="146" rx="14" fill="#EAF1F8" stroke="#2F5D8A" stroke-width="1.5"/>
+<text x="58" y="613" font-size="20" fill="#2F5D8A" font-weight="700" text-anchor="start">第二层：工作事实</text>
+<circle cx="64" cy="644" r="3.2" fill="#2F5D8A"/>
+<text x="76" y="648" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">提供服务的人（或其关联人）是公司的特定股东</text>
+<circle cx="64" cy="669" r="3.2" fill="#2F5D8A"/>
+<text x="76" y="674" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">假如没有这家公司，这个人会被合理看作客户的雇员或高管</text>
+<circle cx="64" cy="695" r="3.2" fill="#2F5D8A"/>
+<text x="76" y="699" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">看谁控制工作方式、工具谁出、盈亏风险谁担、能不能同时服务别的客户</text>
+<line x1="450" y1="728" x2="450" y2="755" stroke="#5B6B7F" stroke-width="2.5"/>
+<path d="M442,752 L458,752 L450,764 Z" fill="#5B6B7F"/>
+<text x="466" y="747" font-size="15" fill="#5B6B7F" font-weight="500" text-anchor="start">两条都成立时，再看例外</text>
+<rect x="40" y="766" width="820" height="121" rx="14" fill="#E6F4F3" stroke="#0E7C7B" stroke-width="1.5"/>
+<text x="58" y="800" font-size="20" fill="#0E7C7B" font-weight="700" text-anchor="start">第三层：两个例外</text>
+<circle cx="64" cy="830" r="3.2" fill="#0E7C7B"/>
+<text x="76" y="835" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">公司在该业务里全年雇有超过五名全职员工</text>
+<circle cx="64" cy="856" r="3.2" fill="#0E7C7B"/>
+<text x="76" y="860" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">服务费来自同一年与本公司关联的公司</text>
+<line x1="450" y1="889" x2="450" y2="916" stroke="#5B6B7F" stroke-width="2.5"/>
+<path d="M442,913 L458,913 L450,925 Z" fill="#5B6B7F"/>
+<text x="466" y="908" font-size="15" fill="#5B6B7F" font-weight="500" text-anchor="start">两个例外都不适用</text>
+<rect x="40" y="927" width="820" height="172" rx="14" fill="#FDECEA" stroke="#B42318" stroke-width="1.5"/>
+<text x="58" y="961" font-size="20" fill="#B42318" font-weight="700" text-anchor="start">结果：个人服务业务</text>
+<circle cx="64" cy="991" r="3.2" fill="#B42318"/>
+<text x="76" y="996" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">不算活跃经营：拿不到小企业扣除</text>
+<circle cx="64" cy="1017" r="3.2" fill="#B42318"/>
+<text x="76" y="1021" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">不算完全税率应税所得：拿不到一般税率减免</text>
+<circle cx="64" cy="1042" r="3.2" fill="#B42318"/>
+<text x="76" y="1047" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">另加 5% 附加税；BC 公司层面合计 45%</text>
+<circle cx="64" cy="1068" r="3.2" fill="#B42318"/>
+<text x="76" y="1072" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">费用基本只剩本人工资、福利，以及少数销售与催收法律费用</text>
+<rect x="40" y="1125" width="820" height="172" rx="14" fill="#FFF4E5" stroke="#B45309" stroke-width="1.5"/>
+<text x="58" y="1159" font-size="20" fill="#B45309" font-weight="700" text-anchor="start">最容易弄错</text>
+<circle cx="64" cy="1189" r="3.2" fill="#B45309"/>
+<text x="76" y="1194" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">「有公司和发票，就不是雇员型业务」：外壳不排除个人服务业务。</text>
+<circle cx="64" cy="1215" r="3.2" fill="#B45309"/>
+<text x="76" y="1219" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">「只有一个客户，就一定是个人服务业务」：还要看雇佣事实，以及雇员人数等例外。</text>
+<circle cx="64" cy="1240" r="3.2" fill="#B45309"/>
+<text x="76" y="1245" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">「45% 比个人最高档低，所以还是划算」：留存差额只剩约 8.5 个点，费用又大多不能扣，取出来还</text>
+<text x="76" y="1270" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">要再交个人税，要连同工资和股东提款一起算。</text>
+<line x1="40" y1="1323" x2="860" y2="1323" stroke="#D5DEE8" stroke-width="1.5"/>
+<text x="40" y="1348" font-size="15" fill="#5B6B7F" font-weight="700" text-anchor="start">官方来源</text>
+<text x="40" y="1369" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">Income Tax Act s.125(7)「personal services business」「active business」定义（laws-lois.justice.gc.ca）</text>
+<text x="40" y="1389" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">Income Tax Act s.123.4(1)（完全税率应税所得）、s.123.5（5% 附加税）、s.18(1)(p)（费用限制）</text>
+<text x="40" y="1410" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">CRA · Corporation tax rates（canada.ca）；B.C. Corporate income tax rates（gov.bc.ca）</text>
+<text x="40" y="1436" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">核对日 2026-10-14（ITA 合订本 current to 2026-09-21）。是否构成雇佣关系是事实判断，本图只列要看的事实，不替个案</text>
+<text x="40" y="1456" font-size="14" fill="#5B6B7F" font-weight="400" text-anchor="start">下结论。</text>
+</svg>
